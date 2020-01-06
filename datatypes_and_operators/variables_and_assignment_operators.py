@@ -70,4 +70,4 @@ print("An error like the one below(syntax or parsing error) forces the program t
 print("Note: Python Interpreter reads and executes python code from top to bottom")
 print('#' * 79)
 print(my_variable)
-print('Hello there!') #will not be executed because the line preceding it has an error
+print('Hello there!') #will not be executed because the line preceding it has a syntactic or parsing error
