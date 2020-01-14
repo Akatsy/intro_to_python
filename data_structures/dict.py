@@ -8,3 +8,21 @@ print("By using curly braces '{}' to sorround a comma separated collection of ke
 print('#' * 79)
 n = {}
 print("When you declare a variable and assign it an empty set of curly braces, it is assigned the type dict e.g n = {} and type(n) will give; ", type(n))
+print('#' * 79)
+print("The key(sorrounded by square brackets, []) in a dict can be used to access a value, change a value or add a new object to a dict as follows:")
+print("we can print out the value of the brand in our list above like this thisdict['brand']", thisdict['brand'])
+print('#' * 79)
+thisdict['brand']='mercedes'
+print("we can change the value of the brand in our list above like this thisdict['brand']='mercedes' and printing out the value, we get: {}".format(thisdict))
+print('#' * 79)
+thisdict['make']='c200'
+print("we can add a new object to our list above like this thisdict['make']='c200' and printing out the value, we get: {}".format(thisdict))
+print('#' * 79)
+print("There are a few methods that are useful for operating on lists:")
+print("The get() method looks up to see if a key exists in the dict and if it does, returns the value of that key. If it does not exist, it returns the keyword None(by default) or another user defined response: e.g")
+print('#' * 79)
+cc = thisdict.get('cc', 'The carrying capacity does not exist')
+print("We can look for a key 'cc' in our existing dict and if it does not exist print a message 'The carrying capacity does not exist' like this cc = thisdict.get('cc', 'The carrying capacity does not exist') and printing out the variable cc 'print(cc)' that stores the return value we get:",cc)
+print('#' * 79)
+print("The get() method is a better way to search for a key in a dict than using just the square brackets and the key value like so thisdict['cc'] which returns an error if the key does not exist. Errors cause programs to break which is bad, so if you anticipate that a key might not exist, it is better to use the get() method which returns None or a custom message.")
+print('#' * 79)
