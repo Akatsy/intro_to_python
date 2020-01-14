@@ -3,7 +3,7 @@ print("Sets are mutable so you can modify the contents. They are unordered, so y
 print('#' * 79)
 print("Sets can be created as follows:")
 a_set = {1,2,3,4,5,2,3,1,5,1,3,6,7,1,2}
-print("1.By using angle brackets '{}' to delimit a collection of elements separated by commas.\n If there are any duplicate elements, they will be removed and the set will only store unique elements e.g\n if we declare a set as follows; a_set = {1,2,3,4,5,2,3,1,5,1,3,6,7,1,2} and print it out we will get-", a_set)
+print("1.By using curly braces '{}' to delimit a collection of elements separated by commas.\n If there are any duplicate elements, they will be removed and the set will only store unique elements e.g\n if we declare a set as follows; a_set = {1,2,3,4,5,2,3,1,5,1,3,6,7,1,2} and print it out we will get-", a_set)
 print('#' * 79)
 list_sentence = ['she', 'sells', 'sea', 'shells', 'by', 'the', 'sea', 'shore','she', 'sells', 'sea', 'shells', 'by', 'the', 'sea', 'shore']
 set_sentence = set(list_sentence)
