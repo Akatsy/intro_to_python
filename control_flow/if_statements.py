@@ -27,3 +27,5 @@ else:
     print("Weather is confusing!")
 
 print("After the example, you can see the line printed is 'Carry an umbrella' because that is the block that will be executed since our weather variable is set to 'rainy'")
+print('#' * 79)
+print("The if statement executes from top to bottom - once a condition is satisfied, the execution stops and exits from the if statement to the next code block after it. This understanding should help you structure your if statements well for the best efficiency for your code execution")
