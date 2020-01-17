@@ -52,3 +52,5 @@ print("if weather == 'cold' and weather == 'rainy':\n\tprint(\"carry an umbrella
 print("The above is an unambigous and correct version of the code, where the expression to each side of the logical operator is a boolean expression")
 print('#' * 79)
 print("3. Do not compare variables with '==True' and '==False' - If you have a variable which is already a boolean, you do not need to compare it using '==True' and '==False' since it is already a boolean object.")
+print('#' * 79)
+print("NOTE: Always try to write succint(clear, clean and short code) by considering the flow of the if statement and the 3 rules above")
