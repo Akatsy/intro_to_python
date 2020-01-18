@@ -35,18 +35,37 @@ for team in teams:
     print(team.lower()) # print out each element in teams converted to lower case
 print("All Done!")
 
+print('#' * 79)
+
 reversed_elements_list = []
 for team in teams:
     reversed_elements_list.append(team[::-1])  #  reverse each string(element) in the teams list and add it to the new list
 print(reversed_elements_list)
+
+print('#' * 79)
 
 #modify the team list to have all caps using the range() function
 for index in range(len(teams)):
     teams[index] = teams[index].upper()
 print(teams)
 
+print('#' * 79)
+
 print(range(0, 100, 5))  # returns a range object
 print(list(range(0, 100, 5)))  # convert range object to a list object
 for num in range(0, 100, 5):  # iterate through the range object and print each number
     # print(num, end =" ")   #print numbers on the same line
+    print(num)
+
+print('#' * 79)
+# Use a for loop to take a list and print each element of the list in its own line.
+sentence = ["the", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"]
+
+for word in sentence:
+    print(word)
+
+print('#' * 79)
+
+# Write a for loop below that will print out every whole number that is a multiple of 5 and less than or equal to 30.
+for num in range(5,31,5):
     print(num)
