@@ -86,4 +86,27 @@ for name in names:
     name = name.replace(' ', '_').lower()
     user_names.append(name)
 print(user_names)
-    
+
+print('#' * 79)
+# Write a for loop that uses range() to iterate over the positions in names to modify the list. Like you did in the previous quiz, change each name to be lowercase and replace spaces with underscores.
+
+for index in range(len(names)):
+    names[index] = names[index].replace(' ', '_').lower()
+print(names)
+
+print('#' * 79)
+
+# Write a for loop that iterates over a list of strings, tokens, and counts how many of them are XML tags. XML is a data language similar to HTML. You can tell if a string is an XML tag if it begins with a left angle bracket "<" and ends with a right angle bracket ">". Keep track of the number of tags using the variable count.
+# tokens = ['<greeting>', 'Hello World!', '</greeting>']
+# You can assume that the list of strings will not contain empty strings.
+
+tokens = ['<greeting>', 'Hello World!', '</greeting>']
+count = 0
+
+for token in tokens:
+    if token[0] == '<' and token[-1] == '>':
+        count += 1
+print("There are {} xml tags in the list of strings, tokens".format(count))
+
+print('#' * 79)
+
