@@ -119,7 +119,6 @@ print('#' * 79)
 items = ['first string', 'second string']
 html_str = '<ul>\n'
 for item in items:
-    item = '<li>' + item + '</li>' + '\n'
-    html_str += item
+    html_str += "<li>{}</li>\n".format(item)
 html_str += '</ul>'
 print(html_str)
