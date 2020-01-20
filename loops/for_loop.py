@@ -210,3 +210,18 @@ for key in basket_items.keys():
     if key in fruits:
         result += basket_items.get(key)
 print(result)
+
+
+# Use the dictionary and list to count the total number
+# of fruits and not_fruits.
+
+fruit_count = 0
+not_fruit_count = 0
+
+for key in basket_items.keys():
+    if key in fruits:
+        fruit_count += basket_items.get(key)
+    else:
+        not_fruit_count += basket_items.get(key)
+print("There are {} fruits in the basket".format(fruit_count))
+print("There are {} non-fruits in the basket".format(not_fruit_count))
