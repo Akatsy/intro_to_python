@@ -225,3 +225,16 @@ for key in basket_items.keys():
         not_fruit_count += basket_items.get(key)
 print("There are {} fruits in the basket".format(fruit_count))
 print("There are {} non-fruits in the basket".format(not_fruit_count))
+
+# cleaner solution to the one above
+# test example
+basket_items = {'peaches': 5, 'lettuce': 2, 'kites': 3, 'sandwiches': 8, 'pears': 4}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+
+for object, count in basket_items.items():
+    if object in fruits:
+        fruit_count += count
+    else:
+        not_fruit_count += count
+print("There are {} fruits in the basket".format(fruit_count))
+print("There are {} non-fruits in the basket".format(not_fruit_count))
