@@ -149,3 +149,20 @@ for word in word_list:
     else:
         word_counter[word] += 1
 print(word_counter)
+
+# use get method to create a dictionary from a list
+word_count = {}
+
+for word in word_list:
+    word_count[word] = word_count.get(word, 0) + 1
+print(word_count)
+
+# check for identity and equality of the two dictionaries
+print(word_count is word_counter)
+print(word_counter is word_count)
+print(word_count is not word_counter)
+print(word_counter is not word_count)
+print(word_count == word_counter)
+print(word_counter != word_count)
+print(word_counter == word_count)
+print(word_count != word_counter)
