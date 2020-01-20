@@ -243,6 +243,6 @@ print('#' * 79)
 # find the factorial of a number using for loop
 number = 15
 factorial = 1
-for num in range(1,number+1):
+for num in range(2,number+1):
     factorial *= num
 print("The factorial of {} is {}".format(number, factorial))
