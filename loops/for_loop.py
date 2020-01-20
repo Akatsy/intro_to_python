@@ -122,3 +122,30 @@ for item in items:
     html_str += "<li>{}</li>\n".format(item)
 html_str += '</ul>'
 print(html_str)
+
+print('#' * 79)
+# create a word counter dictionary given the following string
+
+python_history = "Python was conceived in the late 1980s[34] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL),[35] capable of exception handling and interfacing with the Amoeba operating system.[8] Its implementation began in December 1989.[36] Van Rossum shouldered sole responsibility for the project, as the lead developer, until July 12, 2018, when he announced his \"permanent vacation\" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[37] He now shares his leadership as a member of a five-person steering council.[38][39][40] In January, 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member \"Steering Council\" to lead the project"
+
+# get a list of the words in the string given and print out the list
+word_list = python_history.split()
+print(word_list)
+print('#' * 79)
+
+# reverse the above process. Build a string from the list of words seperated by a space then print out the string
+word_string = ' '.join(word_list)
+print(word_string)
+print('#' * 79)
+
+# create an empty dictionary to store the word count
+word_counter = {}
+
+# loop over every word in the list, check whether it is in the dictionary, if not add a new entry and set it to 1. If it exists increase it's count by 1
+
+for word in word_list:
+    if word not in word_counter:
+        word_counter[word] = 1
+    else:
+        word_counter[word] += 1
+print(word_counter)
