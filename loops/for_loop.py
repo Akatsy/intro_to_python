@@ -166,3 +166,19 @@ print(word_count == word_counter)
 print(word_counter != word_count)
 print(word_counter == word_count)
 print(word_count != word_counter)
+
+print('#' * 99)
+
+# iterating over dictionaries.
+# 1. to get keys only and print them out
+# 2. to get both keys and values and print them out
+# 3. to get values only and print them out
+
+for key in word_count.keys():
+    print(key)
+
+for key, value in word_count.items():
+    print("word: {} frequency: {}".format(key, value))
+
+for value in word_count.values():
+    print(value)
