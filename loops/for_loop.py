@@ -182,3 +182,31 @@ for key, value in word_count.items():
 
 for value in word_count.values():
     print(value)
+
+
+print('#' * 99)
+
+# You would like to count the number of fruits in your basket. 
+# In order to do this, you have the following dictionary and list of
+# fruits.  Use the dictionary and list to count the total number
+# of fruits, but you do not want to count the other items in your basket.
+# comment out examples to test one
+
+result = 0
+# example 1
+basket_items = {'apples': 4, 'oranges': 19, 'kites': 3, 'sandwiches': 8}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+# example 2
+basket_items = {'lettuce': 2, 'kites': 3, 'sandwiches': 8, 'pears': 4, 'bears': 10}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+# example 3
+basket_items = {'peaches': 5, 'lettuce': 2, 'kites': 3, 'sandwiches': 8, 'pears': 4}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+# example 4
+basket_items = {'pears': 5, 'grapes': 19, 'kites': 3, 'sandwiches': 8, 'bananas': 4}
+fruits = ['apples', 'oranges', 'pears', 'peaches', 'grapes', 'bananas']
+
+for key in basket_items.keys():
+    if key in fruits:
+        result += basket_items.get(key)
+print(result)
