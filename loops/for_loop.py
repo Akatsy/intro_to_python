@@ -238,3 +238,11 @@ for object, count in basket_items.items():
         not_fruit_count += count
 print("There are {} fruits in the basket".format(fruit_count))
 print("There are {} non-fruits in the basket".format(not_fruit_count))
+
+print('#' * 79)
+# find the factorial of a number using for loop
+number = 15
+factorial = 1
+for num in range(1,number+1):
+    factorial *= num
+print("The factorial of {} is {}".format(number, factorial))
