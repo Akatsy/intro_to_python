@@ -44,11 +44,23 @@ count_by = 1 #provide some number to count by
 # write a while loop that uses break_num as the ongoing number to 
 #   check against end_num
 break_num = start_num
-if end_num > start_num:
-    result = break_num
-else:
+if start_num > end_num:
     result = "Oops! Looks like your start value is greater than the end value. Please try again."
-while break_num < end_num:
-    print(break_num)
-    break_num += count_by
-print(result)
+else:
+    break_num = start_num
+    while break_num < end_num:
+        print(break_num)
+        break_num += count_by
+
+print('#' * 99)
+
+# Write a while loop that finds the largest square number less than an integer limit and stores it in a variable nearest_square. A square number is the product of an integer multiplied by itself, for example 36 is a square number because it equals 6*6.
+
+# For example, if limit is 40, your code should set the nearest_square to 36.
+
+limit = 10
+num = 0
+while (num+1)**2 < limit:
+    num += 1
+nearest_square = num**2
+print(nearest_square)
