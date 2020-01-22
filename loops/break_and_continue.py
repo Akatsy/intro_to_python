@@ -10,10 +10,14 @@ weight = 0
 items = []
 weight_limit = 100
 for cargo in manifest:
+    print("current weight is {}".format(weight))
     if weight >= weight_limit:
+        print("terminating loop now...")
         break
     else:
+        print("adding {} weight of {} now".format(cargo[0], cargo[1]))
         items.append(cargo[0])
         weight += cargo[1]
-print(weight)
-print(items)
+    print(weight)
+    print(items)
+print("current weight ({}) and items loaded {}".format(weight, items))
