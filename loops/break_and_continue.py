@@ -56,4 +56,28 @@ for cargo_item, cargo_weight in manifest:
         weight += cargo_weight
 print("Items addded to ship are {}, total weight of items is {}".format(items, weight))
 
+print('#' * 99)
 
+# Write a loop with a break statement to create a string, news_ticker, that is exactly 140 characters long. You should create the news ticker by adding headlines from the headlines list, inserting a space in between each headline. If necessary, truncate the last headline in the middle so that news_ticker is exactly 140 characters long.
+
+# HINT: modify the headlines list to verify your loop works with different inputs
+headlines = ["Local Bear Eaten by Man",
+             "Legislature Announces New Laws",
+             "Peasant Discovers Violence Inherent in System",
+             "Cat Rescues Fireman Stuck in Tree",
+             "Brave Knight Runs Away",
+             "Papperbok Review: Totally Triffic"]
+
+news_ticker = ""
+
+for headline in headlines:
+    if len(news_ticker) >= 140:
+        print("140 character limit reached...")
+        break
+    elif len(headline) + 1 + len(news_ticker) > 140:
+        print("adding the headline will exceed the character limit by {}, truncating to fit...".format(len(headline) + 1 + len(news_ticker) - 140))
+        headline = headline[:140 - len(news_ticker)]
+        news_ticker += headline
+    else:
+        news_ticker += headline + ' '
+print("our news ticker is '{}' and is ({}) characters long".format(news_ticker, len(news_ticker)))
