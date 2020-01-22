@@ -81,3 +81,20 @@ for headline in headlines:
     else:
         news_ticker += headline + ' '
 print("our news ticker is '{}' and is ({}) characters long".format(news_ticker, len(news_ticker)))
+
+print('#' * 99)
+# better solution - more succint
+headlines = ["Red Hat Enterprise Linux 8.2 Beta Released With New Features",
+             "ProtonVPN goes open source to build trust",
+             "Python’s Execution Time Is Close To C++ And Go Language: Study",
+             "Safaricom needs to fix M-Pesa privacy problems",
+             "Why is Samsung jumping from Galaxy S10 to Galaxy S20?",
+             "Have You Tried Kaisen Linux? — A New System Rescue Linux Distro"
+]
+news_ticker = ""
+for headline in headlines:
+    news_ticker += headline + " "
+    if len(news_ticker) >= 280:
+        news_ticker = news_ticker[:280]
+        break
+print("Our newsticker is \"{}\" and has {} characters".format(news_ticker, len(news_ticker)))
