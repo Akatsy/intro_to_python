@@ -19,3 +19,20 @@ for cargo in manifest:
         items.append(cargo[0])
         weight += cargo[1]
 print("current weight ({}) and items loaded {}".format(weight, items))
+print('#' * 99)
+
+print("Sometimes, we also might need to skip an iteration because of some condition. Here we use the continue keyword")
+print("continue skips an iteration of a loop")
+print("Suppose, for example we had a basket of food and wanted to add only those that are fruits to another basket. Looping through the list of food, if we encounter a non-fruit, we are to skip it and not add it to our fruits list then continue looping if there are more food items")
+print('#' * 99)
+fruits = ['apple', 'orange', 'mango', 'pear']
+food = ['cake', 'apple', 'bread', 'pear', 'juice', 'orange', 'beef', 'mango']
+basket = []
+for item in food:
+    if item not in fruits:
+        print("Not a fruit, skipping...")
+        continue
+    else:
+        print("Found a fruit, adding to basket...")
+        basket.append(item)
+print("our basket contains {}".format(basket))
