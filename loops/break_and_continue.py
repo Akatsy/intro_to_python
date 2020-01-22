@@ -36,3 +36,24 @@ for item in food:
         print("Found a fruit, adding to basket...")
         basket.append(item)
 print("our basket contains {}".format(basket))
+print('#' * 99)
+
+# solve the manifest bugs using continue
+manifest = [("bananas", 15), ("mattresses", 24), ("dog kennels", 42), ("machine", 120), ("cheeses", 5)]
+weight = 0
+items = []
+weight_limit = 100
+for cargo_item, cargo_weight in manifest:
+    if weight >= weight_limit:
+        print("weight limit reached, loading stopped")
+        break
+    elif weight + cargo_weight > weight_limit:
+        print("adding item {}, weight {} will exceed the weight limit of {}, skipping item...".format(cargo_item, cargo_weight, weight_limit))
+        continue
+    else:
+        print("adding {} weight {} to ship".format(cargo_item, cargo_weight))
+        items.append(cargo_item)
+        weight += cargo_weight
+print("Items addded to ship are {}, total weight of items is {}".format(items, weight))
+
+
