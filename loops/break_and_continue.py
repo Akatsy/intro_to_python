@@ -18,6 +18,4 @@ for cargo in manifest:
         print("adding {} weight of {} now".format(cargo[0], cargo[1]))
         items.append(cargo[0])
         weight += cargo[1]
-    print(weight)
-    print(items)
 print("current weight ({}) and items loaded {}".format(weight, items))
