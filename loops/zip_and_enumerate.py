@@ -23,3 +23,14 @@ items, weights = zip(*manifest)
 print(items, weights)
 
 print('#' * 79)
+
+print("enumerate() is a function that returns an iterator of tuples containing indices and values of a list")
+print('#' * 99)
+teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea']
+print("for example if you had a list like teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea'] and you wanted to get a list of tuples of team and it's index, you could do the following; print(list(enumerate(teams))) to get the following output:\n{}".format(list(enumerate(teams))))
+print('#' * 99)
+print("You could also print out the values of a list with their indices using enumerate as follows:\n for i, letter in enumerate(teams):\n\tprint(i, letter)\nto get the following output:")
+for i, letter in enumerate(teams):
+    print(i, letter)
+
+print("You will often use enumerate() when you need the indices and values of a list in a loop")
