@@ -58,3 +58,11 @@ for point in points:
 # more succint solution
 for point in zip(labels, x_coord, y_coord, z_coord):
     points.append("{}: {}, {}, {}".format(*point))
+
+print('#' * 99)
+# Use zip to create a dictionary cast that uses names as keys and heights as values.
+cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
+cast_heights = [72, 68, 72, 66, 76]
+
+cast = dict(zip(cast_names, cast_heights))
+print(cast)
