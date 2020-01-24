@@ -37,3 +37,13 @@ print("for example, say we wanted if the number is not even to cube it instead")
 
 weird_squares = [num**2 if num % 2 == 0 else num**3 for num in range(21)] 
 print(weird_squares)
+print('#' * 99)
+#practice
+
+# Quiz: Extract First Names
+# Use a list comprehension to create a new list first_names containing just the first names in names in lowercase.
+
+names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smith"]
+
+first_names = [name.split()[0].lower() for name in names]
+print(first_names)
