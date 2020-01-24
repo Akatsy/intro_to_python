@@ -54,3 +54,7 @@ for object in zip(labels,x_coord,y_coord,z_coord):
 
 for point in points:
     print(point)
+
+# more succint solution
+for point in zip(labels, x_coord, y_coord, z_coord):
+    points.append("{}: {}, {}, {}".format(*point))
