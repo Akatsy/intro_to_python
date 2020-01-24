@@ -79,3 +79,12 @@ names, heights = zip(*cast)
 print(names)
 print(heights)
 
+print('#' * 99)
+# Quiz: Transpose with Zip
+# Use zip to transpose data from a 4-by-3 matrix to a 3-by-4 matrix.
+data = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (9, 10, 11))
+
+data_transpose = tuple(zip(*data))
+print(data_transpose)
+# transpose data from a 3-by-4-matrix to a 4-by-3-matrix
+print(tuple(zip(*data_transpose)))
