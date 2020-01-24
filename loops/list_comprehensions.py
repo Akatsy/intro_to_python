@@ -47,3 +47,8 @@ names = ["Rick Sanchez", "Morty Smith", "Summer Smith", "Jerry Smith", "Beth Smi
 
 first_names = [name.split()[0].lower() for name in names]
 print(first_names)
+
+print('#' * 99)
+# Use a list comprehension to create a list multiples_3 containing the first 20 multiples of 3.
+multiples_3 = [num * 3 for num in range(1, 21)]
+print(multiples_3)
