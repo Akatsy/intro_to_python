@@ -10,7 +10,7 @@ print("Given a list letters = ['a', 'b', 'c', 'd', 'e', 'w', 'm', 'r'], we can c
 print(upper_cased)
 
 print('#' * 99)
-print("Turns out, we can more quickly and precisely create a new list from an existing list in Python using a construct called list comprehensions")
+print("Turns out, we can more quickly and precisely create a new list from an existing list or another iterable in Python using a construct called list comprehensions")
 print('#' * 99)
 print("A list comprehension is created using square brackets and inside them including expressions, for loops and conditional statements as neccessary to create the new list.")
 print('#' * 99)
@@ -52,3 +52,18 @@ print('#' * 99)
 # Use a list comprehension to create a list multiples_3 containing the first 20 multiples of 3.
 multiples_3 = [num * 3 for num in range(1, 21)]
 print(multiples_3)
+print('#' * 99)
+
+# Quiz: Filter Names by Scores
+# Use a list comprehension to create a list of names passed that only include those that scored at least 65.
+
+scores = {
+             "Rick Sanchez": 70,
+             "Morty Smith": 35,
+             "Summer Smith": 82,
+             "Jerry Smith": 23,
+             "Beth Smith": 98
+          }
+
+passed = [name for name, score in scores.items() if score>=65]
+print(passed)
