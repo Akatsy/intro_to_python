@@ -88,3 +88,17 @@ data_transpose = tuple(zip(*data))
 print(data_transpose)
 # transpose data from a 3-by-4-matrix to a 4-by-3-matrix
 print(tuple(zip(*data_transpose)))
+
+print('#' * 99)
+# Quiz: Enumerate
+# Use enumerate to modify the cast list so that each element contains the name followed by the character's corresponding height. For example, the first element of cast should change from "Barney Stinson" to "Barney Stinson 72".
+
+cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
+heights = [72, 68, 72, 66, 76]
+
+# write your for loop here
+for index, name in enumerate(cast):
+    cast[index] = "{} {}".format(name,heights[index])
+
+
+print(cast)
