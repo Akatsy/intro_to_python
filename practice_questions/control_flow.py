@@ -87,3 +87,26 @@ for director, count in zip(winners_list, count_list):
 
 print("most_win_director = {}".format(most_win_director))
 print('#' * 99)
+
+
+# better solution to question 2 - using a dictionary
+most_wins = []
+winner_count_dict = {}
+for winnerlist in winners.values():
+    for winner in winnerlist:
+        winner_count_dict[winner] = winner_count_dict.get(winner,0) + 1
+# print(winner_count_dict)
+
+highest_count = 0
+
+for director, count in winner_count_dict.items():
+    if count > highest_count:
+        highest_count = count
+        most_wins.clear()
+        most_wins.append(director)
+    elif count == highest_count:
+        most_wins.append(director)
+    else:
+        continue
+
+print("most_win_director = {}".format(most_wins))
