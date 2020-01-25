@@ -25,6 +25,15 @@ print('#' * 99)
 for director, count in count_nominations.items():
     print("director: {}- {} oscar nominations".format(director,count))
 
+# alternate solution
+nom_count_dict = {}
+for year, list_dir in nominated.items():
+    for director in list_dir:
+        if director not in nom_count_dict:
+            nom_count_dict[director] = 1
+        else:
+            nom_count_dict[director] += 1
+
 print('#' * 99)
 ### 1B: Create dictionary with the count of Oscar wins for each director
 win_count_dict = {}
