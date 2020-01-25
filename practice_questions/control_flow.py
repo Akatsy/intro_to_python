@@ -66,13 +66,17 @@ for director in winners.values():
     winners_list.append(director)
 print(winners_list)
 
+print('#' * 99)
+
 for director in winners_list:
     count = winners_list.count(director)
     count_list.append(count)
     print("director {} - count of {}".format(director, count))
 # print(count_list)
 max_count = max(count_list)
-print(max_count)
+# print(max_count)
+print('#' * 99)
+print('#' * 99)
 
 for director, count in zip(winners_list, count_list):
     if count == max_count:
@@ -82,3 +86,4 @@ for director, count in zip(winners_list, count_list):
 # print(len(winners_list))
 
 print("most_win_director = {}".format(most_win_director))
+print('#' * 99)
