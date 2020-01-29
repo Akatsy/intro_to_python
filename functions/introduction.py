@@ -58,3 +58,9 @@ print("1. positional arguments- This is where we give values inside the paranthe
 print('#' * 99)
 
 print("2. named arguments- This is where we give values inside the parantheses using their argument names and then supply a value e.g cylinder_volume(radius=10, height=6) so the height will be 6 and radius will be 10")
+
+print('#' * 99)
+print("Function - A block of code that has a name but does not do anythin until we tell it to (by calling it)")
+print("Function call - A statement that makes a function run (perform a process)")
+print("Method - A function associated with an object")
+print("Arguments - Values we can pass to a function when we call it")
