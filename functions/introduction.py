@@ -64,3 +64,7 @@ print("Function - A block of code that has a name but does not do anythin until 
 print("Function call - A statement that makes a function run (perform a process)")
 print("Method - A function associated with an object")
 print("Arguments - Values we can pass to a function when we call it")
+
+print('#' * 99)
+print("What is the difference between print() and return statements in a function??")
+print("print() provides output for the output window(console) while return provides an output value  to the statement that called it and that value can also be stored and used by other programs")
