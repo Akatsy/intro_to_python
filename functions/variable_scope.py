@@ -17,7 +17,26 @@ print(word_count(random_string, 'a'))
 
 print('#' * 99)
 print("A variable defined outside any function is said to have a global scope. It is accessible inside any function within the program but it's value can only be accessed and cannot be changed")
+print("Trying to change a global variable within a function will give an UnboundLocalVariable error because Python does not allow a function to modify a global variable")
 print('#' * 99)
+
+print("It is recommended that when writing programs, we define variables in the lowest scope needed so that we avoid errors even though functions can still access variables defined in a higher scope")
+print("Just keep variables local. They are easier to work with and modify")
+
+print('#' * 99)
+print("If you have two variable names that are similar, one global and one local, then the local one is the one used inside the function (takes precedence)")
+print('#' * 99)
+print("To remedy the situation where you cannot modify a global variable using a function, we can pass the global variable as an argument to the function, then modify it outside the function e.g:")
+print("eggs_count = 0\ndef buy_eggs(number):\n\treturn number + 30\n\neggs_count = buy_eggs(eggs_count)\nprint(eggs_count)")
+eggs_count = 0
+def buy_eggs(number):
+    return number + 30
+
+eggs_count = buy_eggs(eggs_count)
+print(eggs_count)
+print('#' * 99)
+print('#' * 99)
+
 
 # generate a random string using alphanumeric characters 
 def random_str_generator(len_str):
