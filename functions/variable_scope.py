@@ -50,3 +50,11 @@ def random_str_generator(len_str):
     
 print(random_str_generator(10))
 
+# return the largest square given an integer input
+
+def largest_square(number):
+    i = 0
+    while (i+1)**2 < number:
+        i += 1
+    return i**2
+print(largest_square(500))
