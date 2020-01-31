@@ -11,6 +11,12 @@ print('#' * 99)
 print("If the function is a little complicated, you can include a paragraph to further describe the function")
 print("The next line after the brief description is a description of the inputs (arguments) to the function.Here you list the arguments the function will take and their expected types, Then a description of what the arguments actually are (what they represent)")
 print("After the inputs description, it is good to give a description of the output of the function also (what the function returns or prints out)")
+print('#' * 99)
+print('#' * 99)
+print("an example of a docstring")
+print("def population_density(population, land_area):\n\t\"\"\" Calculate the population density of an area\n\t\tINPUT:\n\t\tpopulation: int. The number of people in an area\n\t\tland_area: int or float. This is unit-agostic meaning if you give the area in a certain unit,\n\t\tsay kilometres or miles, the answer will be given in that unit\n\t\tOUTPUT:\n\t\tpopulation_density: population/land_area. The population density of a given area \"\"\"\n\treturn population/land_area")
+print('#' * 99)
+
 def population_density(population, land_area):
     """ Calculate the population density of an area
         INPUT:
