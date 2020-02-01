@@ -26,3 +26,23 @@ def population_density(population, land_area):
         population_density: population/land_area. The population density of a given area """ 
     return population/land_area
 print(population_density(900, 90))
+
+print('#' * 99)
+# Quiz: Write a Docstring
+# Write a docstring for the readable_timedelta function
+# Given an integer that represents a number of days, write a function that returns a string that states the number of weeks and number of days for example if days = 10, it should return 1 week(s) and 3 day(s)
+
+def readable_timedelta(days):
+    """ a function to calculate number of weeks and days given a number of days
+        INPUT:
+        days: int. a number representing the number of days
+        OUTPUT:
+        a string stating the number of days given, and the number of weeks and days that evaluates to"""
+    weeks = days // 7
+    remainder = days % 7
+    return "Given {} days that is {} week(s) and {} days(s)".format(days, weeks, remainder)
+
+print(readable_timedelta(90))
+help(readable_timedelta)
+
+
