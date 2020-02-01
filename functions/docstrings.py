@@ -43,6 +43,24 @@ def readable_timedelta(days):
     return "Given {} days that is {} week(s) and {} days(s)".format(days, weeks, remainder)
 
 print(readable_timedelta(90))
+# help(readable_timedelta)
+
+
+print('#' * 99)
+# a better way to define the docstring
+def readable_timedelta(days):
+    """
+    Return a string of days input and the number of weeks and days included in days
+
+    Parameters:
+    days -- number of days to convert(int)
+
+    Returns:
+    a string of days input and the number of weeks and days included in days
+    """
+    weeks = days // 7
+    remainder = days % 7
+    return "Given {} days that translates to {} week(s) and {} day(s)".format(days, weeks, remainder)
+
+print(readable_timedelta(366))
 help(readable_timedelta)
-
-
