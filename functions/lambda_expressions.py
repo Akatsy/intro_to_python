@@ -40,3 +40,27 @@ def mean(num_list):
 average = list(map(mean, numbers))
 average = list(map(lambda num_list: sum(num_list)/len(num_list),numbers))
 print("list of averages is", average)
+
+print('#' * 99)
+print('#' * 99)
+
+# lambda with filter
+
+print("filter is a higher order built-in function that takes in a function and an iterable as arguments and returns an iterator with the elements from the iterable for which the function returns True")
+print('#' * 99)
+
+print("for example suppose we have a list of cities as follows:\n cities = ['New York', 'Barcelona', 'Madrid', 'Amsterdam', 'Cape Town', 'New Delhi', 'Massachusetts', 'Dubai', 'Meru', 'Nairobi', 'Mombasa']\n and we want to find cities with short names (i.e less than 8 characters) then we could define a method to return a boolean of whether the length of the name of a city is less than 8.Then using the filter built-in function, we could pass this function and the cities list to get back an iterator which we pass to the list method to create a list-- short_cities")
+print('#' * 99)
+print("def is_short(name):\n\treturn len(name)<8")
+print("\nshort_cities = list(filter(is_short, cities))\nprint(short_cities)")
+print('#' * 99)
+print('#' * 99)
+print("We can define an anonymous function to replace the is_short function using lambda expressions and use it in the call to the filter function as follows:\nshort_cities = list(filter(lambda name: len(name)<8), cities)")
+def is_short(name):
+    return len(name)<8
+
+cities = ['New York', 'Barcelona', 'Madrid', 'Amsterdam', 'Cape Town', 'New Delhi', 'Massachusetts', 'Dubai', 'Meru', 'Nairobi', 'Mombasa']
+
+short_cities = list(filter(is_short, cities))
+short_cities = list(filter(lambda name: len(name)<8, cities))
+print(short_cities)
