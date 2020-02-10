@@ -42,4 +42,22 @@ while True:
     finally:
         print("\nThank you for trying\n")
     
+print('#' * 99)
+print("We can still access an error message after we have handled an exception to prevent the program from crashing")
+print("try:\n\t#some code\nexcept ZeroDivisionError as e:\n\tprint('ZeroDivisionError occured: {}'.format(e))")
+print("This would output:")
+try:
+    5/0
+except ZeroDivisionError as e:
+    print("ZeroDivisionError occured: {}".format(e))
 
+print('#' * 99)
+print("If we are not handling a specific exception, we can still access the error message using the base class for exceptions as follows:")
+print("try:\n\t5 + 's'\nexcept Exception as e:\n\tprint(\"The following exception occured: {}\".format(e))")
+print("This would output:")
+try:
+    5 + 's'
+except Exception as e:
+    print("The following exception occured: {}".format(e))
+print('#' * 99)
+print("'Exception' is the base class for all built in exceptions")
