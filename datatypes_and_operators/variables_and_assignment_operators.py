@@ -16,19 +16,19 @@ print("\t1. must all be lowercase and cannot contain spaces")
 print("\t2. can only contain ordinary letters, numbers and underscores")
 print("\t3. must begin with a letter or underscore, so cannot begin with a number")
 print("\t4. must not be Python reserved keywords or built-in identifiers")
-print("\t5. construct your variable names using snake_case i.e all lowercase and use underscores to join words ")
+print("\t5. construct your variable names using snake_case i.e all lowercase and use underscores to join words - not a rule, rather a convention used by many Pythonistas. Not following this will not result in an error unlike the aothers above.")
 print('#' * 79)
 print("You can declare multiple values at once using one expression like this:")
-print("x,y.z = 4, 5.6, 8")
+print("x,y,z = 4, 5.6, 8")
 print("This assigns 4 to x, 5.6 to y and 8 to z")
 x,y,z = 4, 5.6, 8
 print("x: y: z:",(x, y, z))
-print("Only use multiple assignments like above for closely related data e.g co-ordinates of a point and remember variable names should be descriptive of the values they hold. The above variable names are okay, for say, co-ordinates in a 3D-axis")
+print("Only use multiple assignments like above for closely related data e.g co-ordinates of a point and remember variable names should be descriptive of the values they hold. The above variable names are okay, for say, co-ordinates in a 3D-axis or points in a bearing")
 print('#' * 79)
 print("You can change the value of a variable once you have declared it as follows:")
 print("Suppose you had declared your weight as 'weight = 56' then after a while you had it measured and found it to be 58kgs. You can change the value in two ways:")
 print("1. just reassign the new value to the variable like 'weight = 58'")
-print("1. add the weight gained to the variable and then reassign it like 'weight = weight + 2'")
+print("2. add the weight gained to the variable and then reassign it like 'weight = weight + 2'")
 weight = 56
 print("my weight is", weight)
 weight = 58
@@ -37,9 +37,9 @@ weight = weight + 2
 print("my new weight after adding is", weight)
 print('#' * 79)
 print("There are special assignment operators in python to deal with the common use-case of performing an arithmetic operation to a variable e.g adding and then re-assigning the new value to the variable")
-print("These are all arithmetic operators followed by '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and ten assign it back to the variable")
+print("The special assignment operators are all the arithmetic operators followed by '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign it back to the variable")
 print('#' * 79)
-print("e.g, say you have 'x=2', and you want to increase x by 2 then decrease x by 1 then raise multiply x by 3 then raise x to the power of 4 then divide x by 6 you would do the following:")
+print("e.g, say you have 'x=2', and you want to increase x by 2 then decrease x by 1 then multiply x by 3 then raise x to the power of 4 then do float division of x by 6 and finally integer division of x by 5 you would do the following:")
 x = 2
 print('x = 2 gives', x)
 x += 2
@@ -52,12 +52,17 @@ x **= 4
 print('x **= 4 gives', x)
 x /= 6
 print('x /= 6 gives', x)
+x //= 5
+print('x //= 5 gives', x)
 print('#' * 79)
 import keyword
-print('The list of python keywords that cannot be used as variable names is:')
-print(keyword.kwlist)
+print('Below are python keywords that cannot(read as should not- because really, you can use them but they will lead to unwanted errors eventually when you try using them for their reserved purposes in Python) be used as variable names is:')
+for index, keyword in enumerate(keyword.kwlist):
+    print(index, keyword)
+# print(keyword.kwlist)
+
 print('#' * 79)
-print('You can check if a word is a python keyword by typing the following on your REPL and replacing "variable_name" with the name you want to check:')
+print('You can check if a word is a python keyword by typing the following on your REPL(A read–eval–print loop, also termed an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e., single expressions), evaluates (executes) them, and returns the result to the user;) and replacing "variable_name" with the name you want to check:')
 print('\t1. import keyword')
 print('\t2. print(keyword.iskeyword(\'variable_name\'))')
 print('#' * 79)
