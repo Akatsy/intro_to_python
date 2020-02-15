@@ -6,7 +6,7 @@ print("Tuples can be created or defined in the following ways:")
 dimensions = (34, 56, 90.7)
 print("1.using parantheses to delimit an ordered sequence of elements e.g dimensions = (34, 56, 90.7) creates a variable dimensions and assigns to it a tuple of three objects(numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
-dimensions = (34, 56, 90.7)
+dimensions = 34, 56, 90.7
 print("2.Optionally, you can ommit the  parantheses used to delimit an ordered sequence of elements e.g dimensions = 34, 56, 90.7 creates a variable dimensions and assigns to it a tuple of three objects(numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
 print("3. You can use the tuple() constructor method to create a tuple e.g if you have list = [1,2,3] you can create a tuple like this: my_tuple = tuple(list)")
