@@ -13,4 +13,4 @@ print("Sets are mutable so you can add or remove elements from them using:\n\t{}
 set_sentence.add('fish')
 print("set_sentence.add('fish') then print(set_sentence)",set_sentence)
 removed_element = set_sentence.pop()
-print("removed_element = set_sentence.pop() then print(removed_element, set_sentence) to get();\n",removed_element, set_sentence)
+print("removed_element = set_sentence.pop() then print(removed_element, set_sentence) to get:\n removed element- {} and remaining set- {}".format(removed_element, set_sentence))
