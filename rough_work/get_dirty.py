@@ -6,7 +6,10 @@ print(len(newline))
 print(len('\t'))
 print(len('\n'))
 print(len(' '))
+print('#' * 99)
 
 my_list = [1,2,3]
 my_list[3:6] = [4,5,6]
 print(my_list)
+
+print('#' * 99)
