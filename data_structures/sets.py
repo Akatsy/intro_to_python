@@ -11,6 +11,6 @@ print("2. Using the set() method which can for example be used to quickly remove
 print('#' * 79)
 print("Sets are mutable so you can add or remove elements from them using:\n\t{} and \n\t{}".format("add() method- adds an element to the set", "pop() method removes and returns an element from the set"))
 set_sentence.add('fish')
-print("set_sentence.add('fish') then print(set_sentence)",set_sentence)
+print("set_sentence.add('fish') then print(set_sentence) to get:\n",set_sentence)
 removed_element = set_sentence.pop()
-print("removed_element = set_sentence.pop() then print(removed_element, set_sentence) to get:\n removed element- {} and remaining set- {}".format(removed_element, set_sentence))
+print("removed_element = set_sentence.pop() then print(removed_element, set_sentence) to get:\n removed element is {} and remaining set is {}".format(removed_element, set_sentence))
