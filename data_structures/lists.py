@@ -39,7 +39,7 @@ print('#' * 79)
 print("Using the del comand to delete any element by referencing it's index or delete multiple elements using the slicing notation or just delete the whole list by inputing it as the argument to the del function")
 print('#' * 79)
 months[:4] = ['Jan', 'Feb', 'Mar', 'Apr']
-print("Using the slicing notation, we can alter any indices(valid indices i.e an index that exists in the list) or even indices that do not exist(Python will create new indices for them) and assign them a new value e.g we can change the first four months to a short form like so months[:4] = ['Jan', 'Feb'] and printing it out print(months) we see the change:", months)
+print("Using the slicing notation, we can alter any indices(valid indices i.e an index that exists in the list) or even indices that do not exist(Python will create new indices for them) and assign them a new value e.g we can change the first four months to a short form like so months[:4] = ['Jan', 'Feb', 'Mar', 'Apr'] and printing it out print(months) we see the change:", months)
 print('#' * 79)
 print("Note: When assigning values to variables, the variable is just a name for the value and the value is what gets stored in memory. (If you assign a value to a variable and then assign that variable to another variable, the value stored in that variable is what is stored in the new variable) thus there is a difference when we use two(or more) variables (names) to refer to the same value and alter one of them depending on whether that value is of a mutable or immutable type")
 print('#' * 79)
