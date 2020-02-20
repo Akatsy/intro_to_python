@@ -10,14 +10,14 @@ print(bank_balance)
 
 #Second Example - try changing the value of number
 
-number = 145
+number = int(input('Enter a number: '))
 if number % 2 == 0:
     print("Number " + str(number) + " is even.")
 else:
     print("Number " + str(number) + " is odd.")
 
 #Third Example - try to change the value of age
-age = 35
+age = int(input('Enter age of passenger: '))
 
 # Here are the age limits for bus fares
 free_up_to_age = 4
