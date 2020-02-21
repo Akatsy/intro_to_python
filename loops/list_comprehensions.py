@@ -28,7 +28,7 @@ print('#' * 99)
 
 print("We can add conditional statements to the list comprehensions as follows:")
 print("Suppose we want to print out just the squares of even numbers. We could add a conditional as follows:\neven_squares = [num**2 for num in range(21) if x % 2 ==0]")
-even_squares = [num**2 for num in range(21) if num % 2 ==0]
+even_squares = [num**2 for num in range(21) if num % 2 == 0]
 print(even_squares)
 print('#' * 99)
 
