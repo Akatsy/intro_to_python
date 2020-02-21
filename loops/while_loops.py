@@ -3,20 +3,23 @@
 # Find the factorial of a number using a while loop.
 
 number = 10 # number to find factorial of. change to any value
+used = number
 factorial = 1 # result of the factorial
 
 while number >= 1:
     factorial *= number
     number -= 1
-print(factorial)
+print("The factorial of {} is {}".format(used,factorial))
 
 # another solution
-number = 35 # number to find factorial of. change to any value
+factorial = 1
+number = 5 # number to find factorial of. change to any value
+used = number
 current = 1 # number to keep track of number we working on
 while current <= number:
     factorial *= current
     current += 1
-print(factorial)
+print("The factorial of {} is {}".format(used,factorial))
 
 print('#' * 79)
 # Suppose you want to count from some number start_num by another number count_by until you hit a final number end_num. Use break_num as the variable that you'll change each time through the loop. For simplicity, assume that end_num is always larger than start_num and count_by is always positive.
