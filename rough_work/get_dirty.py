@@ -18,3 +18,7 @@ print('#' * 99)
 print(list(zip(['a','b','c','d'],[1,2,3])))
 for letter, number in zip(['a','b','c','d'],[1,2,3]):
     print(letter, number)
+
+print('#' * 99)
+# floats store approximations not exact values
+print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
