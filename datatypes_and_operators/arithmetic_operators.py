@@ -1,4 +1,4 @@
-#Arithmetic operators
+#Arithmetic operators - perform mathematical operations
 print("The '+' symbol is the python arithmetic operator for addition as shown below:")
 print("3 + 5 = ", 3+5)
 print('#' * 79)

@@ -1,4 +1,4 @@
-#Variables and assignment operators
+#Variables and assignment operators - how to store data in Python
 print("Variables are a way to store data so as to access that data later. The power this brings to programming is immense")
 print('#' * 79)
 print("This is how to declare a variable to store data(value of any type e.g a number):")
