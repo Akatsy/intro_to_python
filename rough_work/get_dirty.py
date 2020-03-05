@@ -22,3 +22,7 @@ for letter, number in zip(['a','b','c','d'],[1,2,3]):
 print('#' * 99)
 # floats store approximations not exact values
 print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
+
+# the escape character
+rand_str = "Hey there, how y\\\"all doing?"
+print(rand_str)

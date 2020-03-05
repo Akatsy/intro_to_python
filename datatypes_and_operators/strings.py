@@ -1,8 +1,11 @@
-print("Wondering how to deal with text in Python? The string datatype is used to represent text in Python")
+# how to represent text data in Python
+print("A data type is a particular kind of data item, as defined by the values it can take or the operations that can be performed on it.")
+print('#' * 99)
+print("Wondering how to deal with text in Python? Well, the string datatype is used to represent text in Python")
 print("str(short for String) is a datatype for immutable ordered sequence of characters(any typeable symbol on the keyboard- that includes space, tab, punctuation e.t.c)")
 print('#' * 79)
 print("immutable means once a string object has been declared you cannot alter or change it without creating a new object")
-print("ordered means that each character in the string has an index and can be referenced using that index")
+print("ordered means that each character in the string has an index(an integer that denotes it's position) and can be referenced using that index")
 print('#' * 79)
 print("Strings are created by wrapping any character(s) in quotes. Both single(') and double(\") quotes can be used")
 print("When you have to represent quotes inside the string declaration, use the backslash(\) character to escape the quotes so that Python does not misinterpret the qoutes as the end of the string declaration like shown below:")
