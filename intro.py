@@ -20,7 +20,13 @@ print("It is included as an easter egg in the Python interpreter which can be di
 import this
 
 print('#' * 99)
-print("Python is a powerful general-purpose programming language with applications ranging form web and internet development, scientific and numeric (mathematics, science, and engineering, data analysis and modelling, deep learning, machine learning, AI, visualization etc), creating Desktop GUIs, Software and game development, Education, scripting, Network Programming among others ")
+print("Python is a powerful, general-purpose programming language with the following applications:")
+print("web and internet development")
+print("scientific and numeric - Python is widely used in scientific and numeric computing")
+print("creating Desktop GUIs")
+print("Software and game development - Python is often used as a support language for software developers, for build control and management, testing, and in many other ways.")
+print("Education - Python is a superb language for teaching programming, both at the introductory level and in more advanced courses.")
+print("scripting - writing code used to automate processes that would otherwise need to be executed step-by-step by a developer")
 print('#' * 99)
 print("A few points to note before learning Python:")
 print("Python is case-sensitive so 'name' and 'Name' are not the same")
