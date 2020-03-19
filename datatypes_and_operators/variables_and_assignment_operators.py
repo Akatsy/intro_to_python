@@ -38,6 +38,8 @@ weight = 56
 weight = weight + 2
 print("weight = weight + 2\nmy new weight after adding weight gained is", weight)
 print('#' * 79)
+print("When a variable is assigned, it is assigned to the value that results from evaluating an expression and not to the expression itself as seen above i.e Python reduces (by evaluating) the 'weight + 2' expression to a value 58 then assigns that value to the weight variable")
+print('#' * 99)
 print("There are special assignment operators in python to deal with the above common use-case of performing an arithmetic operation to a variable e.g adding and then re-assigning the new value to the variable")
 print("The special assignment operators are all the arithmetic operators followed by the '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign the result back to the variable")
 print('#' * 79)
