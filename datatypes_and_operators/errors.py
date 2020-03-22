@@ -1,3 +1,4 @@
+# errors in Python
 print("Errors are inevitable in programming. Error messages are just a way for the computer to let you know they do not quite understand what you have instructed them to do. THIS DOES NOT IN ANY WAY MAKE YOU A BAD PROGRAMMER. Instead, you should take this as a learning opportunity to become a better programmer.")
 print('#' * 79)
 print("Understand common errors you may get and what to do about them.")
