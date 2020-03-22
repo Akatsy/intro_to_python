@@ -1,3 +1,4 @@
+# quickly get valid attributes of an object in Python using dir() and their definitions using help() built-in functions
 print("The dir() built-in fuction returns information about an object. It can be useful when you have an object and want to quickly find out what you can do with it. It returns some of the attributes and methods of that object (Remember every object you encounter in Python has a type and this is what will determine the attributes and methods returned)")
 print('#' * 79)
 num = 5
