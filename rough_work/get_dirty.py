@@ -38,3 +38,9 @@ print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
 # the escape character
 rand_str = "Hey there, how y\\\"all doing?"
 print(rand_str)
+
+# join() method
+list = ['a', 'b', 'c', 'd']
+joined = ''.join(list)
+print(joined)
+# print(joined.split('')) - you cannot use an empty seperator for the split method
