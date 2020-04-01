@@ -38,10 +38,10 @@ weight = 56
 weight = weight + 2
 print("weight = weight + 2\nmy new weight after adding weight gained is", weight)
 print('#' * 79)
-print("When a variable is assigned, it is assigned to the value that results from evaluating an expression and not to the expression itself as seen above i.e Python reduces (by evaluating) the 'weight + 2' expression to a value 58 then assigns that value to the weight variable")
+print("When a variable is assigned, it is assigned to the value that results from evaluating an expression and not to the expression itself as seen above i.e Python reduces (by evaluating) the 'weight + 2' expression to a single value 58 then assigns that value to the weight variable")
 print('#' * 99)
 print("There are special assignment operators in python to deal with the above common use-case of performing an arithmetic operation to a variable e.g adding and then re-assigning the new value to the variable")
-print("The special assignment operators are all the arithmetic operators followed by the '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign the result back to the variable")
+print("The special assignment operators are basically just all the arithmetic operators followed by the '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign the result back to the variable")
 print('#' * 79)
 print("e.g, say you have 'x=2', and you want to increase x by 2 then decrease x by 1 then multiply x by 3 then raise x to the power of 4 then do integer division of x by 6 and finally float division of x by 5 you would do the following:")
 x = 2
@@ -67,7 +67,7 @@ for index, keyword in enumerate(keyword.kwlist):
 # print(keyword.kwlist) - prints out a list of Python keywords
 
 print('#' * 79)
-print('You can check if a word is a python keyword by typing the following on your REPL(A read–eval–print loop, also termed an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e., single expressions), evaluates (executes) them, and returns the result to the user;) and replacing "variable_name" with the name you want to check:')
+print('You can check if a word is a python keyword by typing the following on your REPL (A read–eval–print-loop, also termed an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e single expressions), evaluates (executes) them, and returns the result to the user;) and replacing "variable_name" below with the name you want to check:')
 print('\t1. import keyword')
 print('\t2. print(keyword.iskeyword(\'variable_name\'))')
 print('#' * 79)
@@ -76,7 +76,7 @@ print('#' * 79)
 print("Let's generate our first error by trying to access a variable name we have not defined:")
 print("The statement 'print(my_variable)' below generates an error called 'NameError' and as it states 'my_variable' is not defined")
 print('#' * 79)
-print("An error like the one below(syntax or parsing error) forces the program to stop execution at the point of failure and exit thus any statements after are not executed")
+print("An error like the one below (syntax or parsing error) forces the program to stop execution at the point of failure and exit thus any statements after are not executed")
 print("Note: Python Interpreter reads and executes python code from top to bottom")
 print('#' * 79)
 print("print(my_variable)")
