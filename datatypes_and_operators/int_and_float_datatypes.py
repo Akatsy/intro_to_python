@@ -4,10 +4,10 @@ print("Data types are also useful in the sense that they define what kind of fun
 print('#' * 79)
 print("For numerical data in our programs, we can represent it using two data types -- int (short for integer) and float (short for floating point numbers).")
 print("int is a data type for real whole numbers - either positive or negative.")
-print("float is a data type for real numbers that use a decimal point to allow numbers with fractional values.")
+print("float is a data type for real numbers (positive or negative) that use a decimal point to allow numbers with fractional values.")
 print('#' * 79)
-print("A real number is a number that is not imaginary. Imaginary numbers are like the square root of -1 or infinite.")
-print("Real numbers are a point on an infinitely long line called the number line / real line")
+print("A real number is a number that is not imaginary. Imaginary numbers are like the square root of -1, infinite e.t.c")
+print("A real number is a point on an infinitely long line called the number line / real line")
 print('#' * 79)
 
 print("We can use the built-in 'type()' function to check the data type of any object in python")
