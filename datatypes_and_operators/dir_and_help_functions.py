@@ -11,6 +11,6 @@ for index, attrib in enumerate(dir('s')):
     print(index, attrib)
 print('#' * 79)
 
-print("The information printed is not very useful so we have another builtin function called help() which gives a short description of any of the attributes returned by dir(). You call help() on the attribute using the dot notation e.g help(num.__add__)")
+print("The information printed is not very useful so we have another builtin function called help() which gives a short description of any of the attributes returned by dir(). You call help() on the attribute using the dot notation e.g help(num.__add__) or help('s'.rfind)")
 print('#' * 79)
 # print(help(num.__add__))
