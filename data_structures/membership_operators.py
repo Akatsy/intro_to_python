@@ -1,3 +1,4 @@
+# check whether an object exists in another object using membership operators in and not in 
 print("Membership operators evaluate if an object(on the left of the operator) exists(is included) in another object(on the right of the operator)." )
 print("The membership operators are:\n\t{}\n\t{}".format("in- evaluates if the object on the left side is included in the object on the right side", "not in- evaluates if the object on the left side is NOT included in the object on the right side"))
 print('#' * 79)
