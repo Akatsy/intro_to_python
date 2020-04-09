@@ -1,13 +1,15 @@
+# store related pieces of info using the tple data type (data structure)
+
 print("Tuples are a data type for immutable ordered sequence of objects")
 print("They are immutable meaning a tuple cannot be modified once it has been created- you cannot remove or add or sort the order of elements in it")
 print("They are ordered meaning each object has an index to indicate it's position in the data structure and that can be used to access it")
 print('#' * 79)
 print("Tuples can be created or defined in the following ways:")
 dimensions = (34, 56, 90.7)
-print("1.using parantheses to delimit an ordered sequence of elements e.g dimensions = (34, 56, 90.7) creates a variable dimensions and assigns to it a tuple of three objects(numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
+print("1. Using parantheses to delimit an ordered sequence of elements e.g dimensions = (34, 56, 90.7) creates a variable dimensions and assigns to it a tuple of three objects (numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
 dimensions = 34, 56, 90.7
-print("2.Optionally, you can ommit the  parantheses used to delimit an ordered sequence of elements e.g dimensions = 34, 56, 90.7 creates a variable dimensions and assigns to it a tuple of three objects(numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
+print("2. Optionally, you can ommit the  parantheses used to delimit an ordered sequence of elements e.g dimensions = 34, 56, 90.7 creates a variable dimensions and assigns to it a tuple of three objects (numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
 print("3. You can use the tuple() constructor method to create a tuple e.g if you have list = [1,2,3] you can create a tuple like this: my_tuple = tuple(list)")
 print('#' * 79)
