@@ -1,3 +1,4 @@
+# use a list data structure (container) to group and organize other data types
 print("Data structures are containers of data that organize and group different kinds of data types together in different ways")
 print("All data structures are data types- Because data types are just a way to classify data- and data structures do that")
 print("These containers give Python much more power to develop complex programs. The data structures in Python are: \n\t{} \n\t{} \n\t{} \n\t{}".format("1. lists", "2. tuples", "3. sets", "4. dictionaries" ))
