@@ -1,3 +1,5 @@
+# store unique elements with no particular ordering using the set data structure
+
 print("Sets are a data type for a mutable collection of unique elements in no particular order")
 print("Sets are mutable so you can modify the contents. They are unordered, so you cannot index or slice to access elements")
 print('#' * 79)
