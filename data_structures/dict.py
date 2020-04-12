@@ -1,3 +1,4 @@
+# store mappings of keys to values using the dict data type 
 print("Dictionaries are a data type for a mutable unordered mapping of unique keys to values")
 print("The key has to be unique because it is used to access the value to print it out, or modify it")
 print("The key has to be of an immutable data type like int, float, string, tuple and cannot be of a mutable data type like sets or lists")

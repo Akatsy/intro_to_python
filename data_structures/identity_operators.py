@@ -1,3 +1,4 @@
+# check if two objects are identical or not (i.e if they are the same object) using the identity operators
 print("Python provides two identity operators:\n\t1.is and \n\t2.is not")
 print("is checks whether both sides of the operator have the same value")
 print("is not checks whether both sides of the operator have different values")
@@ -15,4 +16,4 @@ print("Using the same example above, we can check for equality non-equality and 
 print("a == b evaluates to {}\n b == a evaluates to {}\n a == c evaluates to {}\n c == a evaluates to {}\n b == c evaluates to {}\n c == b evaluates to {}\n".format(a == b, b == a, a == c, c == a, b == c, c == b))
 print('#' * 79)
 print("a != b evaluates to {}\n b != a evaluates to {}\n a != c evaluates to {}\n c != a evaluates to {}\n b != c evaluates to {}\n c != b evaluates to {}\n".format(a != b, b != a, a != c, c != a, b != c, c != b))
-print("The values stored by the three objects(lists) a, b and c are equal but a and b point to the same object while c points to a different object thus a and b are identical but c is not of the same identity as a and b")
+print("The values stored by the three objects (lists) a, b and c are equal but a and b point to the same object while c points to a different object thus a and b are identical but c is not of the same identity as a and b")
