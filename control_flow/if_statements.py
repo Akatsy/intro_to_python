@@ -1,3 +1,5 @@
+# execute or skip blocks of code depending on conditions evaluating to true or false.
+
 print("Python code is normally read and executed line by line from top to bottom by the Python interpreter")
 print("However, sometimes we might want to have some block of code executed and other blocks skipped depending on some conditions")
 print("if statements are conditional statements that execute or skip blocks of code depending on whether the conditions they check evaluate to True or False")
