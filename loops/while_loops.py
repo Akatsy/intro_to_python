@@ -1,3 +1,20 @@
+# do unspecified number of iterations using the while loop
+
+print("The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true")
+print("It is normally used when we do not know the number of times to iterate beforehand")
+print('#' * 79)
+print("The format / how to define a while loop is as follows:\n\nwhile test_expression:\n\tbody_of_the_loop")
+print("We begin with the keyword 'while' to signal that it is a while loop")
+print("Following the while keyword is a test_expression that is evaluated to a boolean value")
+print("A colon (:) marks the end of the while statement")
+print("Below the while statement is the body of the loop which is a block of code signified by indentation and which will execute once for every iteration")
+print('#' * 79)
+print("The test_expression typically involves one or more variables that are initialized prior to starting the loop and modified somewhere in the body of the loop")
+
+print('#' * 79)
+print("In the while loop, the test_expression is checked first. The body of the loop is entered only if the test_expression evaluates to True.")
+print("After one iteration, the test_expression is checked again and this process continues until the test_expression evaluates to False in which case execution moves to the first unindented line after the body of the loop")
+print('#' * 79)
 # problem sets
 
 # Find the factorial of a number using a while loop.
