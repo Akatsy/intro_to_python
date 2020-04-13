@@ -8,13 +8,13 @@ print('#' * 99)
 print("A for loop can be defined as follows:")
 print("for iteration_variable in iterable:\n\t#block of code to be executed")
 print('#' * 99)
-print("You begin with the for keyword which signals that this is a for loop,\nthen the iteration variable which represents the element from the iterable that the loop is currently processing for each iteration\nthen the in keyword,\nthen the iterable\nFinally you end the for statement with a full colon(:)")
+print("You begin with the for keyword which signals that this is a for loop,\nthen the iteration variable (which represents the element from the iterable that the loop is currently processing for each iteration)\nthen the in keyword (membership operator),\nthen the iterable (the object that can return each of its elements one at a time)\nFinally you end the for statement with a full colon(:)")
 print('#' * 99)
 print("Below the for statement is an indented block of code that executes once for each iteration")
 print("The iteration variable can be accessed and used by the indented block of code during each iteration")
 print('#' * 99)
 print("The range() function is a useful function when dealing with loops\nIt generates an iterable sequence of numbers")
-print("The range() function has three arguments, all of which must be integers as follows, of which the first and third are optional - range(start, stop, step)")
+print("The range() function has three arguments, all of which must be integers as follows and of which the first and third are optional - range(start, stop, step)")
 print("Start indicates which number the sequence starts from, the default is 0")
 print("Stop is one number higher than the last number in the sequence- this argument is mandatory")
 print("Step is the difference between each number in the sequence - defaults to one if not specified")
@@ -150,6 +150,9 @@ for word in word_list:
         word_counter[word] += 1
 print(word_counter)
 
+
+print('#' * 79)
+
 # use get method to create a dictionary from a list
 word_count = {}
 
@@ -178,7 +181,7 @@ for key in word_count.keys():
     print(key)
 
 for key, value in word_count.items():
-    print("word: {} frequency: {}".format(key, value))
+    print("word - {}: frequency - {}".format(key, value))
 
 for value in word_count.values():
     print(value)
@@ -190,7 +193,7 @@ print('#' * 99)
 # In order to do this, you have the following dictionary and list of
 # fruits.  Use the dictionary and list to count the total number
 # of fruits, but you do not want to count the other items in your basket.
-# comment out examples to test one
+
 
 result = 0
 # example 1
@@ -241,7 +244,7 @@ print("There are {} non-fruits in the basket".format(not_fruit_count))
 
 print('#' * 79)
 # find the factorial of a number using for loop
-number = 15
+number = 10
 factorial = 1
 for num in range(2,number+1):
     factorial *= num
