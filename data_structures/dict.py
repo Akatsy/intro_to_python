@@ -101,3 +101,14 @@ print("minimum value is:", sorted_values_asc[0])
 print("Or we could just use the max and min list methods to get the same answers")
 print("maximum value is:", max(values_list))
 print("minimum value is:", min(values_list))
+
+# other useful dictionary methods
+
+print("1. keys() - Returns a list containing the dictionary's keys")
+print("2. values() - Returns a list of all the values in the dictionary")
+print("3. items() - Returns a list containing a tuple for each key value pair")
+print("4. clear() - Removes all the elements from the dictionary")
+print("5. copy() - Returns a copy of the dictionary")
+print("6. update() - Updates the dictionary with the specified key-value pairs")
+print("7. pop() - Removes the element with the specified key")
+print("8. popitem() - Removes the last inserted key-value pair")
