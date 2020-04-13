@@ -1,3 +1,4 @@
+# iterate (repeat an action) over an iterable using the for loop
 print("loops are a way to repeat blocks of code")
 print("Python has two types of loops:\n\t{}, \n\t{}".format("for loops", "while loops"))
 print('#' * 99)
