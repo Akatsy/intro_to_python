@@ -1,3 +1,5 @@
+# how to exit from a loop using break keyword and how to skip an iteration of a loop using continue
+
 print("for loops iterate over every element in an iterable and while loops continue with iterations until their stop condition is met. This is how we choose where to use the two depending on the kind of functionality we aim to get")
 print("However, sometimes we need to have more precise control over when our loops stop")
 print("This is where the 'break' keyword comes in. break will terminate a for or while loop whenever encountered")
