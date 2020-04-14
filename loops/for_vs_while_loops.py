@@ -1,3 +1,4 @@
+# how to determine when to use for loops or while loops. Are the number of iterations known beforehand or unknown?
 print("for and while loops have different use cases")
 print("for loops are ideal when the number of iterations is known or finite  e.g")
 print("1. when you have an iterable collection e.g a list, set, tuple, string, dictionary e.g for object in some_collection:")
