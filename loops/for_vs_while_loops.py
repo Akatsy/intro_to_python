@@ -4,7 +4,7 @@ print("1. when you have an iterable collection e.g a list, set, tuple, string, d
 print("2. When you are repeating a block of code a finite number of times using range() function e.g for i in range(5):")
 print('#' * 79)
 print("while loop is used when you want to iterate until a condition is met e.g")
-print("1.when you want to use a comparison operator e.g while i <= 10:")
+print("1. when you want to use a comparison operator e.g while i <= 10:")
 print("2. when you want to iterate based on a user's input e.g while user_input == 'y':")
 print('#' * 99)
 #PRACTICE
