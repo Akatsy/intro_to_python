@@ -59,15 +59,15 @@ points = []
 for object in zip(labels,x_coord,y_coord,z_coord):
     object = object[0] + ': ' + str(object[1]) + ', ' + str(object[2]) + ', ' + str(object[3])
     points.append(object)
-    
-
-
 for point in points:
     print(point)
 
+print('#' * 99)
 # more succint solution
 for point in zip(labels, x_coord, y_coord, z_coord):
     points.append("{}: {}, {}, {}".format(*point))
+for point in points:
+    print(point)
 
 print('#' * 99)
 # Use zip to create a dictionary cast that uses names as keys and heights as values.
