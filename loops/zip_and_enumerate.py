@@ -119,6 +119,4 @@ heights = [72, 68, 72, 66, 76]
 # write your for loop here
 for index, name in enumerate(cast):
     cast[index] = "{} {}".format(name,heights[index])
-
-
 print(cast)
