@@ -26,6 +26,16 @@ print('#' * 79)
 
 print("enumerate() is a function that returns an iterator of tuples containing indices and values of a list")
 print('#' * 99)
+
+print("The enumerate() method adds counter to an iterable and returns it (the enumerate object).")
+print("The syntax of enumerate() is:\n\tenumerate(iterable, start=0)")
+print('#' * 99)
+
+print("The enumerate() method takes two parameters:\n1. iterable - a sequence, an iterator, or objects that supports iteration\n2. start (optional) - enumerate() starts counting from this number. If start is omitted, 0 is taken as start")
+print("The enumerate() method adds counter to an iterable and returns it. The returned object is a enumerate object.")
+print('#' * 99)
+print("You can convert enumerate objects to list, tuples or dicts using list(), tuple() and dict() methods respectively.")
+print('#' * 99)
 teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea']
 print("for example if you had a list like teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea'] and you wanted to get a list of tuples of team and it's index, you could do the following; print(list(enumerate(teams))) to get the following output:\n{}".format(list(enumerate(teams))))
 print('#' * 99)

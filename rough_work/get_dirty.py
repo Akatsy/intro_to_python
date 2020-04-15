@@ -39,17 +39,22 @@ print(0.1+0.1+0.1+0.1+0.1+0.1+0.1+0.1)
 rand_str = "Hey there, how y\\\"all doing?"
 print(rand_str)
 
+print('#'*79)
 # join() method
 my_list = ['a', 'b', 'c', 'd']
 joined = ''.join(my_list)
 print(joined)
 # print(joined.split('')) - you cannot use an empty seperator for the split method
 
+print('#'*79)
 # loop over a set (iterable of non-sequence type)
 for i in {1,2,3,3,4,5,6,6,8,8,9,9,9,9,10}:
     print(i)
 
+print('#'*79)
 # enumerate
+print(list(enumerate('abcdefghijklmnopqrstuvwxyz', start=1)))
+print('#'*79)
 himym = ('Barney', 'Robin', 'Ted', 'Lily', 'Marshall')
 print(enumerate(himym))
 print(tuple(enumerate(himym)))
