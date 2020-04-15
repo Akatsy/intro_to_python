@@ -40,11 +40,18 @@ rand_str = "Hey there, how y\\\"all doing?"
 print(rand_str)
 
 # join() method
-list = ['a', 'b', 'c', 'd']
-joined = ''.join(list)
+my_list = ['a', 'b', 'c', 'd']
+joined = ''.join(my_list)
 print(joined)
 # print(joined.split('')) - you cannot use an empty seperator for the split method
 
 # loop over a set (iterable of non-sequence type)
 for i in {1,2,3,3,4,5,6,6,8,8,9,9,9,9,10}:
     print(i)
+
+# enumerate
+himym = ('Barney', 'Robin', 'Ted', 'Lily', 'Marshall')
+print(enumerate(himym))
+print(tuple(enumerate(himym)))
+print(list(enumerate(himym)))
+print(dict(enumerate(himym)))
