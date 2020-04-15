@@ -60,3 +60,8 @@ print(enumerate(himym))
 print(tuple(enumerate(himym)))
 print(list(enumerate(himym)))
 print(dict(enumerate(himym)))
+
+print('#' * 99)
+# dict() method on zip
+my_dict = dict(zip([1,2,3,4],['a','b','c','d']))
+print(my_dict)
