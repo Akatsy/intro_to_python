@@ -65,3 +65,14 @@ print('#' * 99)
 # dict() method on zip
 my_dict = dict(zip([1,2,3,4],['a','b','c','d']))
 print(my_dict)
+
+print('#' * 99)
+
+# keyword arguments
+print("Hello", end='')
+print("World")
+print("World")
+
+print("eggs", "bacon", "milk", sep='\t')
+
+print('#' * 99)
