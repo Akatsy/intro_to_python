@@ -76,3 +76,26 @@ print("World")
 print("eggs", "bacon", "milk", sep='\t')
 
 print('#' * 99)
+ # The call stack
+def a():
+    print('a() starts')
+    b()
+    d()
+    print('a() returns')
+
+def b():
+    print("b() begins")
+    c()
+    print("b() returns")
+
+def c():
+    print("c() begins")
+    print("c() returns")
+
+def d():
+    print("d() begins")
+    print("d() returns")
+
+a() # call function a() to see the call stack in action
+
+print('#' * 99)
