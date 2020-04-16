@@ -78,7 +78,7 @@ print("eggs", "bacon", "milk", sep='\t')
 print('#' * 99)
  # The call stack
 def a():
-    print('a() starts')
+    print('a() begins')
     b()
     d()
     print('a() returns')
