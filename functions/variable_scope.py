@@ -18,6 +18,27 @@ print('#' * 99)
 print("Local scope is created whenever a function is called. Any variable assigned in the function exists within the function's local scope and when the function returns (exits), the local scope is destroyed and so these variables are forgotten")
 print("The next time you call the function, the local variables will not remember the values stored from the previous time the function was called")
 print('#' * 99)
+print("What is the importance of scope??")
+print("1. Code in the global scope outside of all functions cannot use any local variable")
+print("2. Code in a local scope can access global variables")
+print("3. You can use the same name for different variables if they are in different scopes")
+print('#' * 99)
+print("Local variable cannot be used in global scope".upper())
+print("Consider the following code and look at the result")
+print("def spam():\n\teggs = 300\nspam()\nprint(eggs)")
+def spam():
+    eggs = 300
+spam()
+try:
+    print(eggs)
+except Exception as e:
+    print(e)
+
+print()
+print("The result (name 'eggs' is not defined') is proof that when program execution is in global scope, there is no local scope thus no local variable exists.")
+print("This is what happens in the code above. Since the first two lines are a function definition, program execution skips them and goes straight to the function call on the third line. The function call has the program execution enter the function, creating a local scope and executes the body where the local variable eggs is assigned to the value 300. The function then exits meaning the local scope together with the local variable is destroyed. The next line printing out the value of eggs is in the global scope and there does not exist a global variable eggs thus the NameError generated")
+print('#' * 99)
+
 
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
 print("def word_count(string, search_term):\n\tcount = 0\n\tfor letter in string:\n\t\tcount += 1\n\treturn count")
