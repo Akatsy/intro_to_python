@@ -65,10 +65,10 @@ print("If the user when calling the function, supplies a value for the default a
 
 print('#' * 99)
 print("There are two ways to supply arguments to a function:")
-print("1. positional arguments- This is where we give values inside the parantheses that match the order of the defined arguments i.e if the first argument was height and second was radius then we specify them in that same order when calling the function e.g cylinder_volume(10, 6) so the height will be 10 and radius will be 6")
+print("1. positional arguments- This is where we give values inside the parantheses that match the order of the defined parameters i.e if the first parameter was height and second was radius then we specify them in that same order when calling the function e.g cylinder_volume(10, 6) so the height will be 10 and radius will be 6")
 print('#' * 99)
 
-print("2. named arguments- This is where we give values inside the parantheses using their argument names and then supply a value e.g cylinder_volume(radius=10, height=6) so the height will be 6 and radius will be 10")
+print("2. named arguments- This is where we give values inside the parantheses using their parameter names and then supply a value e.g cylinder_volume(radius=10, height=6) so the height will be 6 and radius will be 10")
 
 print('#' * 99)
 print("Function - A block of code that has a name but does not do anythin until we tell it to (by calling it)")
