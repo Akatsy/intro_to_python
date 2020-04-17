@@ -47,8 +47,11 @@ print('#' * 99)
 print("We get back the code block inside the function body and the None keyword. Why is the None keyword given as an output?")
 
 print('#' * 99)
-print("Often, the body of a Python function will have the return keyword followed by an expression whose value is what return will give as the output value of the function. So the return keyword is used by  a function to give an output value from the function")
-print("If the return keyword is not used in a function body explicitly to define the output, then the function returns None keyword as seen from the example above")
+print("Often, the body of a Python function will have the return statement i.e the return keyword followed by an expression (or value) whose value is what return will give as the output value of the function. So the return statement is used by  a function to give a return value (output) from the function")
+print("If the return keyword is not used in a function body explicitly to define the output, then the function returns None keyword as seen from the example above i.e Python adds a 'return None' to the end of any function definition with no return statement")
+print('#' * 99)
+print("The None value is the only value of the NoneType data type. It represents the absence of a value and is helpful when you need to store something that will not be confused for a real value in a variable")
+
 
 print('#' * 99)
 print("When defining a function, you can provide default arguments.\nThis means giving a value to the argument which will be used as the default value if when calling a function the user does not specify a value for that argument")
