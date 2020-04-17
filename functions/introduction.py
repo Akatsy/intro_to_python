@@ -6,7 +6,7 @@ print('#' * 99)
 print("for example suppose we want to find the volume of a cylinder, then we can define a function like:\ndef volume_cylinder(height, radius):\n\tpi = 3.14159265359\n\tvolume = pi * radius **2 * height\n\treturn volume")
 def volume_cylinder(height, radius):
     pi = 3.14159265359
-    volume = pi * radius **2 * height
+    volume = pi * radius**2 * height
     return volume
 print('#' * 99)
 
@@ -26,6 +26,13 @@ print("3. Immediately after the function name is a parantheses that houses any n
 print('#' * 99)
 print("B. Function body - This is the indented block of code below the function header")
 print("4. After the definition statement that ends with a colon, comes the body of the function which must be indented below it. It is where the function does it's work. The body can contain other variable declarations and any number of statements or code blocks to perform a task")
+
+print('#' * 99)
+print("A few important terms as far as functions go that might be confusing are explained below:")
+print("1. Define - to define a function is to create it using the def statement, same as we define a variable using the assignment statement")
+print("2. Call - to call a function is to execute it i.e run the block of code in its body")
+print("3. Parameters - variables that have arguments assigned to them i.e when a function is called with arguments, the arguments are stored in parameters")
+print("4. Arguments - a value being passed to a function in a function call")
 print('#' * 99)
 print("An example of a function without arguments\ndef greetings():\n\tprint(\"Hello! hey! alloha!\")\n")
 
@@ -35,13 +42,6 @@ def greetings():
 print('#' * 99)
 print("calling the function as follows\nprint(greetings()) we get the output:")
 print(greetings())
-
-print('#' * 99)
-print("A few important terms as far as functions go that might be confusing are explained below:")
-print("1. Define - to define a function is to create it using the def statement, same as we define a variable using the assignment statement")
-print("2. Call - to call a function is to execute it i.e run the block of code in its body")
-print("3. Parameters - variables that have arguments assigned to them i.e when a function is called with arguments, the arguments are stored in parameters")
-print("4. Arguments - a value being passed to a function in a function call")
 
 print('#' * 99)
 print("We get back the code block inside the function body and the None keyword. Why is the None keyword given as an output?")
