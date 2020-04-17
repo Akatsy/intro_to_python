@@ -86,6 +86,23 @@ bacon()
 print(eggs)
 
 print('#' * 99)
+print('#' * 99)
+print("GLOBAL STATEMENT")
+print("If you want to modify a global variable within a function (local scope), you can do so by using the global statement")
+print("An example:")
+
+print("def add():\n\tglobal a # the global statement\n\ta += 2\n\tprint(a)\na=1\nadd()\nprint(a)")
+
+def add():
+    global a # the global statement
+    a += 2
+    print(a)
+a = 1
+add()
+print(a)
+
+print("The global statement at the top of the function tells Python that in this function the variable 'a' refers to the global variable so that is what is modified")
+print('#' * 99)
 
 
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
