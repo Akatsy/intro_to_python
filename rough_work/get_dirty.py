@@ -99,3 +99,7 @@ def d():
 a() # call function a() to see the call stack in action
 
 print('#' * 99)
+print("What is the difference between an expression and a statement?")
+print("A statement is a complete line of Python code that performs some action\nwhile an expression is the most basic kind of instruction in Python that is made up of values and operators and always reduces (evaluates) to a single value")
+
+print('#' * 99)
