@@ -10,7 +10,7 @@ print("Python has a better way to handle errors so that our programs do not alwa
 print("Try block is used to handle exceptions and has 4 clauses we can use:")
 print('#' * 99)
 print("1. try: This is the only mandatory clause in the try statement and its code block is the first to be executed in the try statement")
-print("2. except: If Python runs into any exception while running code in the try block, it jumps to the except block that handles the exception")
+print("2. except: If Python runs into any exception while running code in the try block, it jumps to the except block that handles the exception. Once the execution jumps to the code in the except clause, it does not return to the try clause. Instead, it just continues moving down the program as normal")
 print("3. else: If Python runs into no exceptions while running the code in the try block, it will execute the code in else after executing the try block")
 print("4. finally: This block will always be executed under any circumstances before the try statement exists even if it is ending the program. The finally block is useful for cleaning up actions in our code e.g closing a file we attempted opening using a try statement")
 print('#' * 99)
