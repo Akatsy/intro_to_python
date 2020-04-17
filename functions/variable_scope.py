@@ -1,7 +1,24 @@
 print("Variable scope is which part of a program a variable can be referenced (used)")
+print("Scope is like a container for variables")
 print("There are two types of variable scope:\n\t1. local scope\n\t2.global scope")
-print("Variables defined within a function are said to have a scope that is local meaning that the variable can only be accessed and used within that function. Using or accessing a variable with a local scope outside the function it is defined in is not possible")
+print("Parameters and Variables defined (assigned) within a function are said to have a scope that is local. Using or accessing a variable with a local scope outside the function it is defined in is not possible")
 print('#' * 99)
+print("A variable defined outside all functions is said to have a global scope.")
+print('#' * 99)
+print("local variable - a variable that exists in a local scope")
+print("global variable - a variable that exists in a global scope")
+print("A variable cannot be both local and global. It has to be one of the two")
+print('#' * 99)
+print("When a scope is destroyed, all the values stored in variables in the scope are forgotten")
+print('#' * 99)
+
+print("There is only one global scope. This is created when a program begins")
+print("When a program terminates, the global scope is destroyed and all the variables are forgotten, so the next time you run your program, the variables do not remember the values from last program execution")
+print('#' * 99)
+print("Local scope is created whenever a function is called. Any variable assigned in the function exists within the function's local scope and when the function returns (exits), the local scope is destroyed and so these variables are forgotten")
+print("The next time you call the function, the local variables will not remember the values stored from the previous time the function was called")
+print('#' * 99)
+
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
 print("def word_count(string, search_term):\n\tcount = 0\n\tfor letter in string:\n\t\tcount += 1\n\treturn count")
 print("Calling the function as follows: print(word_count(random_string, 'a')) after defining a random_string: random_string = \"VGJYJJjEIRCNFWuEVBHiYzVJsmMYlWMlHQrarfCcWzprOHEjksmzvlHlFwnxQqmzurrBkpasHIWqQawKKcBYszvsyXzOLyogy\" would give us:")
@@ -14,11 +31,6 @@ def word_count(string, search_term):
     return count
 
 print(word_count(random_string, 'a'))
-
-print('#' * 99)
-print("A variable defined outside any function is said to have a global scope. It is accessible inside any function within the program but it's value can only be accessed and cannot be changed")
-print("Trying to change a global variable within a function will give an UnboundLocalVariable error because Python does not allow a function to modify a global variable")
-print('#' * 99)
 
 print("It is recommended that when writing programs, we define variables in the lowest scope needed so that we avoid errors even though functions can still access variables defined in a higher scope")
 print("Just keep variables local. They are easier to work with and modify")
