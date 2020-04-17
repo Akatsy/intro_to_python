@@ -38,6 +38,54 @@ print()
 print("The result (name 'eggs' is not defined') is proof that when program execution is in global scope, there is no local scope thus no local variable exists.")
 print("This is what happens in the code above. Since the first two lines are a function definition, program execution skips them and goes straight to the function call on the third line. The function call has the program execution enter the function, creating a local scope and executes the body where the local variable eggs is assigned to the value 300. The function then exits meaning the local scope together with the local variable is destroyed. The next line printing out the value of eggs is in the global scope and there does not exist a global variable eggs thus the NameError generated")
 print('#' * 99)
+print("Local scopes cannot use local variables in other local scopes".upper())
+print("A new local scope is created whenever a function is called even if the function is called within another function / from another function")
+print("Consider the following block of code and what is printed after it executes")
+print()
+print("30 is printed out after the code executes. Why??")
+print("Program execution begins at the function call spam() which creates a new local scope and causes program execution to enter the spam function and begin execution at the first line in the body which assigns 30 to the local variable eggs. The next line is a call to the bacon function which creates a new local scope and program execution immediately moves into the bacon function where it assigns 60 to a new local variable eggs which is different from the one in the spam function. The function is one line so after that line it exits (finishes) and thus its local scope and all variables in it is destroyed and program execution moves to the next line after the bacon() function call which instructs it to print the value of the variable eggs. We are still within the spam's local scope, so the variable eggs of that scope is what is printed which is 30 and once done the program is finished so it exits and the scope is destroyed together with any variables in it")
+print("def spam():\n\teggs = 30\n\tbacon()\n\tprint(eggs)\ndef bacon():\n\teggs = 60\nspam()")
+def spam():
+    eggs = 30
+    bacon()
+    print(eggs)
+def bacon():
+    eggs = 60
+
+spam()
+
+print('#' * 99)
+print("Global values can be read (accessed) from local scope".upper())
+print("The following code snippet supports the above fact")
+
+print("def spam():\n\tprint(eggs)\neggs = 90\nspam()\nprint(eggs)")
+def spam():
+    print(eggs)
+eggs = 90
+spam()
+print(eggs)
+print()
+print("When the spam() function is called, program execution enters it's body and executes the statement to print out the value of the variable eggs and since there is no local variable eggs assigned in its scope, it prints out the global variable eggs which has the value 90 and exits then the next line is in the global scope and prints out the global variable eggs")
+
+print('#' * 99)
+print("Local and global values can have the same name".upper())
+print("The following code uses the same name 'eggs' for the variables. This is however confusing in some instances. Avoid it if you can")
+print("def spam():\n\teggs = 'spam local'\n\tprint(eggs)\ndef bacon():\n\teggs = 'bacon local'\n\tprint(eggs)\n\tspam()\n\tprint(eggs)\neggs = 'global'\nbacon()\nprint(eggs)")
+print()
+
+def spam():
+    eggs = 'spam local'
+    print(eggs)
+def bacon():
+    eggs = 'bacon local'
+    print(eggs)
+    spam()
+    print(eggs)
+eggs = 'global'
+bacon()
+print(eggs)
+
+print('#' * 99)
 
 
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
