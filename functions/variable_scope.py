@@ -130,6 +130,22 @@ eggs = 30 # global
 print('#' * 99)
 print('#' * 99)
 
+print("def spam():\n\tprint(eggs)\n\teggs = 30\neggs = 42\nspam()")
+def spam():
+    print(eggs)
+    eggs = 30
+eggs = 42
+try:
+    spam()
+except Exception as e:
+    print(e)
+
+print("The above code results in an error 'local variable \'eggs\' referenced before assignment' as shown above. Why??")
+
+print("This error happens because Python sees that there is an assignment statement in the function thus it considers eggs to be a local variable but because the print function is called before the eggs variable has been assigned a value, the local eggs variable therefore does not exist and since a function can only have either a global or local variable, Python cannot fall back to using the global eggs variable that exists thus the error")
+print('#' * 99)
+print('#' * 99)
+
 
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
 print("def word_count(string, search_term):\n\tcount = 0\n\tfor letter in string:\n\t\tcount += 1\n\treturn count")
