@@ -103,6 +103,32 @@ print(a)
 
 print("The global statement at the top of the function tells Python that in this function the variable 'a' refers to the global variable so that is what is modified")
 print('#' * 99)
+print('#' * 99)
+
+print("4 rules to tell whether a variable is in local or global scope".upper())
+print("1. If a variable is being used in the global scope i.e outside of all functions then it is always a global variable")
+print("2. If there is a global statement for that variable in a function, it is always a global variable")
+print("3. Otherwise, if the variable is used in an assignment  statement in a function, it is a local variable")
+print("4. But if the variable is not used in an assignment statement, it is a global variable")
+
+print('#' * 99)
+print('#' * 99)
+print("def spam():\n\tglobal eggs\n\teggs = 'spam' # global variable\n\ndef bacon():\n\teggs = 'bacon' # local variable\n\ndef ham():\n\tprint(eggs)  # global variable\n\neggs = 30 # global")
+
+def spam():
+    global eggs
+    eggs = 'spam' # global variable
+
+def bacon():
+    eggs = 'bacon' # local variable
+
+def ham():
+    print(eggs)  # global variable
+
+eggs = 30 # global
+
+print('#' * 99)
+print('#' * 99)
 
 
 print("eg of a local variable count used to get the number of occurences of a substring in a string")
