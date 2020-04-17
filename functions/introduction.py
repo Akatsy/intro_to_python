@@ -78,4 +78,4 @@ print("Arguments - Values we can pass to a function when we call it")
 
 print('#' * 99)
 print("What is the difference between print() and return statements in a function??")
-print("print() provides output for the output window(console) while return provides an output value  to the statement that called it and that value can also be stored and used by other programs")
+print("print() provides output for the output window (console) while return provides an output value  to the statement that called it and that value can also be stored and used by other programs")
