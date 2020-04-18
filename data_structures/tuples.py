@@ -8,6 +8,9 @@ print("Tuples can be created or defined in the following ways:")
 dimensions = (34, 56, 90.7)
 print("1. Using parantheses to delimit an ordered sequence of elements e.g dimensions = (34, 56, 90.7) creates a variable dimensions and assigns to it a tuple of three objects (numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
+print("If your tuple has just one object, include a trailing comma (,) so that Python knows it is a tuple otherwise, Python will assume you have just wrapped a regular value in brackets. e.g type(('hello')) will result in {} while type(('hello',)) will result in {}".format(type(('hello')),type(('hello',))))
+print('#' * 79)
+
 dimensions = 34, 56, 90.7
 print("2. Optionally, you can ommit the  parantheses used to delimit an ordered sequence of elements e.g dimensions = 34, 56, 90.7 creates a variable dimensions and assigns to it a tuple of three objects (numbers in this case). Printing out dimensions and checking the type will result in: {}, {} ".format(dimensions, type(dimensions)))
 print('#' * 79)
