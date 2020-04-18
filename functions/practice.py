@@ -49,8 +49,15 @@ def collatz(number):
     elif number % 2 == 1:
         return 3 * number + 1
 
-num = int(input("Enter any integer value: "))
-print("The collatz sequence for {} is".format(num))
-while num != 1:
-    num = collatz(num)
-    print(num)
+import sys
+while True:
+    try:
+        num = int(input("Enter any integer value: "))
+        print("The collatz sequence for {} is".format(num))
+        while num != 1:
+            num = collatz(num)
+            print(num)
+        sys.exit()
+    except ValueError:
+        print("Please input an integer value")
+
