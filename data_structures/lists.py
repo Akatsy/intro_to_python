@@ -76,3 +76,16 @@ print("The list() constructor returns a list. If no parameters are passed, it re
 print("For example:")
 print("Printing an empty list - print(list() would print out: {}".format(list()))
 print("Printing a list created from a string of vowels - print(list('aeiou') would print out: {}".format(list('aeiou')))
+
+print('#' * 99)
+# a program to enter any number of names to a list
+a_list = []
+while True:
+    element = input("Enter a name or nothing to stop: ")
+    if element == '':
+        break
+    else:
+        a_list.append(element)
+print("The names entered are:")
+for object in a_list:
+    print(object)
