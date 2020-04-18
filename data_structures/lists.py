@@ -104,3 +104,12 @@ a.insert(1,0)
 print(a)
 a.insert(10,10)
 print(a)
+
+# remove() method to remove a value from the list
+print("The remove() method is passed the value to be removed from the list it is called on")
+a = [1,2,3,4,5,4]
+a.remove(4)
+print(a)
+
+print("Attempting to delete a value that does not exist in the list will result in a ValueError error")
+print("The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list")
