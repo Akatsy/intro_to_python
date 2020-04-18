@@ -81,7 +81,7 @@ print('#' * 99)
 # a program to enter any number of names to a list
 a_list = []
 while True:
-    element = input("Enter a name or nothing to stop: ")
+    element = input("Enter a name for number {} or nothing to stop: ".format(len(a_list)+1))
     if element == '':
         break
     else:
