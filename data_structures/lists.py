@@ -89,3 +89,8 @@ while True:
 print("The names entered are:")
 for object in a_list:
     print(object)
+
+# index() method to find index of a value in a list
+spam = ['hello', 'hi', 'howdy', 'alloha']
+# spam.index('Hello') # gives a value error - 'Hello' not in list
+print(spam.index('hi'))
