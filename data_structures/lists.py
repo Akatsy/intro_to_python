@@ -113,3 +113,16 @@ print(a)
 
 print("Attempting to delete a value that does not exist in the list will result in a ValueError error")
 print("The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list")
+
+# sorting values in a list using sort() method - different from sorted()
+print("sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z")
+print("For example:")
+names = ['Ann', 'alice', 'Ben', 'Zippy', 'Candice']
+names.sort()
+print(names)
+
+print("If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort() method call like below")
+names.sort(key=str.lower)
+print(names)
+
+print(sorted(names,key=str.lower)) - also applies to the sorted() function
