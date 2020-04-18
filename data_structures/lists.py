@@ -94,3 +94,13 @@ for object in a_list:
 spam = ['hello', 'hi', 'howdy', 'alloha']
 # spam.index('Hello') # gives a value error - 'Hello' not in list
 print(spam.index('hi'))
+
+# insert() method to add an element to a list at any position
+
+a = [1,2,3]
+a.insert(3,4)
+print(a)
+a.insert(1,0)
+print(a)
+a.insert(10,10)
+print(a)
