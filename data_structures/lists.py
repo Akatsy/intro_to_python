@@ -125,4 +125,11 @@ print("If you need to sort the values in regular alphabetical order, pass str.lo
 names.sort(key=str.lower)
 print(names)
 
-print(sorted(names,key=str.lower)) - also applies to the sorted() function
+# print(sorted(names,key=str.lower)) - also applies to the sorted() function
+
+# reverse a list using reverse() method
+print("If you need to quickly reverse the order of the items in a list, you can call the reverse() list method")
+print("for example:")
+animals = ['cats','dogs','rats', 'snakes']
+animals.reverse()
+print(animals)
