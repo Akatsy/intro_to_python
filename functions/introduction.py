@@ -79,3 +79,8 @@ print("Arguments - Values we can pass to a function when we call it")
 print('#' * 99)
 print("What is the difference between print() and return statements in a function??")
 print("print() provides output for the output window (console) while return provides an output value  to the statement that called it and that value can also be stored and used by other programs")
+
+print('#' * 99)
+print("Functions are the primary way to compartmentalize your code into logical groups. Since the variables in functions exist in their own local scopes, the code in one function cannot directly affect the values of variables in other functions. This limits what code could be changing the values of your variables, which can be helpful when it comes to debugging your code.".upper())
+print()
+print("Functions are a great tool to help you organize your code. Think of them as black boxes: they have inputs in the form of parameters and outputs in the form of return values, and the code in them doesn’t affect variables in other functions")
