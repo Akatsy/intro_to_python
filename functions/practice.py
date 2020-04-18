@@ -53,11 +53,14 @@ import sys
 while True:
     try:
         num = int(input("Enter any integer value: "))
-        print("The collatz sequence for {} is".format(num))
-        while num != 1:
-            num = collatz(num)
-            print(num)
-        sys.exit()
+        if num < 0:
+            print("Please input a positive value")
+        else:
+            print("The collatz sequence for {} is".format(num))
+            while num != 1:
+                num = collatz(num)
+                print(num)
+            sys.exit()
     except ValueError:
         print("Please input an integer value")
 
