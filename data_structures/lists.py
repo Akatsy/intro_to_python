@@ -178,6 +178,7 @@ print('#' * 99)
 
 # reverse a list using reverse() method
 print("If you need to quickly reverse the order of the items in a list, you can call the reverse() list method")
+print("reverse() reverses the order of the list items in place thus it returns None")
 print("for example:")
 animals = ['cats','dogs','rats', 'snakes']
 animals.reverse()
