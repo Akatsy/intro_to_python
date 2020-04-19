@@ -77,6 +77,13 @@ print("For example:")
 print("Printing an empty list - print(list() would print out: {}".format(list()))
 print("Printing a list created from a string of vowels - print(list('aeiou') would print out: {}".format(list('aeiou')))
 
+# tuple unpacking / multiple assignment on lists
+print("Tuple unpacking is a shorthand that lets you assign multiple variables with values in a list in one line of code. The number of variables must match the number of items in the list otherwise, Python throws an error")
+print("For example consider the following and what is printed out:\nvowels = ['a','e','i','o','u']\nfirst,second,third,fourth,fifth = vowels\nprint(first,second,third,fourth,fifth,sep='\n')")
+vowels = ['a','e','i','o','u']
+first,second,third,fourth,fifth = vowels
+print(first,second,third,fourth,fifth, sep='\n')
+
 print('#' * 99)
 # a program to enter any number of names to a list
 a_list = []
