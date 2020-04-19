@@ -57,4 +57,14 @@ print(id(a))
 
 
 print('#' * 79)
+# the copy module's copy() and deepcopy() functions
+
+print("You can use the copy module's copy() fuction to make a duplicate of a list not just acopy of the reference")
+import copy
+a = [1,2,3,4]
+print(id(a))
+b = copy.copy(a)
+print(id(b))
+print(id(a) == id(b))
+print("If the list you need to copy contains lists, use the deepcopy() function instead of copy() so that the inner lists are copied as well")
 print('#' * 79)
