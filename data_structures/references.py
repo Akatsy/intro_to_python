@@ -36,3 +36,7 @@ print(id(1))
 print("The id() function returns the numeric memory address where a value is stored")
 
 print("Python picks this address based on which memory bytes happen to be free on your computer at the time so the value is different each time you run the code")
+
+print('#' * 79)
+print("For immutable data types, if you change the value stored in a variable, a new value is being created in memory and the reference to it being stored in the new variable and the old value's reference being forgotten, thus the old value has no variable referring to it.")
+print("Python's automatic garbage collection deletes any values not being referred to by any variable to free up memory. Manual garbage collection in other PLs like C is a common source of bugs")
