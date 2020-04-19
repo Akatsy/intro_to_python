@@ -114,6 +114,7 @@ print(a)
 print("Attempting to delete a value that does not exist in the list will result in a ValueError error")
 print("The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list")
 
+print('sidenote : The del statement can also be used on a simple variable storing a value like int, string, float or boolean to delete it - think of it like unassignment operation.'.upper())
 # sorting values in a list using sort() method - different from sorted()
 print("sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z")
 print("For example:")
