@@ -123,6 +123,7 @@ print(alphabets)
 
 print('#' * 99)
 print("List values have an index() method that can be passed a value, and if that value exists in the list, the index of the value is returned. If the value isn’t in the list, then Python produces a ValueError error")
+print("When there are duplicates of the value in the list, the index of its first appearance is returned")
 # index() method to find index of a value in a list
 spam = ['hello', 'hi', 'howdy', 'alloha']
 # spam.index('Hello') # gives a ValueError - 'Hello' not in list
