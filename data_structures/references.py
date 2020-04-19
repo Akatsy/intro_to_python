@@ -40,3 +40,21 @@ print("Python picks this address based on which memory bytes happen to be free o
 print('#' * 79)
 print("For immutable data types, if you change the value stored in a variable, a new value is being created in memory and the reference to it being stored in the new variable and the old value's reference being forgotten, thus the old value has no variable referring to it.")
 print("Python's automatic garbage collection deletes any values not being referred to by any variable to free up memory. Manual garbage collection in other PLs like C is a common source of bugs")
+
+print('#' * 79)
+
+print("How are arguments passed to functions??")
+print("When a function is called, the values of the arguments are copied to the parameter variables. For list (and dictionaries), this means a copy of the reference is used for the parameter - meaning that the parameter and the arguments are essentially the same underlying list")
+
+def eggs(par):
+    print(id(par))
+    par.append('asd')
+
+a = [2,3,4]
+eggs(a)
+print(a)
+print(id(a))
+
+
+print('#' * 79)
+print('#' * 79)
