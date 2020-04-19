@@ -113,6 +113,14 @@ print("random.shuffle() will re-order the items in a list. This function modifie
 random.shuffle(alphabets)
 print(alphabets)
 
+# add (concatenate) lists or replicate lists using the '+' and '*' operators
+print('#' * 99)
+print("We can add (concatenate) lists or replicate lists using the '+' and '*' operators")
+alphabets += string.digits
+print(alphabets)
+alphabets *= 4
+print(alphabets)
+
 print('#' * 99)
 # index() method to find index of a value in a list
 spam = ['hello', 'hi', 'howdy', 'alloha']
