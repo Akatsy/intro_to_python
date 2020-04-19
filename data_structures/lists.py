@@ -135,6 +135,7 @@ print('#' * 99)
 
 # insert() method to add an element to a list at any position
 print("append() method adds the argument to the end of the list. The insert() method can insert a value at any index in the list. The first argument to insert() is the index for the new value, and the second argument is the new value to be inserted.")
+print("Both append() and insert() modify the list in place. Their return value is thus None")
 a = [1,2,3]
 a.insert(3,4)
 print(a)
