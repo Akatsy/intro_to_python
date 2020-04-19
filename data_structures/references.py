@@ -26,3 +26,13 @@ print(a)
 print(b)
 print("Why does the change in a affect b??")
 print("When we create the list, we assign its reference to the variable a. Then we assign a to b, in effect copying the reference for the list to variable b. Note that this means a and b thus refer to the same underlying list. So when you modify a, you are modifying the same list b refers to and hence the results above")
+
+print('#' * 79)
+print("All values in Python have a unique identity that can be obtained with the id() function e.g \nprint(id(print))\nprint(id(False))\nprint(id(1))\nwill output:")
+print(id(print))
+print(id(False))
+print(id(1))
+
+print("The id() function returns the numeric memory address where a value is stored")
+
+print("Python picks this address based on which memory bytes happen to be free on your computer at the time so the value is different each time you run the code")
