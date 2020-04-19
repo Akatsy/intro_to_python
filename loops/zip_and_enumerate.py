@@ -43,6 +43,7 @@ print('#' * 99)
 
 print("The enumerate() method takes two parameters:\n1. iterable - a sequence, an iterator, or objects that supports iteration\n2. start (optional) - enumerate() starts counting from this number. If start is omitted, 0 is taken as start")
 print("The enumerate() method adds counter to an iterable and returns it. The returned object is a enumerate object.")
+print("On each iteration of the loop, enumerate() will return two values: the index of the item in the list, and the item in the list itself")
 print('#' * 99)
 print("You can convert enumerate objects to list, tuples or dicts using list(), tuple() and dict() methods respectively.")
 print('#' * 99)
