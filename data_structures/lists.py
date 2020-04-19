@@ -161,6 +161,8 @@ print('sidenote : The del statement can also be used on a simple variable storin
 print('#' * 99)
 
 # sorting values in a list using sort() method - different from sorted()
+print("Lists of number values or lists of strings can be sorted with the sort() method")
+
 print("sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z")
 print("For example:")
 names = ['Ann', 'alice', 'Ben', 'Zippy', 'Candice']
