@@ -172,10 +172,9 @@ print(names)
 print("If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort() method call like below")
 names.sort(key=str.lower)
 print(names)
+# print(sorted(names,key=str.lower)) - also applies to the sorted() function
 
 print('#' * 99)
-
-# print(sorted(names,key=str.lower)) - also applies to the sorted() function
 
 # reverse a list using reverse() method
 print("If you need to quickly reverse the order of the items in a list, you can call the reverse() list method")
