@@ -122,9 +122,11 @@ alphabets *= 4
 print(alphabets)
 
 print('#' * 99)
+# index() method to find index of a value in a list
+
 print("List values have an index() method that can be passed a value, and if that value exists in the list, the index of the value is returned. If the value isn’t in the list, then Python produces a ValueError error")
 print("When there are duplicates of the value in the list, the index of its first appearance is returned")
-# index() method to find index of a value in a list
+
 spam = ['hello', 'hi', 'howdy', 'alloha']
 # spam.index('Hello') # gives a ValueError - 'Hello' not in list
 print(spam.index('hi'))
@@ -132,7 +134,7 @@ print(spam.index('hi'))
 print('#' * 99)
 
 # insert() method to add an element to a list at any position
-
+print("append() method adds the argument to the end of the list. The insert() method can insert a value at any index in the list. The first argument to insert() is the index for the new value, and the second argument is the new value to be inserted.")
 a = [1,2,3]
 a.insert(3,4)
 print(a)
