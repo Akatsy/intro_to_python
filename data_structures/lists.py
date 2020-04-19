@@ -109,6 +109,11 @@ alphabets = [letter for letter in string.ascii_letters]
 print(random.choice(alphabets))
 
 print('#' * 99)
+print("random.shuffle() will re-order the items in a list. This function modifies a list in place rather than returning a new list")
+random.shuffle(alphabets)
+print(alphabets)
+
+print('#' * 99)
 # index() method to find index of a value in a list
 spam = ['hello', 'hi', 'howdy', 'alloha']
 # spam.index('Hello') # gives a value error - 'Hello' not in list
