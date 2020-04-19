@@ -153,6 +153,7 @@ a.remove(4)
 print(a)
 
 print("Attempting to delete a value that does not exist in the list will result in a ValueError error")
+print("If the value appears multiple times in the list, only the first instance of the value will be removed")
 print("The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list")
 
 print('sidenote : The del statement can also be used on a simple variable storing a value like int, string, float or boolean to delete it - think of it like unassignment operation.'.upper())
