@@ -77,6 +77,8 @@ print("For example:")
 print("Printing an empty list - print(list() would print out: {}".format(list()))
 print("Printing a list created from a string of vowels - print(list('aeiou') would print out: {}".format(list('aeiou')))
 
+print('#' * 99)
+
 # tuple unpacking / multiple assignment on lists
 print("Tuple unpacking is a shorthand that lets you assign multiple variables with values in a list in one line of code. The number of variables must match the number of items in the list otherwise, Python throws an error")
 print("For example consider the following and what is printed out:\nvowels = ['a','e','i','o','u']\nfirst,second,third,fourth,fifth = vowels\nprint(first,second,third,fourth,fifth,sep='\n')")
@@ -97,10 +99,22 @@ print("The names entered are:")
 for object in a_list:
     print(object)
 
+print('#' * 99)
+
+# random module functions that accept list for arguments
+print("The random module has some functions that accept lists for arguments")
+print("random.choice() returns a random item from the list supplied as an argument")
+import string, random
+alphabets = [letter for letter in string.ascii_letters]
+print(random.choice(alphabets))
+
+print('#' * 99)
 # index() method to find index of a value in a list
 spam = ['hello', 'hi', 'howdy', 'alloha']
 # spam.index('Hello') # gives a value error - 'Hello' not in list
 print(spam.index('hi'))
+
+print('#' * 99)
 
 # insert() method to add an element to a list at any position
 
@@ -112,6 +126,8 @@ print(a)
 a.insert(10,10)
 print(a)
 
+print('#' * 99)
+
 # remove() method to remove a value from the list
 print("The remove() method is passed the value to be removed from the list it is called on")
 a = [1,2,3,4,5,4]
@@ -122,6 +138,9 @@ print("Attempting to delete a value that does not exist in the list will result 
 print("The del statement is good to use when you know the index of the value you want to remove from the list. The remove() method is useful when you know the value you want to remove from the list")
 
 print('sidenote : The del statement can also be used on a simple variable storing a value like int, string, float or boolean to delete it - think of it like unassignment operation.'.upper())
+
+print('#' * 99)
+
 # sorting values in a list using sort() method - different from sorted()
 print("sort() uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase a is sorted so that it comes after the uppercase Z")
 print("For example:")
@@ -133,6 +152,8 @@ print("If you need to sort the values in regular alphabetical order, pass str.lo
 names.sort(key=str.lower)
 print(names)
 
+print('#' * 99)
+
 # print(sorted(names,key=str.lower)) - also applies to the sorted() function
 
 # reverse a list using reverse() method
@@ -141,3 +162,5 @@ print("for example:")
 animals = ['cats','dogs','rats', 'snakes']
 animals.reverse()
 print(animals)
+
+print('#' * 99)
