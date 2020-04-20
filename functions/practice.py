@@ -64,3 +64,24 @@ while True:
     except ValueError:
         print("Please input an integer value")
 
+
+print('#' * 99)
+# Comma Code
+# Say you have a list value like this:
+
+# spam = ['apples', 'bananas', 'tofu', 'cats']
+
+# Write a function that takes a list value as an argument and returns a string with all the items separated by a comma and a space, with and inserted before the last item. For example, passing the previous spam list to the function would return 'apples, bananas, tofu, and cats'. But your function should be able to work with any list value passed to it. Be sure to test the case where an empty list [] is passed to your function.
+
+def comma_seperated_items(arr):
+    return_str = ''
+    for idx, item in enumerate(arr):
+        if idx == len(arr)-1:
+            return_str += 'and ' + item
+        else:
+            return_str += item + ', '
+    return return_str
+
+spam = ['apples', 'bananas', 'tofu', 'cats']
+print(comma_seperated_items(spam))
+print(comma_seperated_items([]))
