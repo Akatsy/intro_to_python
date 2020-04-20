@@ -84,4 +84,4 @@ def comma_seperated_items(arr):
 
 spam = ['apples', 'bananas', 'tofu', 'cats']
 print(comma_seperated_items(spam))
-print(comma_seperated_items([]))
+print(comma_seperated_items([])) # comment out the collatz sequence code for this code to run coz of the sys.exit() statement
