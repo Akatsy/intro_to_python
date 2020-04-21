@@ -136,3 +136,17 @@ while True:
 
 
 print('#' * 99)
+
+# ORDERED DICTIONARIES IN PYTHON 3.7
+
+print("While they’re still not ordered and have no “first” key-value pair, dictionaries in Python 3.7 and later will remember the insertion order of their key-value pairs if you create a sequence value from them")
+print("For example, a list made from the following two dictionaries will match the sequence in which they were created in the dictionary")
+
+got = {'genre':'thriller', 'seasons':8, 'rank':2}
+suits = {'rank':6, 'seasons':9, 'genre':'drama'}
+print(list(got))
+print(list(suits))
+
+print("The same will not work in Python versions before 3.7 i.e the list doesn’t match the insertion order of the dictionary’s key-value pairs when you run this code in say Python 3.5")
+print("You shouldn’t rely on this behavior, as dictionaries in older versions of Python don’t remember the insertion order of key-value pairs")
+print('#' * 99)
