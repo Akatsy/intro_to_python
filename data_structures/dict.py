@@ -117,3 +117,22 @@ print("Two dictionaries are equal if they contain the same key-value pairs: e.g 
 a = {1:'a', 2:'b', 3:'c'}
 b = {2:'b', 3:'c', 1:'a'}
 print(a == b)
+
+print('#' * 99)
+# a program to store friend's birthdays
+birthdays = {'Kevin':'Dec 28', 'Naitore':'Jan 14', 'Angule':'Mar 3'}
+while True:
+    name = input("Enter friend's name (leave blank to quit): ")
+    if name == '':
+        break
+    elif name in birthdays:
+        print("{} is the birthday for {}".format(birthdays[name], name))
+    else:
+        print("Oops! I happen to be missing {}'s birthday".format(name))
+        bday = input("When is their birthday? (enter month and date e.g Apr 2): ")
+        birthdays[name] = bday
+        print("Thankyou! Database Updated")
+        print("{} is the birthday for {}".format(birthdays[name], name))
+
+
+print('#' * 99)
