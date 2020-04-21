@@ -185,3 +185,7 @@ animals.reverse()
 print(animals)
 
 print('#' * 99)
+
+print("The order of items in a list matters for determining whether two lists are the same e.g [1,2,3,4] == [1,3,2,4] would evaluate to {}: despite the two lists having similar values but their order is different".format([1,2,3,4] == [1,3,2,4]))
+
+print('#' * 99)

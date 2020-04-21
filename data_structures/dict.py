@@ -112,3 +112,8 @@ print("5. copy() - Returns a copy of the dictionary")
 print("6. update() - Updates the dictionary with the specified key-value pairs")
 print("7. pop() - Removes the element with the specified key")
 print("8. popitem() - Removes the last inserted key-value pair")
+
+print("Two dictionaries are equal if they contain the same key-value pairs: e.g {1:'a', 2:'b', 3:'c'} == {2:'b', 3:'c', 1:'a'} will result to:")
+a = {1:'a', 2:'b', 3:'c'}
+b = {2:'b', 3:'c', 1:'a'}
+print(a == b)
