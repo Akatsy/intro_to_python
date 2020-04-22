@@ -123,6 +123,13 @@ print(list(my_list.values()))
 print('#' * 79)
 
 print("3. items() - Returns a list containing a tuple for each key value pair")
+print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
+my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
+print(my_list.items())
+print(type(my_list.items()))
+print(list(my_list.items()))
+print('#' * 79)
+
 print("4. clear() - Removes all the elements from the dictionary")
 print("5. copy() - Returns a copy of the dictionary")
 print("6. update() - Updates the dictionary with the specified key-value pairs")
