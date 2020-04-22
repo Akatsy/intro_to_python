@@ -146,6 +146,15 @@ print("8. popitem() - Removes the last inserted key-value pair")
 print('#' * 99)
 print("setdefault() - a method that takes two arguments, the first is the key and the second is a value for that key. It assigns and returns a default value to the key in the dictionary if it doesn't exist, and if it does it returns the value of the key and does not change it")
 
+# a  program to count the number of occurences of each character in a sentence 
+
+sentence = "The setdefault() method is a nice shortcut to ensure that a key exists."
+char_count = {}
+for char in sentence:
+    char_count.setdefault(char,0)
+    char_count[char] += 1
+print(char_count)
+
 print('#' * 99)
 
 print("Two dictionaries are equal if they contain the same key-value pairs: e.g {1:'a', 2:'b', 3:'c'} == {2:'b', 3:'c', 1:'a'} will result to:")
