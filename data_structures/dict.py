@@ -157,6 +157,20 @@ print(char_count)
 
 print('#' * 99)
 
+print("You can import the pprint module which has two helpful functions pprint() and pformat() that help you output a prettier display of a dictionary's items")
+print("the pprint() function displays a much cleaner output than print and even sorts the keys in the output displayed")
+print("pprint() is especially helpful if you have a list or another dict nested in the dictionary")
+import pprint
+pprint.pprint(char_count)
+print('#' * 99)
+
+print("If you want to obtain the prettified version as a string instead of outputting it, use the pformat() method")
+pretty_version = pprint.pformat(char_count)
+print(type(pretty_version)) # type is a string
+print(pretty_version) # you can print it out
+print('#' * 99)
+
+
 print("Two dictionaries are equal if they contain the same key-value pairs: e.g {1:'a', 2:'b', 3:'c'} == {2:'b', 3:'c', 1:'a'} will result to:")
 a = {1:'a', 2:'b', 3:'c'}
 b = {2:'b', 3:'c', 1:'a'}
