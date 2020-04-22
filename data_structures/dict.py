@@ -129,6 +129,12 @@ print(my_list.items())
 print(type(my_list.items()))
 print(list(my_list.items()))
 print('#' * 79)
+print("You can use the list-like objects returned in a for loop to print out the items. You can use the multiple assignment statement to assign the items() return value to different variables")
+for key,value in my_list.items():
+    print(key, value)
+
+print('#' * 79)
+
 
 print("4. clear() - Removes all the elements from the dictionary")
 print("5. copy() - Returns a copy of the dictionary")
