@@ -107,7 +107,7 @@ print('#' * 79)
 # other useful dictionary methods
 
 print("1. keys() - Returns a list containing the dictionary's keys")
-print("The value returned is not a true list since you cannot modify it (like append() or insert()). It is a list-like object that can be turned to a list by passing it to the list() method")
+print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
 my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
 print(my_list.keys())
 print(type(my_list.keys()))
@@ -115,6 +115,13 @@ print(list(my_list.keys()))
 print('#' * 79)
 
 print("2. values() - Returns a list of all the values in the dictionary")
+print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
+my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
+print(my_list.values())
+print(type(my_list.values()))
+print(list(my_list.values()))
+print('#' * 79)
+
 print("3. items() - Returns a list containing a tuple for each key value pair")
 print("4. clear() - Removes all the elements from the dictionary")
 print("5. copy() - Returns a copy of the dictionary")
