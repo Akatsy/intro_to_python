@@ -102,9 +102,18 @@ print("Or we could just use the max and min list methods to get the same answers
 print("maximum value is:", max(values_list))
 print("minimum value is:", min(values_list))
 
+print('#' * 79)
+
 # other useful dictionary methods
 
 print("1. keys() - Returns a list containing the dictionary's keys")
+print("The value returned is not a true list since you cannot modify it (like append() or insert()). It is a list-like object that can be turned to a list by passing it to the list() method")
+my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
+print(my_list.keys())
+print(type(my_list.keys()))
+print(list(my_list.keys()))
+print('#' * 79)
+
 print("2. values() - Returns a list of all the values in the dictionary")
 print("3. items() - Returns a list containing a tuple for each key value pair")
 print("4. clear() - Removes all the elements from the dictionary")
