@@ -73,3 +73,11 @@ for key, value in escape_characters.items():
 
 
 print('#' * 79)
+print("You can place the letter r lowercase before the beginning quotation mark of a string to make it a raw string")
+print("This is the path of your file in windows " + r'c:\\Users\Desktop\Mutwiri\Downloads')
+print("This is the path of your file in windows {}".format(r'c:\\Users\Desktop\Mutwiri\Downloads'))
+print("Because of the r, Python considers the backslash as part of the string and not the beginning of an escape character")
+print("Raw strings are helpful if you are typing string values with a lot of backslashes for example a window's file path like above")
+print('#' * 79)
+print('#' * 79)
+
