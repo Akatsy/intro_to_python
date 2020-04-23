@@ -79,5 +79,16 @@ print("This is the path of your file in windows {}".format(r'c:\\Users\Desktop\M
 print("Because of the r, Python considers the backslash as part of the string and not the beginning of an escape character")
 print("Raw strings are helpful if you are typing string values with a lot of backslashes for example a window's file path like above")
 print('#' * 79)
+
+print("For strings that span multiple lines in Python, you can use the multiline strings in Python. These begin and end with triple quotes (three single quotes or three double quotes). Any newline, tab or quotes in between the multiline string are considered part of the string. Escaping strings is not necessary inside the multiline strings")
+print(""" 
+This is a multiline string.
+It spans multiple lines
+You don't need to escape any "quotes" here either single or double
+    A tab can be added
+    A new line can be added
+    Python indentation rules for blocks do not appply for multiline strings
+""")
+print("Multiline strings are also the preferred way to add long comments spanning multiple lines")
 print('#' * 79)
 
