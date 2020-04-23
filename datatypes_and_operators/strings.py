@@ -92,3 +92,20 @@ You don't need to escape any "quotes" here either single or double
 print("Multiline strings are also the preferred way to add long comments spanning multiple lines")
 print('#' * 79)
 
+print("Putting strings inside strings is a common operations in programming")
+print("You can use the + concatenation operation")
+name = "Kevin"
+age = 25
+print(name + " is " + str(age) + " years old.")
+print('#' * 79)
+
+print("The above is requires a lot of tedious typing. A better method is using String Interpolation where '%s' is used as a placeholder for the values to be put in then the values are put at the end of the string in order of how they should be put into the string")
+print("%s is %s years old" %(name,age))
+
+print('#' * 79)
+print("Python 3.6 introduced f-strings which is an even easier way to put strings inside strings. They use {} (curly braces instead of %s) and the values are put directly inside the curly braces. Like r-strings, f-strings have to begin with the f character before the starting quotation mark, otherwise they will be interpreted as being part of the string")
+print(f'{name} is {age} years old')
+print('#' * 79)
+print('#' * 79)
+
+
