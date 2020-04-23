@@ -208,3 +208,26 @@ print(list(suits))
 print("The same will not work in Python versions before 3.7 i.e the list doesn’t match the insertion order of the dictionary’s key-value pairs when you run this code in say Python 3.5")
 print("You shouldn’t rely on this behavior, as dictionaries in older versions of Python don’t remember the insertion order of key-value pairs")
 print('#' * 99)
+
+print('#' * 99)
+# using nested dictionaries
+
+all_guests = {
+    'Kevin': {'iphones': 3, 'macbooks': 2, 'ipads': 1, 'mercedes':1},
+    'Vero': {'iphones': 1, 'macbooks': 1, 'ipads': 1, 'mercedes':1},
+    'Davie': {'iphones': 2, 'macbooks': 2, 'ipads': 2, 'mercedes':1}
+}
+
+def item_count(guests, item):
+    total = 0
+    for guest, items in guests.items():
+        total += items.get(item,0)
+    return "There were a total of {} {} in the meeting".format(total,item)
+
+print(item_count(all_guests,'iphones'))
+print(item_count(all_guests,'macbooks'))
+print(item_count(all_guests,'ipads'))
+print(item_count(all_guests,'mercedes'))
+
+print('#' * 99)
+
