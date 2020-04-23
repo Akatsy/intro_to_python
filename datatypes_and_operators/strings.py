@@ -57,3 +57,19 @@ print("You can get the last three characters in a string like this print('hello 
 print('#' * 79)
 print("Python and programming in general uses zero-based indexing i.e it counts starting from zero and not one. This is explicable in the sense that we consider how far a character is from the beginning of the string and the first character is 0 characters away from the start, the second is 1 character away and so on...")
 print("Counting from the end, the last character is -1, the second last is -2 and so on...")
+
+print('#' * 79)
+
+escape_characters = {
+    "\\'": 'single quote',
+    '\\"': 'double quote',
+    '\\n': 'new line',
+    '\\t': 'tab',
+    '\\\\': 'backslash'
+}
+print("An escape character helps you use characters in a string that would otherwise be impossible to put in. It begins with a backslash followed by the character you want to escape")
+for key, value in escape_characters.items():
+    print("The {} escape character prints as {}".format(key,value))
+
+
+print('#' * 79)
