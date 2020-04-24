@@ -207,5 +207,17 @@ print('Hello world.'.endswith("ld."))
 
 print('#' * 79)
 
+print("join() string method is called on a string, gets passed a list value (of strings) and returns a string")
+print("The string returned is a concatenation of each string in the list value with the string join is called on between each element (string) of the list argument")
+
+
+print('#' * 79)
+
+print("")
+
+print('#' * 79)
+print('#' * 79)
+
+
 
 
