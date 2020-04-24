@@ -195,6 +195,16 @@ while True:
         break
 
 print('#' * 79)
+
+print("startswith() and endswith() string methods return True if the string they are called on starts with or ends with the string passed to the methods. They are a good alternative to the '==' operator if you just want to check just the equality of the first or last parts of a string rather than the whole string. It is a case sensitive comparison")
+
+print('Hello world.'.startswith("Hello"))
+print('Hello world.'.startswith("hello"))
+print('Hello world.'.startswith("Hell"))
+print('Hello world.'.endswith("world."))
+print('Hello world.'.endswith("world"))
+print('Hello world.'.endswith("ld."))
+
 print('#' * 79)
 
 
