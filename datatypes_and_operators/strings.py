@@ -111,7 +111,7 @@ print("upper() and lower() methods do not change the original string. They retur
 print("These methods are especially useful when you want to make a case-insensitive comparison. Just simply convert all letters in the target string you want to compare to a similar case with your reference string and compare")
 # a small program to do a case-insesitive comparison
 feeling = input("How are you feeling? ")
-if feeling.lower == 'great':
+if feeling.lower() == 'great':
     print('I am feeling great too')
 else:
     print(f'Why are you feeling {feeling.lower()}?')
