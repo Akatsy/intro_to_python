@@ -118,4 +118,18 @@ else:
 
 print('#' * 79)
 
+print("islower() and isupper() methods return a Boolean True value if there is at least one letter in the string and all the letters are lowercase or uppercase respectively, otherwise it returns False e.g:")
+print('12345i'.islower())
+print('12345i'.isupper())
+print('9023234'.islower())
+print('abCdefgh'.islower())
+print('pythoniscool'.islower())
+print('ASKMEHOW'.isupper())
+
+print('#' * 79)
+print('#' * 79)
+print('#' * 79)
+print('#' * 79)
+
+
 
