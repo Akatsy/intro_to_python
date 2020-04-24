@@ -209,12 +209,28 @@ print('#' * 79)
 
 print("join() string method is called on a string, gets passed a list value (of strings) and returns a string")
 print("The string returned is a concatenation of each string in the list value with the string join is called on between each element (string) of the list argument")
-
+print("join() method is useful when you have a list of strings you need to be joined into a single string")
 
 print('#' * 79)
 
-print("")
+print("split() method is called on a string and returns a list of strings")
+print("By default the string it is called on is split whenever there is a whitespace character like space or tab. You can change this by passing an argument for the sep parameter (separator) - this is a string value that you want to be used as the split delimiter. The sep is not included in the strings in the returned list")
+print()
+print("A common use of split is to split a multiline string along the newline character")
+letter = '''    
+                Mutwiri Mwenda
+                P.O BOX 2469
+                Meru
 
+    Dear Baby,
+    Do not loose hope
+    Do not give up on yourself
+    I pray God keeps you safe
+    
+Yours truly,
+Beau.
+'''
+print(letter.split('\n'))
 print('#' * 79)
 print('#' * 79)
 
