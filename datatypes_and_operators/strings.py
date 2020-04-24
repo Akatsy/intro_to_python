@@ -106,6 +106,16 @@ print('#' * 79)
 print("Python 3.6 introduced f-strings which is an even easier way to put strings inside strings. They use {} (curly braces instead of %s) and the values are put directly inside the curly braces. Like r-strings, f-strings have to begin with the f character before the starting quotation mark, otherwise they will be interpreted as being part of the string")
 print(f'{name} is {age} years old')
 print('#' * 79)
+
+print("upper() and lower() methods do not change the original string. They return a new string value where all the letters have been converted to either uppecase or lowercase. Any non-letter character remains unchanged.")
+print("These methods are especially useful when you want to make a case-insensitive comparison. Just simply convert all letters in the target string you want to compare to a similar case with your reference string and compare")
+# a small program to do a case-insesitive comparison
+feeling = input("How are you feeling? ")
+if feeling.lower == 'great':
+    print('I am feeling great too')
+else:
+    print(f'Why are you feeling {feeling.lower()}?')
+
 print('#' * 79)
 
 
