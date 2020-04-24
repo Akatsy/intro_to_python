@@ -145,12 +145,24 @@ print("1 2 3 4 5".isdecimal())
 
 print('#' * 79)
 
-print("isalnum() returns True if the string consists only of letters and numeric characters and is not blank, otherwise returns False")
+print("3. isalnum() returns True if the string consists only of letters and numeric characters and is not blank, otherwise returns False")
 print("secr3t".isalnum())
 print("hello".isalnum())
 print("45".isalnum())
 print("123_sed".isalnum())
 
+print('#' * 79)
+
+print("4. isspace() returns True if the string only consists of spaces, tabs, newline characters and is not blank, otherwise returns False")
+print("\n".isspace())
+print("\t".isspace())
+print(" ".isspace())
+print("Kevin\ncome here".isspace())
+
+
+print('#' * 79)
+print('#' * 79)
+print('#' * 79)
 print('#' * 79)
 
 
