@@ -161,6 +161,12 @@ print("Kevin\ncome here".isspace())
 
 
 print('#' * 79)
+
+print("5. istitle() method returns True if the string consists of words whose first letter is uppercase and all other letters in the word are lowercase and the string is not blank, otherwise returns False")
+print("12345 Is A Title String".istitle())
+print("12345".istitle())
+print("Is NOt Title".istitle())
+
 print('#' * 79)
 print('#' * 79)
 print('#' * 79)
