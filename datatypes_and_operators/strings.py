@@ -129,6 +129,7 @@ print('ASKMEHOW'.isupper())
 print('#' * 79)
 
 print("isX() string methods are useful methods that begin with 'is' and return a boolean value that describes the nature of the string")
+print()
 print("1. isalpha() - returns True if the string consists of only letters and is not empty - otherwise returns False")
 print('kevinisaboy'.isalpha())
 print('kevin is a boy'.isalpha())
@@ -136,6 +137,12 @@ print('kevin2isaboy'.isalpha())
 
 
 print('#' * 79)
+
+print("2. isdecimal() returns True if the string only consists of numeric characters and is not empty, otherwise returns False")
+print("12345".isdecimal())
+print("k24".isdecimal())
+print("1 2 3 4 5".isdecimal())
+
 print('#' * 79)
 print('#' * 79)
 
