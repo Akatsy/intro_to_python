@@ -283,3 +283,16 @@ items = {'mercedes': 2, 'toyota': 5, 'TX': 3, 'BMW': 2}
 neat_spacing(items,12,5)
 neat_spacing(items,20,6)
 neat_spacing(items,15,30)
+
+print('#' * 99)
+
+print("Sometimes you want to strip all whitespaces (tabs, spaces, newline characters) from a string or just from the sides  (the left or right of a string)")
+print("strip(), lstrip() and rstrip() can be used to do that. They return a new string with the whitespace characters removed")
+
+print('   Hello   world'.strip())
+print('   Hello   world'.lstrip())
+print('   Hello   world'.rstrip())
+
+print('#' * 99)
+print('#' * 99)
+print('#' * 99)
