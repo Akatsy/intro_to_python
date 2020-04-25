@@ -172,27 +172,27 @@ print('#' * 79)
 print("The isX() methods are useful when you need to validate user input")
 # a program to validate different user input using isX() methods
 
-while True:
-    name = input("Please input your names (First letter must be capital): ")
-    if not name.istitle():
-        print("Please capitalize the first letter of each name")
-    else:
-        print(f"Your name is {name}")
-        break
-while True:
-    age = input("What is your age? ")
-    if age.isdecimal():
-        print(f"Your age is {age}")
-        break
-    else:
-        print("Please enter a number for your age")
-while True:
-    password = input("Set up a password (numbers and letters only): ")
-    if not password.isalnum():
-        print("Please use only letters and numbers")
-    else:
-        print("Password set up successfully")
-        break
+# while True:
+#     name = input("Please input your names (First letter must be capital): ")
+#     if not name.istitle():
+#         print("Please capitalize the first letter of each name")
+#     else:
+#         print(f"Your name is {name}")
+#         break
+# while True:
+#     age = input("What is your age? ")
+#     if age.isdecimal():
+#         print(f"Your age is {age}")
+#         break
+#     else:
+#         print("Please enter a number for your age")
+# while True:
+#     password = input("Set up a password (numbers and letters only): ")
+#     if not password.isalnum():
+#         print("Please use only letters and numbers")
+#     else:
+#         print("Password set up successfully")
+#         break
 
 print('#' * 79)
 
@@ -255,6 +255,9 @@ print("Python".ljust(12))
 print("Python".rjust(12))
 
 print('#' * 79)
+
+print("")
+
 print('#' * 79)
 print('#' * 79)
 print('#' * 79)
