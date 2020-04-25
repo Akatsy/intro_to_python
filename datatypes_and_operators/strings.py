@@ -231,7 +231,11 @@ Yours truly,
 Beau.
 '''
 print(letter.split('\n'))
+
 print('#' * 79)
+print("the partition() string method can be used to split a string. It is called on a string and passed another string (separator) as argument. The method looks for the string passed as argument in the string it is called on and returns a tuple of three strings - 1. the before, 2. the separator string and 3. the after")
+print("Hello Python".partition(' '))
+
 print('#' * 79)
 
 
