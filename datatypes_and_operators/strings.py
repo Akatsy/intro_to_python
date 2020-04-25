@@ -330,5 +330,11 @@ print('#' * 99)
 import string
 for char in string.ascii_letters:
     print(char, ord(char))
+
 print('#' * 99)
+
+for i in range(91,127):
+    print(i, chr(i))
+
+
 print('#' * 99)
