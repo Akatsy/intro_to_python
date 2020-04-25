@@ -261,6 +261,13 @@ print("Python".ljust(12, '*'))
 print("Python".rjust(12, '*'))
 
 print('#' * 79)
+
+print("center() method works in the same way as ljust() and rjust() but instead it centers the text")
+print("Python".center(12))
+print("Python".center(15))
+print("Python".center(12, '*'))
+print("Python".center(20, '*'))
+
 print('#' * 79)
 print('#' * 79)
 
