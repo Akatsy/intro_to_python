@@ -317,5 +317,12 @@ print("pamamplifieramppam".lstrip('pam'))
 print("pamamplifieramppam".lstrip('map'))
 
 
+print("pamamplifieramppam".strip('Amp'))
 
+print('#' * 99)
+
+
+
+print('#' * 99)
+print('#' * 99)
 print('#' * 99)
