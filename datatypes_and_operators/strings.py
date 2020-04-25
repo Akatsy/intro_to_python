@@ -294,5 +294,11 @@ print('   Hello   world'.lstrip())
 print('   Hello   world'.rstrip())
 
 print('#' * 99)
+
+print("Optionally, you can pass a string that specifies which characters on the end will be stripped")
+print('   Hello   world'.strip('    H'))
+print('   Hello   world'.lstrip('   He'))
+print('   Hello   world'.rstrip('ld'))
+
 print('#' * 99)
 print('#' * 99)
