@@ -245,6 +245,8 @@ print('#' * 79)
 print("If the separator string does not exist in the string partition() is called on, the first string returned in the tuple (before) is the entire string and the other two (separator, after) are empty strings")
 print("Programming is fun".partition('p'))
 
+print("The partition() method is useful for splitting a string whenever you need the parts before, including, and after a particular separator string")
+
 print('#' * 79)
 
 
