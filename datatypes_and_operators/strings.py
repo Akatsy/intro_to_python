@@ -321,8 +321,14 @@ print("pamamplifieramppam".strip('Amp'))
 
 print('#' * 99)
 
-
+print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a string of binary numbers hence the need to be able to convert text to numbers for storage.")
+print("ord() function returns the code point (numeric value) of a one-character string")
+print("chr() function returns the one-character string for an integer code point")
+print("The above functions are useful when you need to do an ordering or mathematical operations on characters")
 
 print('#' * 99)
+import string
+for char in string.ascii_letters:
+    print(char, ord(char))
 print('#' * 99)
 print('#' * 99)
