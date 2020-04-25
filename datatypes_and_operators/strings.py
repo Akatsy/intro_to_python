@@ -269,9 +269,17 @@ print("Python".center(12, '*'))
 print("Python".center(20, '*'))
 
 print('#' * 79)
-print('#' * 79)
 
+print("Justifying text is especially useful when you want to print tabular data with even spacing and neat alignment")
 
+# a program to print tabular data using justify methods
 
-
-
+def neat_spacing(item_dict,leftlen,rightlen):
+    print("ITEMS".center(leftlen+rightlen, '='))
+    for key, value in item_dict.items():
+        print(key.ljust(rightlen, '.') + str(value).rjust(leftlen))
+    
+items = {'mercedes': 2, 'toyota': 5, 'TX': 3, 'BMW': 2}
+neat_spacing(items,12,5)
+neat_spacing(items,20,6)
+neat_spacing(items,15,30)
