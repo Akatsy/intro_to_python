@@ -249,6 +249,17 @@ print("The partition() method is useful for splitting a string whenever you need
 
 print('#' * 79)
 
+print("You can justify text in Python using ljust(), rjust() and center() methods")
+print("ljust() and rjust() return a padded version of the string they are called on. The first argument to rjust() and ljust() is an integer length of the string returned e.g calling 'hello'.rjust(10) means the returned string will be of length ten and since the string itself has a length of 5 the remaining length of 5 will be spaces added to the left of the string so the string is justified to the right")
+print("Python".ljust(12))
+print("Python".rjust(12))
+
+print('#' * 79)
+print('#' * 79)
+print('#' * 79)
+print('#' * 79)
+
+
 
 
 
