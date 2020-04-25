@@ -301,4 +301,21 @@ print('   Hello   world'.lstrip('   He'))
 print('   Hello   world'.rstrip('ld'))
 
 print('#' * 99)
+
+print("The order of the characters in the string passed to strip() does not matter - strip('map) will do the same thing as strip(pam) or strip(amp)")
+print("pamamplifieramppam".strip('amp'))
+print("pamamplifieramppam".strip('mpa'))
+print("pamamplifieramppam".strip('pam'))
+print("pamamplifieramppam".strip('map'))
+print("pamamplifieramppam".rstrip('amp'))
+print("pamamplifieramppam".rstrip('mpa'))
+print("pamamplifieramppam".rstrip('pam'))
+print("pamamplifieramppam".rstrip('map'))
+print("pamamplifieramppam".lstrip('amp'))
+print("pamamplifieramppam".lstrip('mpa'))
+print("pamamplifieramppam".lstrip('pam'))
+print("pamamplifieramppam".lstrip('map'))
+
+
+
 print('#' * 99)
