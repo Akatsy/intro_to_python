@@ -256,7 +256,9 @@ print("Python".rjust(12))
 
 print('#' * 79)
 
-print("")
+print("You can pass an optional second argument to ljust() and rjust() to change the fill character used from the default of space.")
+print("Python".ljust(12, '*'))
+print("Python".rjust(12, '*'))
 
 print('#' * 79)
 print('#' * 79)
