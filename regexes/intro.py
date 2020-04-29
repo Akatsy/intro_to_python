@@ -17,3 +17,11 @@ def is_phone_number(text):
             return False
     return True
 
+print('Is 415-555-4242 a phone number?')
+print(is_phone_number('415-555-4242'))
+print('Is Moshi moshi a phone number?')
+print(is_phone_number('Moshi moshi'))
+print('Is 000-000-0000 a phone number?')
+print(is_phone_number('000-000-0000'))
+print('Is 000-0O0-0000 a phone number?')
+print(is_phone_number('000-0O0-0000'))
