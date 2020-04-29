@@ -20,11 +20,17 @@ def print_table(list_value):
     for i in list_value:
         longest = [len(j) for j in i]
         col_width.append(max(longest))
-    print(col_width)
+    # print(col_width)
     right_width = max(col_width)
 
-    for i in list_value:
+    unzipped = zip(*list_value) # get a list of tuples each with the item at that index from each list in the list value
+    for i in unzipped:
         for j in i:
-            print(j.rjust(right_width))     
+            print(j.rjust(right_width), end='')
+        print()
+        
 
-print(print_table(table_data))
+print_table(table_data)
+# table_data = [['apples', 'oranges', 'cherries', 'banana'],['Alice', 'Bob', 'Carol', 'David'],['dogs', 'cats', 'moose', 'goose']]
+# zipped = zip(*table_data)
+# print(list(zipped))
