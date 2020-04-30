@@ -19,8 +19,11 @@ phone_num_regex = re.compile(r'\d{3}-\d{3}-\d{4}')
 print("#" * 99)
 
 print("MATCHING REGEX OBJECTS".center(66, '*'))
-
-
+print("A regex object's search method searches the string it is passed for a pattern matching the regex")
+print("search() will return the null value None if no match is found in the string")
+print("If a match is found (i.e a pattern matching the regex) then search method returns a Match Object which have a group() method that will return the actual matched text from the search string")
+mo = phone_num_regex.search('Call me at 415-555-1011 tomorrow')
+print("Phone number found:", mo.group())
 
 print("#" * 99)
 print("#" * 99)
