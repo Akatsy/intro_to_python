@@ -26,5 +26,13 @@ mo = phone_num_regex.search('Call me at 415-555-1011 tomorrow')
 print("Phone number found:", mo.group())
 
 print("#" * 99)
+
+print("steps to using regular expressions in Python".upper().center(100, '*'))
+print("1. import the regex module with >>>import re")
+print("2. Create a regex object with re.compile(). REMEMBER TO USE RAW STRINGS")
+print("3. Pass the string you want to search to the regex object's search method which returns a Match Object")
+print("4. Call the Match Object's group() method which returns a string of the actual matched text")
+
+
 print("#" * 99)
 
