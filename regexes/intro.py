@@ -105,6 +105,8 @@ print(mo1.group())
 mo2 = phone_num_regex.search("My number is 555-4242")
 print(mo2.group())
 
+print("The (group)? tells regex to match none or one occurrence of the group preceding the ? character")
+
 print("#" * 99)
 print("#" * 99)
 
