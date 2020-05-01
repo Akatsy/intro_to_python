@@ -170,6 +170,13 @@ mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
 print(mo2.group())
 
 print("#" * 99)
+
+print("the findall() method".center(99, '='))
+print("Regex objects have a findall() method in addition to the search() method. The search() method returns a Match Object which contains the first occurrence of the matched text")
+print("The findall() method on the other hand will return all occurrences of matched text as follows:")
+print("1. If the regex does not contain groups, then findall() returns a list of strings of all matched text")
+print("2. If the regex contains groups, findall() returns a list of tuples of strings. Each tuple contains strings, one for each group")
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
