@@ -134,6 +134,28 @@ print(mo == None)
 
 
 print("#" * 99)
+
+print(" matching specific repetitions with braces {} ".upper().center(99, '='))
+print("If you have a group that you want to repeat a number of times, follow that group in your regex with a number in braces e.g (Ha){3} will match the string 'HaHaHa'")
+print("Instead of a single number, you can specify a range by adding a minimum, a comma and a maximum number inside the braces e.g (Ha){3,6} will match 3, 4, 5 or 6 repetitions of the string 'Ha' ")
+print("You can leave the minimum and maximum numbers out to have unbounded minimum and maximum values e.g (Ha){3,} will match 3 or more repetitions of the string 'Ha' while (Ha){,5} will match zero to five repetitions of the pattern 'Ha' ")
+laugh_regex = re.compile(r'(Ha){3}')
+mo = laugh_regex.search("HAhaHaHaHaHaHa")
+print(mo.group())
+
+
+laugh_regex = re.compile(r'(Ha){3,7}')
+mo1 = laugh_regex.search("HAhaHaHaHaHaHaHAHaHaHaHaHaha")
+print(mo1.group())
+
+laugh_regex = re.compile(r'(Ha){2,}')
+mo2 = laugh_regex.search("HAhaHaHaHaHaHaHAHaHaHaHaHaha")
+print(mo2.group())
+
+laugh_regex = re.compile(r'(Ha){,10}')
+mo3 = laugh_regex.search("HaHaHaHaHaHaHaHAHaHaHaHaHaHaHaHaHaHaHaHaHa")
+print(mo3.group())
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
