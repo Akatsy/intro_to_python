@@ -37,9 +37,9 @@ print("4. Call the Match Object's group() method which returns a string of the a
 print("#" * 99)
 
 print("grouping with parantheses".upper().center(99, '*'))
-print("You can create groups in regexes using parantheses, then you can use the Match Object group() method to grab the specific text for a particular group")
+print("You can create groups in regexes using parantheses, then you can use the Match Object group() method to grab the matching text from a particular group")
 print("The first set of parantheses in a regex will be group 1, the second will be group 2 and so on...")
-print("Passing the integer 1 or 2 to the Match Object's group method will return either of the two different parts of the matched text. Passing 0 or nothing to the group() method will return the entire matched string")
+print("Passing the integer 1 or 2 to the Match Object's group() method will return either of the two different parts of the matched text. Passing 0 or nothing to the group() method will return the entire matched string")
 phone_num_regex = re.compile(r'(\d{3})-(\d{3}-\d{4})')
 mo = phone_num_regex.search("My number is 415-555-4242.")
 print(mo.group(1))
