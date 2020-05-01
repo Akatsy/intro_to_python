@@ -85,5 +85,20 @@ print(mo2.group())
 
 print("#" * 99)
 
+print("You can also use pipe to match one of several patterns e.g say you want to get teams with the word city at the end e.g Manchester city, Leicester city, Norwich City etc, it would be convenient if you could be able to just specify city once in the regex. That is possible by using parantheses")
+team_regex = re.compile(r'(Manchester|Leicester|Norwich|Cardiff) city')
+mo = team_regex.search("The following teams are English teams: Manchester city, Manchester United, Leicester city, Norwich city, Cardiff city")
+print(mo.group())
+print(mo.group(1))
+
+print("The call mo.group() returns the full matched text while mo.group(1) returns just the part of the matched text inside the group 1 (in paranthesis)")
+print("By using the pipe character and grouping parantheses, you can specify several alternative patterns you would like your regex to match")
+print("#" * 99)
+print("#" * 99)
+print("#" * 99)
+
+
+
+
 
 
