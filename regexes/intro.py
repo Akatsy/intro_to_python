@@ -93,7 +93,18 @@ print(mo.group(1))
 
 print("The call mo.group() returns the full matched text while mo.group(1) returns just the part of the matched text inside the group 1 (in paranthesis)")
 print("By using the pipe character and grouping parantheses, you can specify several alternative patterns you would like your regex to match")
+
 print("#" * 99)
+
+print("optional matching with the ? character".upper().center(99, '='))
+print("Sometimes, you want to match a pattern optionally e.g you might want to match a phone number with area code part being optional, i.e your regex will match a phone number with an area code and one without as well")
+phone_num_regex = re.compile(r'(\d{3}-)?\d{3}-\d{4}')
+mo1 = phone_num_regex.search("My number is 415-555-4242")
+print(mo1.group())
+
+mo2 = phone_num_regex.search("My number is 555-4242")
+print(mo2.group())
+
 print("#" * 99)
 print("#" * 99)
 
