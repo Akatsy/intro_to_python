@@ -157,6 +157,18 @@ mo3 = laugh_regex.search("HaHaHaHaHaHaHaHAHaHaHaHaHaHaHaHaHaHaHaHaHa")
 print(mo3.group())
 
 print("#" * 99)
+
+print("greedy and non-greedy matching".upper().center(99, '='))
+print("Python's Regular expressions are greedy by default, which means given an ambigous situation, they will return the longest string possible e.g r'(Ha){3,5}' will match 3,4 or 5 repetitions of the string 'Ha' so if the search string 'HaHaHaHaHa' is the search string, Match Object's group() method will return the 5 repetitions text instead of the shorter 3 or 4 repetitions which are also valid. ")
+print("The non-greedy or lazy version of the braces which matches the shortest string possible has the closing brace followed by a question mark")
+greedy_ha_regex = re.compile(r'(Ha){3,5}')
+mo1 = greedy_ha_regex.search('HaHaHaHaHa')
+print(mo1.group())
+
+non_greedy_ha_regex = re.compile(r'(Ha){3,5}?')
+mo2 = non_greedy_ha_regex.search('HaHaHaHaHa')
+print(mo2.group())
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
