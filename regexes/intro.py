@@ -108,6 +108,18 @@ print(mo2.group())
 print("The (group)? tells regex to match none or one occurrence of the group preceding the ? character")
 
 print("#" * 99)
+
+print(" matching zero or more with the * ".upper().center(99, '='))
+print("The * (star or asterisk) means 'zero or more' i.e the group preceding it can occur zero, one or more than one times e.g r'Bat(wo)?man' would match Batman (no occurrence of 'wo'), Batwoman (one occurrence of 'wo') and Batwowowowowowoman (more than one occurrence of 'wo')")
+heroRegex = re.compile(r'Bat(wo)?man')
+mo1 = heroRegex.search("Batman (no occurrence of 'wo'), Batwoman (one occurrence of 'wo') and Batwowowowowowoman (more than one occurrence of 'wo')")
+print(mo1.group())
+mo1 = heroRegex.search("Batwoman (no occurrence of 'wo'), Batwoman (one occurrence of 'wo') and Batwowowowowowoman (more than one occurrence of 'wo')")
+print(mo1.group())
+mo1 = heroRegex.search("Batwowowowowoman (no occurrence of 'wo'), Batwoman (one occurrence of 'wo') and Batwowowowowowoman (more than one occurrence of 'wo')")
+print(mo1.group())
+print(mo1.group(1))
+
 print("#" * 99)
 
 
