@@ -65,4 +65,12 @@ print(f"area code is {area_code}, main number is {main_number}")
 
 print("#" * 99)
 
+print("characters with special meaning in regular expressions and how to include them".upper().center(99,'='))
+SPECIAL_CHARACTERS = ('.', '^', '*', '+', '$', '?', '\\', '|', '{', '}', '[', ']', '(', ')')
+for char in SPECIAL_CHARACTERS:
+    print(f'Character: {char} how to include it: \{char}')
+print("#" * 99)
+print("#" * 99)
+
+
 
