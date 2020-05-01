@@ -47,6 +47,14 @@ print(mo.group(2))
 print(mo.group(0))
 print(mo.group())
 print("#" * 99)
+
+print("If you would like to retrieve all the groups at once, use the groups() method -- Note the plural form.")
+print(mo.groups())
+print("mo.groups() returns a tuple of multiple values (i.e matched text of each group). We can therefore use multiple-assignment to assign the returned values to different variables")
+area_code, main_number = mo.groups()
+print(f"area code is {area_code}, main number is {main_number}")
+
+
 print("#" * 99)
 print("#" * 99)
 
