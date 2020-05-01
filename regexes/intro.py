@@ -177,6 +177,14 @@ print("The findall() method on the other hand will return all occurrences of mat
 print("1. If the regex does not contain groups, then findall() returns a list of strings of all matched text")
 print("2. If the regex contains groups, findall() returns a list of tuples of strings. Each tuple contains strings, one for each group")
 
+phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+result = phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+print(result)
+
+phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)')
+result = phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
+print(result)
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
