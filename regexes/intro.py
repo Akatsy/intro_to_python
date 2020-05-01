@@ -69,7 +69,20 @@ print("characters with special meaning in regular expressions and how to include
 SPECIAL_CHARACTERS = ('.', '^', '*', '+', '$', '?', '\\', '|', '{', '}', '[', ']', '(', ')')
 for char in SPECIAL_CHARACTERS:
     print(f'Character: {char} how to include it: \{char}')
+
+
 print("#" * 99)
+
+print("matching multiple groups with the pipe".upper().center(99, '='))
+print("The | is the pipe character. It can be used to match one of many expressions e.g if you have r'Kenya|Nairobi' then your regex will match Kenya or Nairobi. If there is occurrence of both in the searched string, then the first matched text will be returned.")
+pipe_regex = re.compile(r'Kenya|Nairobi')
+mo1 = pipe_regex.search('The capital city of Kenya is Nairobi.')
+print(mo1.group())
+
+pipe_regex = re.compile(r'Kenya|Nairobi')
+mo2 = pipe_regex.search('Nairobi is the capital city of Kenya.')
+print(mo2.group())
+
 print("#" * 99)
 
 
