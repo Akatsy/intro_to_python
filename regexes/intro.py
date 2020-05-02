@@ -194,6 +194,8 @@ print("2. Flagging an optional group")
 print("#" * 99)
 
 print("character classes".upper().center(99, '='))
+print("Character classes are nice for shortening regexes e.g \d stands for any numeric digit from 0-9 thus is a shorthand for the regex (0|1|2|3|4|5|6|7|8|9)")
+print("The following are shorthand codes for common character classes:\n")
 SHORTHAND_CODES = {
     r'\d': 'Any numeric digit from 0-9',
     r'\D': 'Any character that is not a numeric digit from 0-9',
@@ -209,7 +211,7 @@ left_width = 5
 for code, description in SHORTHAND_CODES.items():
     print(code.ljust(left_width) + description.rjust(right_width))
 
-    
+print("\nWhile \d matches digits and \w matches any letter, digit and the underscore, there is no shorthand character class that matches letters only. (though you can use the character class [a-zA-Z])")  
 
     
 
