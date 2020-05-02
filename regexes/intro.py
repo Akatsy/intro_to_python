@@ -219,7 +219,15 @@ sample_regex = re.compile(r'\d+\s\w+')
 matched = sample_regex.findall("12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge tring built from groups 1, 3, 5, and 8 of the matched text")
 print(matched)
 
+
 print("#" * 99)
+
+print("creating character classes".upper().center(99, '='))
+print("Using square brackets, we can create our own character classes when the existing ones are too broad for the pattern we want to define")
+vowel_regex = re.compile(r'[aeiouAEIOU]')
+matches = vowel_regex.findall("The quick brown fox jumped over the lazy dog. Those Quick brown foxes Jumped over those lazy DOGS")
+print(matches)
+
 print("#" * 99)
 print("#" * 99)
 
