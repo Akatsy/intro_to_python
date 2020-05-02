@@ -186,6 +186,11 @@ result = phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
 print(result)
 
 print("#" * 99)
+
+print("The ? character can have two meanings in regexes, which are completely unrelated:")
+print("1. Declaring a non-greedy (lazy) match")
+print("2. Flagging an optional group")
+
 print("#" * 99)
 print("#" * 99)
 
