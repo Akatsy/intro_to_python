@@ -237,6 +237,15 @@ print(matched_list)
 
 print("#" * 99)
 
+print("You can make a negative character class by placing a caret symbol (^) after the character class' opening square bracket")
+print("A negative character class will match all characters that are not in the character class")
+consonants_regex = re.compile(r'[^aeiouAEIOU\s\W\d]')
+matched = consonants_regex.findall("This with keyword allows you to open a file, do operations on it, and automatically close it after the indented code is executed, in this case, reading from the file.")
+print(matched)
+
+print("#" * 99)
+print("#" * 99)
+
 
 
 
