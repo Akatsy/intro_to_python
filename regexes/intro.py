@@ -213,8 +213,14 @@ for code, description in SHORTHAND_CODES.items():
 
 print("\nWhile \d matches digits and \w matches any letter, digit and the underscore, there is no shorthand character class that matches letters only. (though you can use the character class [a-zA-Z])")  
 
-    
+print("#" * 99)
 
+sample_regex = re.compile(r'\d+\s\w+')
+matched = sample_regex.findall("12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge tring built from groups 1, 3, 5, and 8 of the matched text")
+print(matched)
+
+print("#" * 99)
+print("#" * 99)
 print("#" * 99)
 
 
