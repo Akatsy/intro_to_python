@@ -244,6 +244,9 @@ matched = consonants_regex.findall("This with keyword allows you to open a file,
 print(matched)
 
 print("#" * 99)
+
+print("note that inside the square brackets, the normal special symbols / characters are not interpreted as such meaning you do not have to escape them e.g [0-5.] would match any digit from 0 to 5 and the period character (.) you do not need to escape it like [0-5\.]")
+
 print("#" * 99)
 
 
