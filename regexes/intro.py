@@ -229,6 +229,12 @@ matches = vowel_regex.findall("The quick brown fox jumped over the lazy dog. Tho
 print(matches)
 
 print("#" * 99)
+
+print("We can define a range of characters using the hyphen e.g a character class like [a-zA-Z0-9] would match all letters both lowercase and uppercase from a to z and digits from 0 to 9")
+letters_regex = re.compile(r'[a-zA-Z]')
+matched_list = letters_regex.findall('This with keyword allows you to open a file, do operations on it, and automatically close it after the indented code is executed, in this case, reading from the file.')
+print(matched_list)
+
 print("#" * 99)
 
 
