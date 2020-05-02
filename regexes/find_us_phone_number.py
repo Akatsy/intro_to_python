@@ -49,8 +49,8 @@ def phone_number_finder(text):
     phone_num_regex = re.compile(r'\d{3}-\d{3}-\d{4}')
     numbers = phone_num_regex.findall(text)
     print("Phone numbers found".upper())
-    for idx, number in enumerate(numbers):
-        print(idx+1, number)
+    for idx, number in enumerate(numbers, 1):
+        print(idx, number)
 
 
 phone_number_finder('Call me at 415-555-1011 tomorrow. 415-555-9999 is my office.')
