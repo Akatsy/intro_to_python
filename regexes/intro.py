@@ -192,6 +192,27 @@ print("1. Declaring a non-greedy (lazy) match")
 print("2. Flagging an optional group")
 
 print("#" * 99)
+
+print("character classes".upper().center(99, '='))
+SHORTHAND_CODES = {
+    r'\d': 'Any numeric digit from 0-9',
+    r'\D': 'Any character that is not a numeric digit from 0-9',
+    r'\w': 'Any letter, numeric digit or the underscore character',
+    r'\W': 'Any character that is not a letter, numeric digit or the underscore character',
+    r'\s': 'Any whitespace character i.e space, tab or newline',
+    r'\S': 'Any character that is not a whitespace character'
+}
+
+sorted_values = sorted(list(SHORTHAND_CODES.values()))
+right_width = len(sorted_values)
+left_width = 5
+for code, description in SHORTHAND_CODES.items():
+    print(code.ljust(left_width) + description.rjust(right_width))
+
+    
+
+    
+
 print("#" * 99)
 
 
