@@ -275,6 +275,8 @@ print("#" * 99)
 print(" the wildcard character (.) ".upper().center(99, '='))
 print("The period (.) is a wildcard character in regexes and will match any character except the newline character")
 print("The dot character (period) will match only one character. To match an actual period you will have to escape with a backslash")
+end_with_at_regex = re.compile(r'.at')
+print(end_with_at_regex.findall("cat is rat but bat ain't flat are you fat big braat"))
 
 print("#" * 99)
 print("#" * 99)
