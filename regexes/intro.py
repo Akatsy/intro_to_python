@@ -299,6 +299,11 @@ print("To match anything and everything in a non-greedy mode, use the dot, star 
 greedy_regex = re.compile(r'<.*>')
 mo = greedy_regex.search("<p class=\"main\"><em>lorem ipsum</em></p>")
 print(mo.group())
+
+non_greedy_regex = re.compile(r'<.*?>')
+mo = non_greedy_regex.search("<p class=\"main\"><em>lorem ipsum</em></p>")
+print(mo.group())
+
 print("#" * 99)
 
 
