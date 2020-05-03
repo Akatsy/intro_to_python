@@ -335,8 +335,19 @@ print("\\D, \\W, \\S matches anything except a digit, word or space characters r
 print("[abc] matches any character between the brackets i.e a,b or c\n")
 print("[^abc] matches any character that is not between the brackets\n")
 
+print("#" * 99)
 
+print("case-insensitive matching".upper().center(99, '='))
+print("Normally, regexes match text with the exact casing you specify. Sometimes however, you might want to match text without worrying whether they are uppercase or lowercase")
+print("To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as your second parameter to re.compile()")
+ignore_case_regex = re.compile(r'python',re.IGNORECASE)
+print(ignore_case_regex.findall("Python pYthon, python, PYThon, PytHON"))
 
+ignore_case_regex = re.compile(r'python',re.I)
+print(ignore_case_regex.findall("Python pYthon, python, PYThon, PytHON"))
+
+print("#" * 99)
+print("#" * 99)
 print("#" * 99)
 
 
