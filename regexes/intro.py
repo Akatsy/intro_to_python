@@ -306,6 +306,15 @@ print(mo.group())
 
 print("#" * 99)
 
+print("matching newline character with dot-character".upper().center(99, '='))
+print("the dot-character (.) matches any character except the newline character. By passing re.DOTALL as the second argument to re.compile(), you can make the dot-character match all characters including the newline")
+
+
+
+
+print("#" * 99)
+print("#" * 99)
+
 
 
 
