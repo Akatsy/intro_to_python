@@ -271,6 +271,11 @@ print(begins_ends_with_number.search("123 45676435"))
 print("the entire string must match the regex if ^ and $ are used")
 
 print("#" * 99)
+
+print(" the wildcard character (.) ".upper().center(99, '='))
+print("The period (.) is a wildcard character in regexes and will match any character except the newline character")
+print("The dot character (period) will match only one character. To match an actual period you will have to escape with a backslash")
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
