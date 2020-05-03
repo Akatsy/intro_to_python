@@ -316,9 +316,27 @@ newline_regex = re.compile('.*', re.DOTALL)
 mo = newline_regex.search("YOLO\nCarpe Diem\nThe world is your oyster.")
 print(mo.group())
 
-
-
 print("#" * 99)
+
+print("Regex symbols cheatsheet".upper().center(99, '='))
+print("The ? matches zero or one of the preceding group\n")
+print("The * matches zero or more of the preceding group\n")
+print("The + matches one or one of the preceding group\n")
+print("The {n} matches exactly n of the preceding group\n")
+print("The {n,} matches n or more of the preceding group\n")
+print("The {,m} matches 0 to m of the preceding group\n")
+print("The {n,m} matches at least n and at most m of the preceding group\n")
+print("{n,m}?, *?, +? performs a non-greedy search of the preceding group\n")
+print("^spam means the searched string must begin with spam\n")
+print("spam$ means the searched string must end with spam\n")
+print("The . matches any character except the newline character\n")
+print("\\d, \\w, \\s matches a digit, word and space characters respectively\n")
+print("\\D, \\W, \\S matches anything except a digit, word or space characters respectively\n")
+print("[abc] matches any character between the brackets i.e a,b or c\n")
+print("[^abc] matches any character that is not between the brackets\n")
+
+
+
 print("#" * 99)
 
 
