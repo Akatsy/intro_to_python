@@ -263,6 +263,12 @@ print(ends_with_fullstop.search("Be consistent!"))
 print("#" * 99)
 
 print("You can use both to indicate that the entire string must match the pattern i.e it is not just enough that some subset of the string matches the pattern")
+begins_ends_with_number = re.compile(r'^\d+$')
+print(begins_ends_with_number.search("12345676435"))
+print(begins_ends_with_number.search("12345abc435"))
+print(begins_ends_with_number.search("123 45676435"))
+
+print("the entire string must match the regex if ^ and $ are used")
 
 print("#" * 99)
 print("#" * 99)
