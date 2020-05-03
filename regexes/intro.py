@@ -278,6 +278,10 @@ print("The dot character (period) will match only one character. To match an act
 end_with_at_regex = re.compile(r'.at')
 print(end_with_at_regex.findall("cat is rat but bat ain't flat are you fat big braat"))
 
+# a four letter word starting with a ending with s
+word_regex = re.compile(r'a..s')
+print(word_regex.findall("glass bass asss class floss boss ares aire args argv abs"))
+
 print("#" * 99)
 print("#" * 99)
 print("#" * 99)
