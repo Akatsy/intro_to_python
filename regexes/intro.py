@@ -252,6 +252,8 @@ print("#" * 99)
 print("the caret (^) and dollar sign ($) in regexes".upper().center(99, '='))
 print("You can place the caret symbol (^) at the beginning of a regex to indicate that a match must occur at the begining of the searched text")
 print("Conversely, you can place a dollar sign ($) at the end of a regex to indicate that the searched text must end with that pattern")
+begins_with_consonant = re.compile(r'^[^aeiouAEIOU]')
+print(begins_with_consonant.search("The quick brown fox jumped over the lazy dog"))
 
 print("#" * 99)
 print("#" * 99)
