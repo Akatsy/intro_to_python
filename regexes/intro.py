@@ -286,6 +286,11 @@ print("#" * 99)
 
 print(" matching everything with dot-star (.*) ".upper().center(99, '='))
 print("Remember dot-character (.) means any character except the newline character and star-character (*) means zero or more of the preceding character. Therefore we can combine both to get the dot-star character which will match anything and everything")
+name_regex = re.compile(r'First Name:(.*)Last Name:(.*)')
+mo = name_regex.search("First Name: Mutwiri Last Name: Mwenda")
+print(mo.group())
+print(mo.group(1))
+print(mo.group(2))
 
 print("#" * 99)
 print("#" * 99)
