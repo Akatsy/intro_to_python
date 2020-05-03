@@ -283,6 +283,10 @@ word_regex = re.compile(r'a..s')
 print(word_regex.findall("glass bass asss class floss boss ares aire args argv abs"))
 
 print("#" * 99)
+
+print(" matching everything with dot-star (.*) ".upper().center(99, '='))
+print("Remember dot-character (.) means any character except the newline character and star-character (*) means zero or more of the preceding character. Therefore we can combine both to get the dot-star character which will match anything and everything")
+
 print("#" * 99)
 print("#" * 99)
 
