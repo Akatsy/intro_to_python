@@ -308,7 +308,13 @@ print("#" * 99)
 
 print("matching newline character with dot-character".upper().center(99, '='))
 print("the dot-character (.) matches any character except the newline character. By passing re.DOTALL as the second argument to re.compile(), you can make the dot-character match all characters including the newline")
+non_newline_regex = re.compile('.*')
+mo = non_newline_regex.search("YOLO\nCarpe Diem\nThe world is your oyster.")
+print(mo.group())
 
+newline_regex = re.compile('.*', re.DOTALL)
+mo = newline_regex.search("YOLO\nCarpe Diem\nThe world is your oyster.")
+print(mo.group())
 
 
 
