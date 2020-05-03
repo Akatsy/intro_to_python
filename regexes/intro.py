@@ -293,6 +293,12 @@ print(mo.group(1))
 print(mo.group(2))
 
 print("#" * 99)
+
+print("dot-star uses greedy mode by default i.e it will always try to match as much text as possible.")
+print("To match anything and everything in a non-greedy mode, use the dot, star and question mark.")
+greedy_regex = re.compile(r'<.*>')
+mo = greedy_regex.search("<p class=\"main\"><em>lorem ipsum</em></p>")
+print(mo.group())
 print("#" * 99)
 
 
