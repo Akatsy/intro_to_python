@@ -347,6 +347,14 @@ ignore_case_regex = re.compile(r'python',re.I)
 print(ignore_case_regex.findall("Python pYthon, python, PYThon, PytHON"))
 
 print("#" * 99)
+
+print("substituting strings with the sub() method".upper().center(99, '='))
+print("Regexes can not only find string pattern matches but can substitute those string matches. The regex object's sub() method is used to substitute string matches to the regex")
+print("sub() method is passed two arguments. The first is the string to be substituted for every match and the second is the search string for the regular expression")
+print("sub() returns a string with the substitution applied")
+secret_agents_regex = re.compile(r'Agent \w+', re.I)
+print(secret_agents_regex.sub('Censored', 'Agent Sameen fell in love with agent Root, Agent Reese fell in love with Agent Carter'))
+
 print("#" * 99)
 print("#" * 99)
 
