@@ -356,6 +356,12 @@ secret_agents_regex = re.compile(r'Agent \w+', re.I)
 print(secret_agents_regex.sub('Censored', 'Agent Sameen fell in love with agent Root, Agent Reese fell in love with Agent Carter'))
 
 print("#" * 99)
+
+print("Sometimes, you might want to use the matched text itself as part of the substitution.")
+print("In the first argument of sub i.e the replacement text, you can use \\1, \\2, \\3 and so on to mean that use the text in group 1, group 2, group 3 and so on of the matched text in the substitution")
+secret_agent_regex = re.compile(r'(Agent) (\w)\w*', re.IGNORECASE)
+censored_text = secret_agent_regex.sub(r'\1 \2****', 'Agent Sameen fell in love with agent Root, Agent Reese fell in love with Agent Carter')
+print(censored_text)
 print("#" * 99)
 
 
