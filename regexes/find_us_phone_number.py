@@ -48,7 +48,7 @@ def phone_number_finder(text):
     import re
     phone_num_regex = re.compile(r'\d{3}-\d{3}-\d{4}')
     numbers = phone_num_regex.findall(text)
-    print("Phone numbers found".upper())
+    print("Phone numbers found:".upper())
     for idx, number in enumerate(numbers, 1):
         print(idx, number)
 
