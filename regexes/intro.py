@@ -369,7 +369,15 @@ print("managing complex regexes".upper().center(99, '='))
 print("Sometimes matching complicated text patterns might require long complicated regexes")
 print("You can use the 'verbose method' to define this text patterns in a legible way. The verbose method tells the re.compile() function to ignore whitespaces and comments inside the regex string")
 print("Pass re.VERBOSE variable as the second argument to re.compile() to enable the verbose method")
-phone_regex = 
+phone_regex = re.compile(r'''(
+    (\d{3}|\(\d{3}\))? # area code
+    (\s|-|\.)? # separator
+    \d{3} # first 3 digits
+    (\s|-|\.) # separator
+    \d{4} # last 4 digits
+    (\s*(ext|x|ext.)\s*\d{2,5})?
+)''', re.VERBOSE)
+print(phone_regex.findall("For example, here’s a US-based number in standard local formatting: (415) 555-2671 Here’s the same phone number in E.164 formatting: +14155552671 For example, here’s a UK-based number in standard local formatting: 020 7183 8750"))
 
 print("#" * 99)
 print("#" * 99)
