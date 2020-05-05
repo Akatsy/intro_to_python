@@ -362,9 +362,18 @@ print("In the first argument of sub i.e the replacement text, you can use \\1, \
 secret_agent_regex = re.compile(r'(Agent) (\w)\w*', re.IGNORECASE)
 censored_text = secret_agent_regex.sub(r'\1 \2****', 'Agent Sameen fell in love with agent Root, Agent Reese fell in love with Agent Carter')
 print(censored_text)
+
 print("#" * 99)
 
+print("managing complex regexes".upper().center(99, '='))
+print("Sometimes matching complicated text patterns might require long complicated regexes")
+print("You can use the 'verbose method' to define this text patterns in a legible way. The verbose method tells the re.compile() function to ignore whitespaces and comments inside the regex string")
+print("Pass re.VERBOSE variable as the second argument to re.compile() to enable the verbose method")
+phone_regex = 
 
+print("#" * 99)
+print("#" * 99)
+print("#" * 99)
 
 
 
