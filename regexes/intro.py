@@ -380,6 +380,13 @@ phone_regex = re.compile(r'''(
 print(phone_regex.findall("For example, here’s a US-based number in standard local formatting: (415) 555-2671 Here’s the same phone number in E.164 formatting: +14155552671 For example, here’s a UK-based number in standard local formatting: 020 7183 8750"))
 
 print("#" * 99)
+
+print("Suppose you want to ignore case in your regex and also want the dot-character to match the newline character? You would have to pass two arguments to re.compile() i.e re.IGNORECASE and re.DOTALL.")
+print("Unfortunately, re.compile() only takes one value as the second argument")
+print("To mitigate this issue, as a workaround, you can use the pipe (|) character to add more than one value as the second argument to re.compile() In this context, the pipe character is used as the 'bitwise or operator' Using the 3 most common values at once would be as follows")
+print("a_regex_value = re.compile('foo', re.IGNORECASE|re.DOTALL|re.VERBOSE)")
+# a_regex_value = re.compile('foo', re.IGNORECASE|re.DOTALL|re.VERBOSE)
+
 print("#" * 99)
 print("#" * 99)
 
