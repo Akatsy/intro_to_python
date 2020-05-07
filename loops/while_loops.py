@@ -3,7 +3,7 @@
 print("The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true")
 print("It is normally used when we do not know the number of times to iterate beforehand")
 print('#' * 79)
-print("The format / how to define a while loop is as follows:\n\nwhile test_expression:\n\tbody_of_the_loop")
+print("The format / how to define a while loop is as follows:\n\nwhile test_expression:\n\tbody_of_the_loop\n")
 print("We begin with the keyword 'while' to signal that it is a while loop")
 print("Following the while keyword is a test_expression that is evaluated to a boolean value")
 print("A colon (:) marks the end of the while statement")
@@ -23,7 +23,7 @@ number = 10 # number to find factorial of. change to any value
 used = number
 factorial = 1 # result of the factorial
 
-while number >= 1:
+while number > 1:
     factorial *= number
     number -= 1
 print("The factorial of {} is {}".format(used,factorial))
