@@ -5,7 +5,7 @@ print('#' * 99)
 print("The zip()function returns an iterator of tuples based on the iterable objects")
 print("If we do not pass any parameter, zip() returns an empty iterator")
 print("If a single iterable is passed, zip() returns an iterator of tuples with each tuple having only one element")
-print("If multiple iterables are passed, zip() returns an iterator of tuples with each tuple having elements from all the iterables")
+print("If multiple iterables are passed, zip() returns an iterator of tuples with each tuple having elements from all the iterables from that position")
 print('#' * 99)
 
 print("Suppose, two iterables are passed to zip(); one iterable containing three and other containing five elements. Then, the returned iterator will contain three tuples. It's because iterator stops when the shortest iterable is exhausted.")
@@ -21,14 +21,14 @@ for object in zip(letters, numbers):
     print(object[0], object[1])
 
 print('#' * 99)
-print("You can also unpack each tuple and print the elements out as follows:\n{}".format("for letter, number in zip(letters, numbers):\n\tprint(letter, number)"))
+print("You can also unpack each tuple (tuple-unpacking or multiple variable assignment) and print the elements out as follows:\n{}".format("for letter, number in zip(letters, numbers):\n\tprint(letter, number)"))
 for letter, number in zip(letters, numbers):
     print(letter, number)
 
 print('#' * 99)
 manifest = [("bananas", 15), ("mattresses", 24), ("dog kennels", 42), ("machine", 120), ("cheeses", 5)]
 print("The zip function can also be used to unzip a list into tuples")
-print("for example, if given the following list; manifest = [(\"bananas\", 15), (\"mattresses\", 24), (\"dog kennels\", 42), (\"machine\", 120), (\"cheeses\", 5)], we can use zip to unzip the list into tuples using items, weights = zip(*manifest) to get the reult below")
+print("for example, if given the following list;\n manifest = [(\"bananas\", 15), (\"mattresses\", 24), (\"dog kennels\", 42), (\"machine\", 120), (\"cheeses\", 5)]\n, we can use zip to unzip the list into tuples using\n items, weights = zip(*manifest)\n to get the result below")
 items, weights = zip(*manifest)
 print(items, weights)
 
