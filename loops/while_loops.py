@@ -84,3 +84,10 @@ while (num+1)**2 < limit:
     num += 1
 nearest_square = num**2
 print(nearest_square)
+
+print('#' * 99)
+
+print("Requirements to consider adding into a while loop".upper().center(99, '='))
+print("1. A condition expression that will be accessed and when met will allow you to exit the loop (i.e a way to exit the loop'")
+print("2. Make sure the loop is advancing - The value of the condition variable is changing with each iteration of the loop")
+print('#' * 99)
