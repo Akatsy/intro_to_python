@@ -18,6 +18,8 @@ print('#' * 99)
 print("After the body of a for loop has executed, we do not move on to the next line yet (i.e the line after the indented block). Rather, program execution goes back to the for statement where the iteration variable takes on the value of the next element from the iterator and the body is executed again.")
 print("This process repeats until the for loop has iterated over all the elements of the iterable. Then now program execution moves on to the line after the indented block of code (body of the loop)")
 print('#' * 99)
+print("The naming convention for iteration variables and iterables is to use the same name where the iteration variable is in the singular form and the iterable is in plural form e.g 'for city in cities:'")
+
 print('#' * 99)
 
 print("The range() function is a useful function when dealing with loops\nIt generates an iterable sequence of numbers")
