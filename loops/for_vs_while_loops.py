@@ -7,6 +7,7 @@ print('#' * 79)
 print("while loop is used when you want to iterate until a condition is met e.g")
 print("1. when you want to use a comparison operator e.g while i <= 10:")
 print("2. when you want to iterate based on a user's input e.g while user_input == 'y':")
+print("3. A while loop can also be used to create an infinite (never ending) loop using the condition while True:")
 print('#' * 99)
 #PRACTICE
 # Question: What type of loop should we use?
