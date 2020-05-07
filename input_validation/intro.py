@@ -1,0 +1,5 @@
+print("Input validation checks that values entered by the user in your program are formatted correctly")
+print("This helps in avoiding bugs, making sure your programs do not crash later on due to invalid values for example if you ask a user for their age, you expect a number (digit value) - an integer to be precise which should not be negative ofcourse. If a user input does not adhere to the above rules, you should prompt them to re-enter the value again")
+print('#' * 99)
+print('#' * 99)
+print('#' * 99)
