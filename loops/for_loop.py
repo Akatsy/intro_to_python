@@ -22,7 +22,8 @@ print("The naming convention for iteration variables and iterables is to use the
 
 print('#' * 99)
 
-print("The range() function is a useful function when dealing with loops\nIt generates an iterable sequence of numbers")
+print("The range() function is a useful function when dealing with loops\nIt generates an iterable  immutable sequence of numbers")
+print("range() returns an object that produces a sequence of integers from start (inclusive) to stop (exclusive)")
 print("The range() function has three arguments, all of which must be integers as follows and of which the first and third are optional - range(start, stop, step)")
 print("Start indicates which number the sequence starts from, the default is 0")
 print("Stop is one number higher than the last number in the sequence- this argument is mandatory")
