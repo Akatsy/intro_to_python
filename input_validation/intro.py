@@ -133,3 +133,9 @@ block_odd_numbers = pyip.inputNum(prompt="Enter a number\n", blockRegexes=[r'[13
 print(block_odd_numbers)
 
 print('#' * 99)
+
+print("If you pass both a allowRegexes and blockRegexes argument, the allow overrides the block incase of any conflict")
+allow_overrides = pyip.inputStr(prompt="enter any word\n", allowRegexes=[r'catastrophe', r'caterpillar'], blockRegexes=[r'cat'])
+print(allow_overrides)
+
+print('#' * 99)
