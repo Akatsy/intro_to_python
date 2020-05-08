@@ -99,7 +99,21 @@ optional_input = pyip.inputStr(limit=3, default='No input entered')
 print(optional_input)
 # blank input allowed
 optional_input = pyip.inputStr(prompt='>>>', blank=True)
-print(optional_input)
+print(type(optional_input))
 
 print('#' * 99)
+
+print("The limit, timeout and default kwargs".center(99, '='))
+print("limit keyword argument is passed an integer to determine how many seconds a PyInputPlus function will make to receive a valid input before giving up")
+print("timeout keyword argument is passed an integer to determine how many seconds a PyInputPlus function will wait to receive a valid input before giving up")
+print("If the user fails to enter a valid input before limit and timeout are reached, PyInputPlus will raise a RetryLimitException and TimeoutException respectively")
+print("Pass a default keyword argument to be returned by the functions instead when limit and timeout is reached instead of an exception being raised")
+
+print('#' * 99)
+
+timeout_input = pyip.inputPassword(prompt="Enter Password\n", timeout=3, default="Wrong Password")
+print(timeout_input)
+
+limit_input = pyip.inputPassword(prompt="Enter Password\n", limit=3, default="No input")
+print(timeout_input)
 print('#' * 99)
