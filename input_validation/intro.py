@@ -82,4 +82,11 @@ print("3. lessThan - the input value cannot be less than the lessThan argument (
 print("4. greaterThan - the input value cannot be greater than the greaterThan argument (and cannot be equal to it.)")
 
 print('#' * 99)
+# max and min
+user_int = pyip.inputInt(prompt="Enter an integer\n", max=100, min=-50)
+print(f"Number entered is {user_int}")
+# lessThan and greaterThan
+user_float = pyip.inputFloat(prompt="Enter a number with a decimal point\n", greaterThan=10.0, lessThan=50)
+print(f"Number entered is {user_float}")
+
 print('#' * 99)
