@@ -115,7 +115,7 @@ timeout_input = pyip.inputPassword(prompt="Enter Password\n", timeout=3, default
 print(timeout_input)
 
 limit_input = pyip.inputPassword(prompt="Enter Password\n", limit=3, default="No input")
-print(timeout_input)
+print(limit_input)
 
 print('#' * 99)
 print("allowRegexes and blockRegexes keyword arguments".center(99,'='))
@@ -123,5 +123,9 @@ print("You can use regular expressions to specify whether an input is allowed or
 print("allowRegexes and blockRegexes keyword arguments take a list of regular expression strings to determine what the PyInputPlus will accept or decline as valid input")
 
 print('#' * 99)
+
+# allowRegexes
+allow_roman_numerals = pyip.inputNum(prompt="Enter a number\n", allowRegexes=[r'(i|v|x|l|m|c|d)+'])
+print(allow_roman_numerals)
 
 print('#' * 99)
