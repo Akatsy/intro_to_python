@@ -4,7 +4,7 @@ print("This helps in avoiding bugs, making sure your programs do not crash later
 print('#' * 99)
 
 print("Input validation also can help avoid security vulnerabilities")
-print("For example say you were implementing a withdraw_from_account() function and the user had to input the amount they want to withdraw. You have to make sure that the user does not enter a negative amount because subtracting a negative amount from the account would end up actually adding.Therefore, the 'withdrawal' would end up adding money to the account instead of subtracting")
+print("For example say you were implementing a withdraw_from_account() function and the user had to input the amount they want to withdraw. You have to make sure that the user does not enter a negative amount because subtracting a negative amount from the account would end up actually adding. Therefore, the 'withdrawal' would end up adding money to the account instead of subtracting")
 
 print('#' * 99)
 
@@ -57,5 +57,9 @@ import pprint
 print(pprint.pformat(pyip_functions))
 
 print('#' * 99)
+print("Here are some PyInputFunctions and what they do".center(99, '='))
+for function, definition in pyip_functions.items():
+    print(function)
+    print(definition)
 
 print('#' * 99)
