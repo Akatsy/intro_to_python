@@ -9,22 +9,22 @@ print("For example say you were implementing a withdraw_from_account() function 
 print('#' * 99)
 
 # input validation example
-# while True:
-#     age = input("Enter your age:\n")
-#     try:
-#         age = int(age)
-#     except:
-#         print("Please input a number in digits")
-#         continue
-#     if age < 1:
-#         print("Age cannot be negative. Input a positive number")
-#         continue
-#     elif age > 150:
-#         print("You cannot be that old. Come on!!")
-#         continue
-#     else:
-#         break
-# print(f'Hey {age} years old human!')
+while True:
+    age = input("Enter your age:\n")
+    try:
+        age = int(age)
+    except:
+        print("Please input a number in digits")
+        continue
+    if age < 1:
+        print("Age cannot be negative. Input a positive number")
+        continue
+    elif age > 150:
+        print("You cannot be that old. Come on!!")
+        continue
+    else:
+        break
+print(f'Hey {age} years old human!')
 
 print('#' * 99)
 
@@ -57,9 +57,18 @@ import pprint
 print(pprint.pformat(pyip_functions))
 
 print('#' * 99)
+
 print("Here are some PyInputFunctions and what they do".center(99, '='))
 for function, definition in pyip_functions.items():
     print(function)
     print(definition)
+
+print('#' * 99)
+
+# example of PyInputPlus in action
+import pyinputplus as pyip
+
+response = pyip.inputNum("Enter a number\n")
+print(f"Number entered is {response} and is of type {type(response)}")
 
 print('#' * 99)
