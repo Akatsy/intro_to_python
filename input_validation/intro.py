@@ -90,3 +90,16 @@ user_float = pyip.inputFloat(prompt="Enter a number with a decimal point\n", gre
 print(f"Number entered is {user_float}")
 
 print('#' * 99)
+
+print("The blank kwarg".center(99, '='))
+print("By default, blank argument is not allowed unless blank kwarg is set to True")
+print("Use blank=True if you would like the input to be optional and the user does not have to enter a value")
+# no blank input allowed
+optional_input = pyip.inputStr(limit=3, default='No input entered')
+print(optional_input)
+# blank input allowed
+optional_input = pyip.inputStr(prompt='>>>', blank=True)
+print(optional_input)
+
+print('#' * 99)
+print('#' * 99)
