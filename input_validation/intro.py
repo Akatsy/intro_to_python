@@ -72,3 +72,14 @@ response = pyip.inputNum("Enter a number\n")
 print(f"Number entered is {response} and is of type {type(response)}")
 
 print('#' * 99)
+
+print("The min, max, lessThan and greaterThan kwargs".center(99, '='))
+print("The inputNum(), inputInt() and inputFloat() functions which accept int and float numbers have min, max, lessThan and greaterThan keyword arguments which specify a range of valid input values")
+print("They are optional but if specified they have the following effect:")
+print("1. min - the input value cannot be less than the min argument (but can be equal to it.)")
+print("2. max - the input value cannot be greater than the max argument (but can be equal to it.)")
+print("3. lessThan - the input value cannot be less than the lessThan argument (and cannot be equal to it.)")
+print("4. greaterThan - the input value cannot be greater than the greaterThan argument (and cannot be equal to it.)")
+
+print('#' * 99)
+print('#' * 99)
