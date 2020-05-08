@@ -128,4 +128,8 @@ print('#' * 99)
 allow_roman_numerals = pyip.inputNum(prompt="Enter a number\n", allowRegexes=[r'(i|v|x|l|m|c|d)+'])
 print(allow_roman_numerals)
 
+# blockRegexes
+block_odd_numbers = pyip.inputNum(prompt="Enter a number\n", blockRegexes=[r'[13579]$'])
+print(block_odd_numbers)
+
 print('#' * 99)
