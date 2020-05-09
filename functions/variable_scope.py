@@ -1,6 +1,6 @@
 print("Variable scope is which part of a program a variable can be referenced (used)")
 print("Scope is like a container for variables")
-print("There are two types of variable scope:\n\t1. local scope\n\t2.global scope")
+print("There are two types of variable scope:\n\t1. local scope\n\t2. global scope")
 print("Parameters and Variables defined (assigned) within a function are said to have a scope that is local. Using or accessing a variable with a local scope outside the function it is defined in is not possible")
 print('#' * 99)
 print("A variable defined outside all functions is said to have a global scope.")
@@ -42,8 +42,6 @@ print("Local scopes cannot use local variables in other local scopes".upper())
 print("A new local scope is created whenever a function is called even if the function is called within another function / from another function")
 print("Consider the following block of code and what is printed after it executes")
 print()
-print("30 is printed out after the code executes. Why??")
-print("Program execution begins at the function call spam() which creates a new local scope and causes program execution to enter the spam function and begin execution at the first line in the body which assigns 30 to the local variable eggs. The next line is a call to the bacon function which creates a new local scope and program execution immediately moves into the bacon function where it assigns 60 to a new local variable eggs which is different from the one in the spam function. The function is one line so after that line it exits (finishes) and thus its local scope and all variables in it is destroyed and program execution moves to the next line after the bacon() function call which instructs it to print the value of the variable eggs. We are still within the spam's local scope, so the variable eggs of that scope is what is printed which is 30 and once done the program is finished so it exits and the scope is destroyed together with any variables in it")
 print("def spam():\n\teggs = 30\n\tbacon()\n\tprint(eggs)\ndef bacon():\n\teggs = 60\nspam()")
 def spam():
     eggs = 30
@@ -53,6 +51,10 @@ def bacon():
     eggs = 60
 
 spam()
+print()
+print("30 is printed out after the code executes. Why??")
+print("Program execution begins at the function call spam() which creates a new local scope and causes program execution to enter the spam function and begin execution at the first line in the body which assigns 30 to the local variable eggs. The next line is a call to the bacon function which creates a new local scope and program execution immediately moves into the bacon function where it assigns 60 to a new local variable eggs which is different from the one in the spam function. The function is one line so after that line it exits (finishes) and thus its local scope and all variables in it is destroyed and program execution moves to the next line after the bacon() function call which instructs it to print the value of the variable eggs. We are still within the spam's local scope, so the variable eggs of that scope is what is printed which is 30 and once done the program is finished so it exits and the scope is destroyed together with any variables in it")
+
 
 print('#' * 99)
 print("Global values can be read (accessed) from local scope".upper())
