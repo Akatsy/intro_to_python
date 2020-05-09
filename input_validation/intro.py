@@ -151,3 +151,17 @@ print("5. Be passed as the first argument to inputCustom()")
 print("Note that the function call looks like inputCustom(name_of_custom_function) and not inputCustom(name_of_custom_function()) because you are passing the function itself to inputCustom() and not calling the custom function and passing the return value to inputCustom()")
 
 print('#' * 99)
+
+# custom validation function 
+def add_up_to_ten(numbers):
+    numbers_list = list(numbers)
+    for i, digit in enumerate(numbers_list):
+        numbers_list[i] = int(digit)
+    if sum(numbers_list) != 10:
+        raise Exception("The sum of the numbers should be equal to {} not {}".format(10, sum(numbers_list)))
+    return(int(numbers))
+
+response = pyip.inputCustom(add_up_to_ten, prompt="Enter numbers adding up to ten\n")
+print(response)
+
+print('#' * 99)
