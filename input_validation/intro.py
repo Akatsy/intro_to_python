@@ -139,3 +139,15 @@ allow_overrides = pyip.inputStr(prompt="enter any word\n", allowRegexes=[r'catas
 print(allow_overrides)
 
 print('#' * 99)
+
+print("Passing a custom validation function to inputCustom()".center(99,'='))
+print("You can write a function that performs some custom validation logic not provided by the functions in PyInputPlus by passing the function to inputCustom()")
+print("Your function should:")
+print("1. Accept a string argument of what your user entered")
+print("2. Raise an exception if the string fails validation")
+print("3. Returns None (or has no return statement) if inputCustom should return the string unchanged")
+print("4. Returns a non-None value if inputCustom() should return a different string from the one the user entered")
+print("5. Be passed as the first argument to inputCustom()")
+print("Note that the function call looks like inputCustom(name_of_custom_function) and not inputCustom(name_of_custom_function()) because you are passing the function itself to inputCustom() and not calling the custom function and passing the return value to inputCustom()")
+
+print('#' * 99)
