@@ -165,3 +165,7 @@ response = pyip.inputCustom(add_up_to_ten, prompt="Enter numbers adding up to te
 print(response)
 
 print('#' * 99)
+
+print("Writing your own custom validation function is useful when it is otherwise impossible to write a regex for valid input")
+
+print('#' * 99)
