@@ -5,7 +5,21 @@ print('#' * 99)
 print("Apart from using descriptive names for functions, we can also add documentation to help other programmers and our future selves understand what a funtion does")
 print("DOCSTRINGS (documentation strings) are a type of comments that describe the purpose of a function and how to use it.")
 print('#' * 99)
-print("DOCSTRINGs are wrapped using triple quotes(\"\"\")")
+
+print("A docstring is a string literal that occurs as the first statement in a module, function, class, or method definition. Such a docstring becomes the __doc__ special attribute of that object")
+print("All modules should normally have docstrings, and all functions and classes exported by a module should also have docstrings. Public methods (including the __init__ constructor) should also have docstrings. A package may be documented in the module docstring of the __init__.py file in the package directory.")
+
+print("String literals occurring elsewhere in Python code may also act as documentation. They are not recognized by the Python bytecode compiler and are not accessible as runtime object attributes (i.e. not assigned to __doc__), but two types of extra docstrings may be extracted by software tools:")
+
+print('1. String literals occurring immediately after a simple assignment at the top level of a module, class, or __init__ method are called "attribute docstrings".')
+print('2. String literals occurring immediately after another docstring are called "additional docstrings"')
+
+print('#' * 99)
+
+print('For consistency, always use """triple double quotes""" around docstrings. Use r"""raw triple double quotes""" if you use any backslashes in your docstrings. For Unicode docstrings, use u"""Unicode triple-quoted strings""".')
+
+print('#' * 99)
+
 print("The first line of a docstring gives a brief description of what the function does. This is enough if the function is not that complicated")
 print('#' * 99)
 print("If the function is a little complicated, you can include a paragraph to further describe the function")
@@ -63,4 +77,4 @@ def readable_timedelta(days):
     return "Given {} days that translates to {} week(s) and {} day(s)".format(days, weeks, remainder)
 
 print(readable_timedelta(366))
-help(readable_timedelta)
+# help(readable_timedelta)
