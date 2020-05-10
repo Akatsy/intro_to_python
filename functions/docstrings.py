@@ -99,7 +99,7 @@ print('#' * 99)
 # Given an integer that represents a number of days, write a function that returns a string that states the number of weeks and number of days for example if days = 10, it should return 1 week(s) and 3 day(s)
 
 def readable_timedelta(days):
-    """ a function to calculate number of weeks and days given a number of days
+    """ calculate number of weeks and days given a number of days
         INPUT:
         days: int. a number representing the number of days
         OUTPUT:
