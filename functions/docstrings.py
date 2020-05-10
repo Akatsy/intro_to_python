@@ -20,6 +20,18 @@ print('For consistency, always use """triple double quotes""" around docstrings.
 
 print('#' * 99)
 
+print("There are two forms of docstrings: one-liners and multi-line docstrings.")
+print("One-liners are for really obvious cases. They should really fit on one line")
+print("Notes for one-liners:")
+print("1. Triple quotes are used even though the string fits on one line. This makes it easy to later expand it")
+print("2. The closing quotes are on the same line as the opening quotes. This looks better for one-liners")
+print("3. There's no blank line either before or after the docstring")
+print('4. The docstring is a phrase ending in a period. It prescribes the function or method\'s effect as a command ("Do this", "Return that"), not as a description; e.g. don\'t write "Returns the pathname ...".')
+
+print('#' * 99)
+print('#' * 99)
+
+
 print("The first line of a docstring gives a brief description of what the function does. This is enough if the function is not that complicated")
 print('#' * 99)
 print("If the function is a little complicated, you can include a paragraph to further describe the function")
