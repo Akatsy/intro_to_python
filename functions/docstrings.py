@@ -55,6 +55,21 @@ If a class subclasses another class and its behavior is mostly inherited from th
 
 print('#' * 99)
 
+print("Here is Google's docstring format:")
+print('''This is an example of Google style.
+
+Args:
+    param1: This is the first param.
+    param2: This is a second param.
+
+Returns:
+    This is a description of what is returned.
+
+Raises:
+    KeyError: Raises an exception.
+''')
+
+print('#' * 99)
 
 
 print("The first line of a docstring gives a brief description of what the function does. This is enough if the function is not that complicated")
