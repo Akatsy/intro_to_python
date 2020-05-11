@@ -42,6 +42,11 @@ print('' * 99)
 print("The Path() function in the pathlib module when passed string values of individual file and folder names in a path will return a string with a file path using the correct path separators")
 from pathlib import Path
 print(Path('Desktop', 'Programs', 'hello.py'))
+print(str(Path('Desktop', 'Programs', 'hello.py')))
 print(type(Path('Desktop', 'Programs', 'hello.py')))
+
+print("Calling Path() on Windows returns a WindowsPath object while Linux returns a PosixPath object (Posix is a set of standards for Unix-like operating systems.)")
+print("You can pass the object returned to the str() function to get a simple text string of the path")
+print("By using the statement 'from pathlib import Path' we avoid having to call pathlib.Path everywhere Path appears in our code")
 
 print('' * 99)
