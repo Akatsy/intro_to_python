@@ -131,6 +131,7 @@ print(r'''
     In the code above, os.makedirs() would create all the folders and subfolders if they did not exist to make sure that full path exists
 ''')
 
-os.makedirs('/home/mutwiri2/Desktop/does/this/work?')
+os.makedirs('/home/mutwiri2/Desktop/does/this/work?') 
+# os.removedirs('/home/mutwiri2/Desktop/does/this/work?') - uncomment to remove the above created folders
 
 print('' * 99)
