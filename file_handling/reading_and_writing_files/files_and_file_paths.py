@@ -26,3 +26,10 @@ print('' * 99)
 print("On Linux and MacOs, path begins from / (root folder) as shown above")
 
 print('' * 99)
+
+print("Additional volumes like USB flash drives will appear differently on various OS")
+print(r"Windows - Appear as new lettered root drives e.g D:\ or F:\ ")
+print(r"MacOs - Appear as new folders under the /Volumes folder")
+print(r"Linux - Appear as new folders under the /mnt ('mount') folder")
+
+print('' * 99)
