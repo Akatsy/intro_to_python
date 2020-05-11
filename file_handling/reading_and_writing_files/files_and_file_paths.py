@@ -62,3 +62,8 @@ print("On Windows, the backslash is used as a separator for directories thus it 
 print("For this reason, it is usually a good idea to use forward slashes in your Python code and the pathlib module will ensure that it always works on all operating systems")
 
 print('' * 99)
+
+print("The / operator normally used for division can be used to combine Path objects and strings")
+print("The pathlib module solves the problem of joining paths easily on all operating systems by simply using the '/' operator without having to write a large amount of code to handle all exceptions that might be raised if we were to use other string operations like the append (+) operator or the join() method to join paths")
+
+print('' * 99)
