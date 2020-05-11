@@ -114,9 +114,23 @@ print('''
     ii. Relative path - Relative to the program's current working directory
 
     Additionally, there are two other folders - the dot (.) and dot-dot (..) folders which are not real folders but specified names that can be used in file paths
-    dot (.) - means 'this directory' and is optional to be added before a path
+    dot (.) - means 'this directory' and is optional to be added before a relative path
     dot-dot (..) - means the "parent directory i.e the directory inside which that path is in"
 
 ''')
+
+print('' * 99)
+
+print(r'''
+    Your program can create new folders (directories) using the os.makedirs() function
+    os.makedirs() will create any neccessary intermediate folders in order to ensure that the full path exists
+    e.g 
+    >>> import os
+    >>> os.makedirs(r'C:\\img\\backgrounds\\img.jpg')
+
+    In the code above, os.makedirs() would create all the folders and subfolders if they did not exist to make sure that full path exists
+''')
+
+os.makedirs('/home/mutwiri2/Desktop/does/this/work?')
 
 print('' * 99)
