@@ -50,3 +50,10 @@ print("You can pass the object returned to the str() function to get a simple te
 print("By using the statement 'from pathlib import Path' we avoid having to call pathlib.Path everywhere Path appears in our code")
 
 print('' * 99)
+
+print("Path objects are passed to file-related functions e.g below is a code snippet to join names from a list to the end of a folder's name:")
+file_list = ['index.html', 'index.css', 'img/img1.jpg']
+for filename in file_list:
+    print(Path(r'/home/mutwiri2/Desktop/webpage', filename))
+
+print('' * 99)
