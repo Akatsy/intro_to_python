@@ -64,6 +64,13 @@ print("For this reason, it is usually a good idea to use forward slashes in your
 print('' * 99)
 
 print("The / operator normally used for division can be used to combine Path objects and strings")
-print("The pathlib module solves the problem of joining paths easily on all operating systems by simply using the '/' operator without having to write a large amount of code to handle all exceptions that might be raised if we were to use other string operations like the append (+) operator or the join() method to join paths")
+print("The pathlib module solves the problem of joining paths correctly on all operating systems your code is running on by simply using the '/' operator without having to write a large amount of code to handle all exceptions that might be raised if we were to use other string operations like the append (+) operator or the join() method to join paths")
+
+print('' * 99)
+
+print("When using the / operator for joining paths, one of the first two values must be a Path object")
+print("Python evaluates the / operator from left to right and evaluates to a Path object so either the first or second leftmost value must be a Path object for the entire expression to evaluate to a Path object")
+print("If you get a TypeError: unsupported operand type(s) for /: 'str' and 'str' it means you have not put a Path object on the left side of the operator")
+print("The / operator replaces the older os.path.join() function")
 
 print('' * 99)
