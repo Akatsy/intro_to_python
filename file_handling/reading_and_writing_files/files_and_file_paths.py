@@ -57,3 +57,8 @@ for filename in file_list:
     print(Path(r'/home/mutwiri2/Desktop/webpage', filename))
 
 print('' * 99)
+
+print("On Windows, the backslash is used as a separator for directories thus it cannot be used on a filename. On Linux and MacOs, however the backslash can be used in a filename")
+print("For this reason, it is usually a good idea to use forward slashes in your Python code and the pathlib module will ensure that it always works on all operating systems")
+
+print('' * 99)
