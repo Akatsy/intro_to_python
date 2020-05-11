@@ -92,4 +92,18 @@ print('' * 99)
 print("Python will display an error if you try to change to a directory that does not exist")
 print("There is no pathlib function to change the cwd because changing the cwd while a program is running can lead to subtle bugs")
 print("os.getcwd() is the older way of getting the cwd as a string")
+
+print('' * 99)
+
+print("All users have a folder for their own files on the computer called the home directory / home folder. The home folders are located in a set place depending on the OS")
+print(r'''
+    Windows - C:\Users
+    MacOs - /Users
+    Linux - /home
+''')
+
+print("You can get a Path object for the home folder by calling Path.home()")
+print(Path.home())
+print("home folder is an ideal place to keep the files that your Python programs will be working with as your scripts will have permission to read and write the files under your home directory")
+
 print('' * 99)
