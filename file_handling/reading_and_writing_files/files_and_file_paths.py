@@ -107,3 +107,16 @@ print(Path.home())
 print("home folder is an ideal place to keep the files that your Python programs will be working with as your scripts will have permission to read and write the files under your home directory")
 
 print('' * 99)
+
+print('''
+    There are two ways to specify a path:
+    i. Absolute path - Always begins at the root folder
+    ii. Relative path - Relative to the program's current working directory
+
+    Additionally, there are two other folders - the dot (.) and dot-dot (..) folders which are not real folders but specified names that can be used in file paths
+    dot (.) - means 'this directory' and is optional to be added before a path
+    dot-dot (..) - means the "parent directory i.e the directory inside which that path is in"
+
+''')
+
+print('' * 99)
