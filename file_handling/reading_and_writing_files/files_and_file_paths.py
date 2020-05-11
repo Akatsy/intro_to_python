@@ -88,3 +88,8 @@ print(Path.cwd())
 
 
 print('' * 99)
+
+print("Python will display an error if you try to change to a directory that does not exist")
+print("There is no pathlib function to change the cwd because changing the cwd while a program is running can lead to subtle bugs")
+print("os.getcwd() is the older way of getting the cwd as a string")
+print('' * 99)
