@@ -16,6 +16,10 @@ print(r"Windows - C:\Users\mutwiri-2\Desktop\programs\hello.py")
 print(r"Linux - /home/mutwiri-2/Desktop/programs/hello.py")
 print(r"MacOs - /Users/mutwiri-2/Desktop/programs/hello.py")
 
+print('' * 99)
+
+print(r"On Windows, the path begins from C:\ which is called the root folder i.e the folder that contains all other folders.")
+print("Users, mutwiri-2, Desktop and programs are all folders (or directories) and hello.py is the name of the file. That means hello.py is a file located inside the programs folder which is itself located inside the Desktop folder located inside mutwiri-2 folder which is located inside the Users folder which is then located in the root folder.")
 
 print('' * 99)
 
