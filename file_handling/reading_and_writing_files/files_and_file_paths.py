@@ -23,3 +23,6 @@ print("Users, mutwiri-2, Desktop and programs are all folders (or directories) a
 
 print('' * 99)
 
+print("On Linux and MacOs, path begins from / (root folder) as shown above")
+
+print('' * 99)
