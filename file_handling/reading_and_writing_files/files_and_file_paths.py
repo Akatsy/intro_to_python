@@ -126,12 +126,20 @@ print(r'''
     os.makedirs() will create any neccessary intermediate folders in order to ensure that the full path exists
     e.g 
     >>> import os
-    >>> os.makedirs(r'C:\\img\\backgrounds\\img.jpg')
+    >>> os.makedirs('C:\\img\\backgrounds\\img.jpg')
 
     In the code above, os.makedirs() would create all the folders and subfolders if they did not exist to make sure that full path exists
 ''')
 
-os.makedirs('/home/mutwiri2/Desktop/does/this/work?') 
-# os.removedirs('/home/mutwiri2/Desktop/does/this/work?') - uncomment to remove the above created folders
+# os.makedirs('/home/mutwiri2/Desktop/does/this/work?') # uncomment to make directories
+# os.removedirs('/home/mutwiri2/Desktop/does/this/work?')  # uncomment to remove the above created folders
+
+print('' * 99)
+
+print(r'''
+    To make a directory from a Path object, call the mkdir() method
+    >>> from pathlib import Path
+    >>> Path(r'C:\Users\')
+''')
 
 print('' * 99)
