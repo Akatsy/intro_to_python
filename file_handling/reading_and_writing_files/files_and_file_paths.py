@@ -77,5 +77,14 @@ print('' * 99)
 
 print("Every program that runs on your computer has a current working directory and any filenames or paths that do not begin with the root folder are assumed to be under the current working directory")
 print("You can get the cwd as a string value  with the Path.cwd() function and you can change it using the os.chdir() function")
+print(Path.cwd())
+import os
+os.chdir('/home/mutwiri2/Desktop')
+print(Path.cwd())
+os.chdir('/home/mutwiri2')
+print(Path.cwd())
+os.chdir('/home/mutwiri2/Desktop/intro_to_python')
+print(Path.cwd())
+
 
 print('' * 99)
