@@ -149,3 +149,10 @@ print(r'''
 
 
 print('' * 99)
+
+print("Calling the is_absolute() method on a Path object will return True if it represents an absolute path or False if it represents a relative path")
+print(Path.cwd().is_absolute())
+print(Path('webpage/img').is_absolute())
+
+
+print('' * 99)
