@@ -74,3 +74,8 @@ print("If you get a TypeError: unsupported operand type(s) for /: 'str' and 'str
 print("The / operator replaces the older os.path.join() function")
 
 print('' * 99)
+
+print("Every program that runs on your computer has a current working directory and any filenames or paths that do not begin with the root folder are assumed to be under the current working directory")
+print("You can get the cwd as a string value  with the Path.cwd() function and you can change it using the os.chdir() function")
+
+print('' * 99)
