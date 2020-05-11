@@ -33,3 +33,15 @@ print(r"MacOs - Appear as new folders under the /Volumes folder")
 print(r"Linux - Appear as new folders under the /mnt ('mount') folder")
 
 print('' * 99)
+
+print("Windows paths are written using backslashes as the separator between folders names. Linux and MacOs use forward slashes as the path separator between folder names")
+print("For your program to work on all operating systems, write your Python scripts to handle both cases")
+
+print('' * 99)
+
+print("The Path() function in the pathlib module when passed string values of individual file and folder names in a path will return a string with a file path using the correct path separators")
+from pathlib import Path
+print(Path('Desktop', 'Programs', 'hello.py'))
+print(type(Path('Desktop', 'Programs', 'hello.py')))
+
+print('' * 99)
