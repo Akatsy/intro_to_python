@@ -9,5 +9,13 @@ print("1. filename - this is the name of the file (usually written as one word) 
 print("2. path - This specifies the location of a file on the computer")
 
 print('' * 99)
+
+print("Operating systems differ on how they handle filenames and paths as shown below:")
+print("This is a file named hello.py located on the Desktop of different OS under a folder called programs")
+print(r"Windows - C:\Users\mutwiri-2\Desktop\programs\hello.py")
+print(r"Linux - /home/mutwiri-2/Desktop/programs/hello.py")
+print(r"MacOs - /Users/mutwiri-2/Desktop/programs/hello.py")
+
+
 print('' * 99)
 
