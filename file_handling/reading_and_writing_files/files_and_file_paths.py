@@ -165,4 +165,18 @@ WindowsPath('my/relative/path')
 WindowsPath('C:/Users/mutwiri2/AppData/Local/Programs/Python/Python37/my/relative/path')
 ''')
 
+print(Path.cwd() / Path("my/relative/path"))
+
+print('' * 99)
+
+print(r'''
+To get an absolute path from a relative path that is not thw cwd, you can put that path infront of the relative path e.g to get an absolute path from the home directory:
+>>>Path('my/relative/path')
+WindowsPath('my/relative/path')
+>>>Path.home()/Path('my/relative/path')
+WindowsPath('C:/Users/mutwiri2/my/relative/path')
+''')
+
+print(Path.home() / Path("my/relative/path"))
+
 print('' * 99)
