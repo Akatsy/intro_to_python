@@ -196,3 +196,10 @@ print(os.path.abspath('.'))
 print(os.path.isabs(os.path.abspath(',')))
 
 print('' * 99)
+
+print(os.path.relpath("/home/mutwiri2"))
+print(os.path.relpath("/home/mutwiri2", "/etc/pwd"))
+
+print("\nWhen the relative path is within the same parent folder as the path, but is within subfolders of a different path, such as 'C:\\Windows' and 'C:\\spam\\eggs', you can use the “dot-dot” notation to return to the parent folder")
+
+print('' * 99)
