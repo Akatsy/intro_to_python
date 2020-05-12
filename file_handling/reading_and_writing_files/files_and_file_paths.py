@@ -180,3 +180,13 @@ WindowsPath('C:/Users/mutwiri2/my/relative/path')
 print(Path.home() / Path("my/relative/path"))
 
 print('' * 99)
+
+print(r'''
+The os.path module has useful functions when it comes to relative and absolute paths
+    1. Calling os.path.abspath(path) will return a string of the absolute path of the argument. This is an easy way to convert a relative path into an absolute one
+    2. Calling os.path.isabs(path) will return True if the argument is an absolute path and False if it is a relative path.
+    3. Calling os.path.relpath(path, start) will return a string of a relative path from the start path to path. If start is not provided, the current working directory is used as the start path.
+
+''')
+
+print('' * 99)
