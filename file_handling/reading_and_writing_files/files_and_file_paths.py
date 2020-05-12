@@ -190,3 +190,9 @@ The os.path module has useful functions when it comes to relative and absolute p
 ''')
 
 print('' * 99)
+
+print(os.path.isabs('.'))
+print(os.path.abspath('.'))
+print(os.path.isabs(os.path.abspath(',')))
+
+print('' * 99)
