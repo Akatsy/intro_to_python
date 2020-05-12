@@ -156,3 +156,13 @@ print(Path('webpage/img').is_absolute())
 
 
 print('' * 99)
+
+print(r'''
+To get an absolute path from a relative path, you can put 'Path.cwd()/' infront of the relative path since when we say 'relative path' we almost always mean a path that is relative to the current working directory
+>>>Path('my/relative/path')
+WindowsPath('my/relative/path')
+>>>Path.cwd()/Path('my/relative/path')
+WindowsPath('C:/Users/mutwiri2/AppData/Local/Programs/Python/Python37/my/relative/path')
+''')
+
+print('' * 99)
