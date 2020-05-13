@@ -209,7 +209,7 @@ Given a Path object, you can extract the file path's different parts as strings 
 The parts of a file path include:
 1. the anchor - This is the root folder of the file system
 2. the drive (on Windows OS only) - The single letter that often denotes a physical HDD or other storage device - (does not include the first backslash)
-3. the parent - the folder that contains the file
+3. the parent - the folder that contains the file - evaluates to a Path object not a string like the other attributes
 4. the name of the file - made up of; stem (or base name) and the suffix (or extension)
 
 To extract each attribute from the file path:
