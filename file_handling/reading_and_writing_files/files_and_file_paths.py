@@ -238,5 +238,14 @@ print(p.parent) # folder that contains the file
 print(p.name) # name of the file
 print(p.stem) # base name
 print(p.suffix) # extension
+print()
+p = Path.cwd()/ Path('file_handling/if')
+print(p)
+print(p.anchor) # root folder of the system
+print(p.parent) # folder that contains the file
+print(p.name) # name of the file
+print(p.stem) # base name
+print(p.suffix) # extension
+print(type(p.suffix)) # empty suffix
 
 print('' * 99)
