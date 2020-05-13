@@ -203,3 +203,14 @@ print(os.path.relpath("/home/mutwiri2", "/etc/pwd"))
 print("\nWhen the relative path is within the same parent folder as the path, but is within subfolders of a different path, such as 'C:\\Windows' and 'C:\\spam\\eggs', you can use the “dot-dot” notation to return to the parent folder")
 
 print('' * 99)
+
+print(r'''
+Given a Path object, you can extract the file path's different parts as strings using several Path object attrinbutes
+The parts of a file path include:
+1. the anchor - This is the root folder of the file system
+2. the drive (on Windows OS only) - The single letter that often denotes a physical HDD or other storage device - (does not include the first backslash)
+3. the parent - the folder that contains the file
+4. the name of the file - made up of; stem (or base name) and the suffix (or extension)
+''')
+
+print('' * 99)
