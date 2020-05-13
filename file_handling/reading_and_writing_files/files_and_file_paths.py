@@ -211,6 +211,21 @@ The parts of a file path include:
 2. the drive (on Windows OS only) - The single letter that often denotes a physical HDD or other storage device - (does not include the first backslash)
 3. the parent - the folder that contains the file
 4. the name of the file - made up of; stem (or base name) and the suffix (or extension)
+
+To extract each attribute from the file path:
+>>>p = Path('C:/Users/mutwiri2/spam.txt')
+>>>p.anchor
+'C:\\'
+>>>p.parent
+'WindowsPath('C:/Users/mutwiri2) # This is a path object not a string
+>>>p.name
+'spam.txt'
+>>>p.stem
+'spam'
+>>p.suffix
+'.txt'
+>>>p.drive
+'C:'
 ''')
 
 print('' * 99)
