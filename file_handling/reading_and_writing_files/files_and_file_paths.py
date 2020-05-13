@@ -249,3 +249,16 @@ print(p.suffix) # extension
 print(type(p.suffix)) # empty suffix
 
 print('' * 99)
+
+print("The parents attribute which is different from the parent attribute evaluates to the ancestor folders of a Path object with an integer index")
+p = Path.cwd()
+print(p)
+print(p.parents[0])
+print(p.parents[1])
+print(p.parents[2])
+print(p.parents[3])
+# print(p.parents[4]) - gives an index error if there is no ancestor
+
+
+
+print('' * 99)
