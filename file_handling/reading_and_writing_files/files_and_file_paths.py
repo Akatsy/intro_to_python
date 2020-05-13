@@ -229,3 +229,14 @@ To extract each attribute from the file path:
 ''')
 
 print('' * 99)
+
+# parts of a file path on Linux
+p = Path.cwd()/ Path('file_handling/reading_and_writing_files/files_and_file_paths.py')
+print(p)
+print(p.anchor) # root folder of the system
+print(p.parent) # folder that contains the file
+print(p.name) # name of the file
+print(p.stem) # base name
+print(p.suffix) # extension
+
+print('' * 99)
