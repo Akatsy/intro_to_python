@@ -348,3 +348,20 @@ calling p.is_dir() returns True if the path exists and is a directory / folder, 
 ''')
 
 print('' * 99)
+
+does_not_exist = Path('/does/not/exist')
+print(does_not_exist.exists())
+print(does_not_exist.is_file())
+print(does_not_exist.is_dir())
+
+dir_exists = Path('/bin')
+print(dir_exists.exists())
+print(dir_exists.is_dir())
+print(dir_exists.is_file())
+
+file_exists = Path('/bin/bash')
+print(file_exists.exists())
+print(file_exists.is_dir())
+print(file_exists.is_file())
+
+print('' * 99)
