@@ -304,4 +304,13 @@ os.listdir(path) returns a list of filename strings for each file in the path ar
 ''')
 print(os.path.getsize('/bin/bash'))
 print(os.listdir('/bin'))
+
+print('' * 99)
+
+# get the total size of files in a folder
+total_size = 0
+for filename in os.listdir('/bin'):
+    total_size += os.path.getsize(os.path.join('/bin', filename))
+print(total_size)
+
 print('' * 99)
