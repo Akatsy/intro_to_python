@@ -293,5 +293,6 @@ os.sep variable is set to the correct folder-separating slash for the Operating 
 >>>example_path.split(os.sep)
 ['C:', 'Windows', 'System32', 'calc.exe']
 ''')
-
+print("In Linux and Mac, the returned list from split() will begin with a blank string")
+print(example_path.split(os.sep))
 print('' * 99)
