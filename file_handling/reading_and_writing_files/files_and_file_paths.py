@@ -316,3 +316,15 @@ for filename in os.listdir('/bin'):
 print("total size is ", total_size)
 
 print('' * 99)
+
+print(r'''
+Path objects have a glob() method for listing the contents of a folder according to a glob pattern
+glob patterns are like a simplified form of regular expressions often used in command-line commands
+The glob() method returns a generator object that you need to pass to list() to easily view in the console window
+'*' - stands for multiple of any characters
+'?' - matches only one character
+By picking out files with specific attributes the glob() method lets you easily specify the files in a directory you want to perform an action on
+'*' 
+''')
+
+print('' * 99)
