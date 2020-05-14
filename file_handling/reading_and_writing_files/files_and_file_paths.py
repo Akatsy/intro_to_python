@@ -259,6 +259,16 @@ print(p.parents[2])
 print(p.parents[3])
 # print(p.parents[4]) - gives an index error if there is no ancestor
 
+print('' * 99)
 
+print(r'''
+os.path.dirname(path) returns a string of everything that comes before the last slash in the path argument
+os.path.basename(path) returns a string of everything that comes after the last slash in the path argument
+>>>example_path = 'C:\\Windows\\System32\calc.exe
+>>>os.path.dirname(example_path)
+'C:\\Windows\\System32'
+>>>os.path.basename(example_path)
+'calc.exe'
+''')
 
 print('' * 99)
