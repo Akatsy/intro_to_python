@@ -338,3 +338,13 @@ print('' * 99)
 print("If you want to perform some operation on every file in a directory, you can use either os.listdir(p) or p.glob('*')")
 
 print('' * 99)
+
+print("Path objects have methods to check whether a given path exists and whether it is a file or folder")
+print(r'''
+Assuming variable p contains a Path object, then:
+calling p.exists() returns True if the path exists or returns False if it doesn't
+calling p.is_file() returns True if the path exists and is a file, otherwise returns False
+calling p.is_dir() returns True if the path exists and is a directory / folder, otherwise returns False
+''')
+
+print('' * 99)
