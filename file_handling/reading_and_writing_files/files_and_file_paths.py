@@ -295,4 +295,13 @@ os.sep variable is set to the correct folder-separating slash for the Operating 
 ''')
 print("In Linux and Mac, the returned list from split() will begin with a blank string")
 print(example_path.split(os.sep))
+
+print('' * 99)
+
+print(r'''
+os.path.getsize(path) returns the size in bytes of the files in the path argument
+os.listdir(path) returns a list of filename strings for each file in the path argument
+''')
+print(os.path.getsize('/bin/bash'))
+print(os.listdir('/bin'))
 print('' * 99)
