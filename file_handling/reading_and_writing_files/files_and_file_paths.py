@@ -271,4 +271,9 @@ os.path.basename(path) returns a string of everything that comes after the last 
 'calc.exe'
 ''')
 
+example_path = '/etc/python3/debian_config'
+print(os.path.dirname(example_path))
+print(os.path.basename(example_path))
+print(type(os.path.dirname(example_path)))
+
 print('' * 99)
