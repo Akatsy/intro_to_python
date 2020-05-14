@@ -286,3 +286,12 @@ If you need both the os.path.dirname and os.path.basename, you can call os.path.
 print(os.path.split(example_path))
 
 print('' * 99)
+
+print(r'''
+To get all the parts of a path as a string, use the split() string method and split on the string in os.sep
+os.sep variable is set to the correct folder-separating slash for the Operating system your code is running on - i.e '\\' for Windows and '/' for MacOs and Linux
+>>>example_path.split(os.sep)
+['C:', 'Windows', 'System32', 'calc.exe']
+''')
+
+print('' * 99)
