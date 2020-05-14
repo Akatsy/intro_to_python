@@ -277,3 +277,12 @@ print(os.path.basename(example_path))
 print(type(os.path.dirname(example_path)))
 
 print('' * 99)
+
+print(r'''
+If you need both the os.path.dirname and os.path.basename, you can call os.path.split() which returns a tuple of strings with the dir name and base name of the path passed as argument
+>>>os.path.split('example_path')
+('C:\\Windows\\System32', 'calc.exe')
+''')
+print(os.path.split(example_path))
+
+print('' * 99)
