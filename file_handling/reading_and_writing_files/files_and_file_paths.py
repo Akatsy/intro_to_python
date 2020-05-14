@@ -334,3 +334,7 @@ for pythonFileObj in p.glob('*.py'):
     print(pythonFileObj)
 
 print('' * 99)
+
+print("If you want to perform some operation on every file in a directory, you can use either os.listdir(p) or p.glob('*')")
+
+print('' * 99)
