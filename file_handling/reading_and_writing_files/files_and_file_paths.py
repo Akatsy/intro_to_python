@@ -373,3 +373,22 @@ You can determine whether there is a dvd or flash drive currently attached to th
 ''')
 
 print('' * 99)
+
+print(r'''
+The older os.path module can accomplish the same with the following methods:
+>>>os.path.exists(path)
+>>>os.path.isfile(path)
+>>>os.path.isdir(path)
+
+As of Python 3.6, these functions can accept Path objects as well as strings of the file paths
+''')
+
+print(os.path.exists(does_not_exist))
+print(os.path.exists(file_exists))
+print(os.path.isfile(file_exists))
+print(os.path.isdir(file_exists))
+print(os.path.isfile(file_exists))
+print(os.path.isdir(dir_exists))
+print(os.path.isfile(dir_exists))
+
+print('' * 99)
