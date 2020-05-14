@@ -328,3 +328,9 @@ By picking out files with specific attributes the glob() method lets you easily 
 ''')
 
 print('' * 99)
+
+p = Path('/home/mutwiri2/Desktop/intro_to_python/datatypes_and_operators')
+for pythonFileObj in p.glob('*.py'):
+    print(pythonFileObj)
+
+print('' * 99)
