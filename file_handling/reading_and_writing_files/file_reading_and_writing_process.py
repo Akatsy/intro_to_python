@@ -18,3 +18,14 @@ written_count = p.write_text('Hello, World!')
 print(written_count)
 content = p.read_text()
 print(content)
+
+print('#' * 99)
+
+print(r'''
+The more common way of file reading and writing process involves the following steps:
+1. call the open() function to return a File object
+2. call the read() or write() method on the file object
+3. close the file by calling the close() method on the File object
+''')
+
+print('#' * 99)
