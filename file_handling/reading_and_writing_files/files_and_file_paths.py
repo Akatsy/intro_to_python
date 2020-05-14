@@ -365,3 +365,11 @@ print(file_exists.is_dir())
 print(file_exists.is_file())
 
 print('' * 99)
+
+print(r'''
+You can determine whether there is a dvd or flash drive currently attached to the computer using the exists() method on the path of the folder where it is normally loaded e.g for Windows:
+>>>d_drive = Path('D:/)
+>>>d_drive.exists()
+''')
+
+print('' * 99)
