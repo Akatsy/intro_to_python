@@ -28,8 +28,12 @@ Once we have opened a file and created a file object, we can use the read method
 
 print('#' * 99)
 
+print("Always remember to close files that you have opened once you no longer need them because if you open a lot of files without closing them, you can run out of file handles and you will not be able to open any new files")
+print("Exactly how many files you can open before running out of handles will depend on your OS")
 
-# f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
-# f_text = f.read()
-# f.close()
-# print(f_text)
+print('#' * 99)
+# example of reading information from a file
+f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
+f_text = f.read()
+f.close()
+print(f_text)
