@@ -78,5 +78,16 @@ f_text = f.read()
 f.close()
 print(f_text)
 
+print('#' * 99)
+
+print(r'''
+Python provides a special syntax that autocloses a file for you because it is easy to forget to close a file once you have operated on it
+The with keyword allows you to open a file, do operations on it and automatically close it after the indented code is executed
+>>>with open('some_file.txt', 'r') as f:
+        file_data = f.read()
+    print(file_data)
+
+Once you have left the indented block of code, the file is closed and you are not able to interact with it. However, the data we had read into the variable file_data is not lost and can be accessed outside the with block
+''')
 
 print('#' * 99)
