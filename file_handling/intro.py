@@ -32,6 +32,11 @@ print("Always remember to close files that you have opened once you no longer ne
 print("Exactly how many files you can open before running out of handles will depend on your OS")
 
 print('#' * 99)
+
+print("The file is a long stream of characters and the file object can look at only one character at a time")
+
+print('#' * 99)
+
 # example of reading information from a file
 f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
 f_text = f.read()
