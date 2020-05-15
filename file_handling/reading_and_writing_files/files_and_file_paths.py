@@ -272,6 +272,7 @@ os.path.basename(path) returns a string of everything that comes after the last 
 ''')
 
 example_path = '/etc/python3/debian_config'
+print(example_path)
 print(os.path.dirname(example_path))
 print(os.path.basename(example_path))
 print(type(os.path.dirname(example_path)))
@@ -288,7 +289,7 @@ print(os.path.split(example_path))
 print('' * 99)
 
 print(r'''
-To get all the parts of a path as a string, use the split() string method and split on the string in os.sep
+To get all the parts of a path as a string, use the split() string method and split on the string using os.sep as the separator argument
 os.sep variable is set to the correct folder-separating slash for the Operating system your code is running on - i.e '\\' for Windows and '/' for MacOs and Linux
 >>>example_path.split(os.sep)
 ['C:', 'Windows', 'System32', 'calc.exe']
