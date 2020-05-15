@@ -42,3 +42,26 @@ f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
 f_text = f.read()
 f.close()
 print(f_text)
+
+print('#' * 99)
+
+print(r'''
+You can also write to a file in which case, you change the contents of a file. To write to a file, take the following steps:
+1. open the file in write ('w') mode
+>>>f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/some_file.txt', 'w')
+NOTE: IF THE FILE DOES NOT EXIST PYTHON WILL CREATE IT FOR YOU.
+    BE CAREFUL BECAUSE WHEN YOU OPEN A FILE IN WRITE MODE, ANYTHING CONTAINED PREVIOUSLY WILL BE DELETED.
+    IF YOU JUST WANT TO ADD TO AN EXISTING FILE, USE THE append ('a') MODE INSTEAD OF write ('w')
+>>>f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/some_file.txt', 'a')
+
+2. Once you have opened the file, you can use the write() method to add content to it
+>>>f.write('Content added to file')
+or append to it if in append mode
+>>>f.write('Content appended to file')
+
+3. Finally, always remember to close the file with close() method
+>>>f.close()
+    
+''')
+
+print('#' * 99)
