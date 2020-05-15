@@ -193,7 +193,7 @@ print('' * 99)
 
 print(os.path.isabs('.'))
 print(os.path.abspath('.'))
-print(os.path.isabs(os.path.abspath(',')))
+print(os.path.isabs(os.path.abspath('.')))
 
 print('' * 99)
 
@@ -205,7 +205,7 @@ print("\nWhen the relative path is within the same parent folder as the path, bu
 print('' * 99)
 
 print(r'''
-Given a Path object, you can extract the file path's different parts as strings using several Path object attrinbutes
+Given a Path object, you can extract the file path's different parts as strings using several Path object attributes
 The parts of a file path include:
 1. the anchor - This is the root folder of the file system
 2. the drive (on Windows OS only) - The single letter that often denotes a physical HDD or other storage device - (does not include the first backslash)
