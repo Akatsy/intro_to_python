@@ -22,7 +22,7 @@ print("3. IndexError: An exception that occurs when a sequence subscript is out 
 print("4. AssertionError: An exception that occurs when an assert statement fails")
 print("5. KeyError: An exception that occurs when a key does not exist in a dictionary")
 print('#' * 99)
-print("When we use the except keyword only in the except clause, it catches all exceptions that may be raised including KeyInterrupt among others, thus if we try to exit the code using ctrl+c, the code still will not exit because the except block catches it as an exception.")
+print("When we use the except keyword only in the except clause, it catches all exceptions that may be raised including KeyboardInterrupt among others, thus if we try to exit the code using ctrl+c, the code still will not exit because the except block catches it as an exception.")
 print("There is a way around this since we can state the exception we want the except block to catch as follows: except ValueError: or we could catch multiple errors by using a paranthesised tuple with the exceptions separated by a comma e.g except (ValueError, TypeError): or we could just have multiple except blocks if we want to run a different code block for each error")
 print('#' * 99)
 
