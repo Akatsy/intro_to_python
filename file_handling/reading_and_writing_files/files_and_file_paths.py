@@ -170,7 +170,7 @@ print(Path.cwd() / Path("my/relative/path"))
 print('' * 99)
 
 print(r'''
-To get an absolute path from a relative path that is not thw cwd, you can put that path infront of the relative path e.g to get an absolute path from the home directory:
+To get an absolute path from a relative path that is not the cwd, you can put that path infront of the relative path e.g to get an absolute path from the home directory:
 >>>Path('my/relative/path')
 WindowsPath('my/relative/path')
 >>>Path.home()/Path('my/relative/path')
