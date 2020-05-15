@@ -1,4 +1,4 @@
-how_many_snakes = 1
+how_many_snakes = 3
 snake_string = """
 Welcome to Python3!
 
