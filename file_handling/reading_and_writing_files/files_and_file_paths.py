@@ -312,9 +312,9 @@ print('' * 99)
 total_size = 0
 for filename in os.listdir('/bin'):
     size = os.path.getsize(os.path.join('/bin', filename))
-    print(f"{filename} size is {size} bytes")
+    print(f"{filename} is {size} bytes in size")
     total_size += size
-print("total size is ", total_size)
+print("total size of all files in folder is {} bytes".format(total_size))
 
 print('' * 99)
 
