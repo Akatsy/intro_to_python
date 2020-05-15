@@ -65,3 +65,18 @@ or append to it if in append mode
 ''')
 
 print('#' * 99)
+
+# write and append to a file example
+f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/some_file.txt', 'w')
+f.write('Content added to file with write()')
+f.close()
+f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/some_file.txt', 'a')
+f.write('Content added to file with append()')
+f.close()
+f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/some_file.txt')
+f_text = f.read()
+f.close()
+print(f_text)
+
+
+print('#' * 99)

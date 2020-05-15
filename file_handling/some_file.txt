@@ -1,0 +1,1 @@
+Content added to file with write()Content added to file with append()
