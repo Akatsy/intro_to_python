@@ -9,7 +9,27 @@ print("Opening files in Python gives us a common programmatic interface to all k
 
 print('#' * 99)
 
-f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
-f_text = f.read()
-f.close()
-print(f_text)
+print(r'''
+This is how to read information from a file into Python:
+1. Open the file using the built in function open()
+>>>f = open('/path/to/file.txt', 'r')
+
+Open takes in a string with the path to the file as the first parameter, and another string as the second parameter that specifies the mode we want to open the file in - 'r' is for 'read mode' meaning we just want to access the contents of the file and not modify anything. (If not specified the mode defaults to read)
+open() returns a file object which is a Python object through which Python interacts with the file itself.
+Once we have opened a file and created a file object, we can use the read method to access the contents of this file.
+
+2. The file object's read() method takes the text contained in a file and puts it into a string and returns that string
+>>>file_data = f.read()
+>>>print(file_data)
+
+3. When you have finished with a file, you should close it using the file object's close() method
+>>>f.close()
+''')
+
+print('#' * 99)
+
+
+# f = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
+# f_text = f.read()
+# f.close()
+# print(f_text)
