@@ -217,7 +217,7 @@ To extract each attribute from the file path:
 >>>p.anchor
 'C:\\'
 >>>p.parent
-'WindowsPath('C:/Users/mutwiri2) # This is a path object not a string
+WindowsPath('C:/Users/mutwiri2') # This is a path object not a string
 >>>p.name
 'spam.txt'
 >>>p.stem
