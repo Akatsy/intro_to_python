@@ -130,5 +130,16 @@ while a blank line is represented by '\n' - a string containing only a single ne
 ''')
 
 
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())
+
 
 print('#' * 99)
