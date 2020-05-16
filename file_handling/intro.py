@@ -143,3 +143,21 @@ with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
 
 
 print('#' * 99)
+
+print(r'''
+For reading lines from a file, you can loop over the file object. This is memory efficient, fast, and leads to simple code
+>>> for line in f:
+...     print(line, end='')
+...
+This is the first line of the file.
+Second line of the file
+
+''')
+
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    for line in f:
+        print(line, end='')
+
+print('#' * 99)
+print('#' * 99)
+
