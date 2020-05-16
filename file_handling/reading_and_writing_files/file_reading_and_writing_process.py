@@ -103,3 +103,16 @@ greetings_file = open('greetings.txt')
 content = greetings_file.read()
 greetings_file.close()
 print(content)
+
+print('#' * 99)
+
+print(r'''
+You can save variables in your Python programs to binary shelf files using the shelve module - this way your programs can restore data to variables from the HDD
+To read and write data using the shelve module:
+1. import the shelve module
+2. call shelve.open() and pass it a filename and then store the returned value in a variable
+3. You can make changes to the shelf value as if it were a dictionary
+4. Call close() on the shelve value once done
+''')
+
+print('#' * 99)
