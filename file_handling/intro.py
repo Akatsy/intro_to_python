@@ -159,5 +159,18 @@ with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
         print(line, end='')
 
 print('#' * 99)
+
+print(r'''
+Conveniently, Python can loop over the lines of a file using the syntax 'for line in file:'
+Ypu could use this to create a list of lines in the file
+Because each line has a newline character attached, you can use .strip() to remove it 
+''')
+if_poem_lines_list = []
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    for line in f:
+        if_poem_lines_list.append(line.strip())
+print(if_poem_lines_list)
+
+print('#' * 99)
 print('#' * 99)
 
