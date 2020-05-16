@@ -114,3 +114,21 @@ with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
     print(f.read(-1))
 
 print('#' * 99)
+
+print(r'''
+f.readline() reads a single line from the file;
+a newline character (\n) is left at the end of the string, and is only omitted on the last line of the file if the file doesn’t end in a newline.
+This makes the return value unambiguous;
+if f.readline() returns an empty string, the end of the file has been reached,
+while a blank line is represented by '\n' - a string containing only a single newline
+>>> f.readline()
+'This is the first line of the file.\n'
+>>> f.readline()
+'Second line of the file\n'
+>>> f.readline()
+''
+''')
+
+
+
+print('#' * 99)
