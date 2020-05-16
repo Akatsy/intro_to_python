@@ -115,4 +115,13 @@ To read and write data using the shelve module:
 4. Call close() on the shelve value once done
 ''')
 
+import shelve
+shelf_file = shelve.open('my_data')
+likes = ['mercedes', 'Prado Tx', 'Lexus LX500', 'macbook', 'iphone', '80 inch screen', 'big derriere wife']
+shelf_file['likes'] = likes
+shelf_file.close()
+
+print(shelf_file)
+print(type(shelf_file))
+
 print('#' * 99)
