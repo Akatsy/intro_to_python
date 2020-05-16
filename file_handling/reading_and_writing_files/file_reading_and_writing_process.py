@@ -29,3 +29,17 @@ The more common way of file reading and writing process involves the following s
 ''')
 
 print('#' * 99)
+
+print(r'''
+To open a file with the open() function, you pass it a string path indicating the file you want to open; it can be either an absolute or relative path. The open() function returns a File object.
+>>>helloFile = open(Path.home() / 'hello.txt')
+The open() function can also accept strings e.g
+>>> helloFile = open('C:\\Users\\your_home_folder\\hello.txt')  # Windows
+>>> helloFile = open('/Users/your_home_folder/hello.txt')   # MacOS
+
+the above commands will open the file in “reading plaintext” mode, or read mode for short. When a file is opened in read mode, Python lets you only read data from the file; you can’t write or modify it in any way. Read mode is the default mode for files you open in Python. But if you don’t want to rely on Python’s defaults, you can explicitly specify the mode by passing the string value 'r' as a second argument to open(). So open('/Users/your_home_folder/hello.txt', 'r') and open('/Users/your_home_folder/hello.txt') do the same thing.
+
+The call to open() returns a File object. A File object represents a file on your computer; it is simply another type of value in Python, much like the lists and dictionaries.  you store the File object in the variable helloFile. Now, whenever you want to read from or write to the file, you can do so by calling methods on the File object in helloFile.
+''')
+
+print('#' * 99)
