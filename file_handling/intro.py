@@ -99,6 +99,12 @@ size is an optional numeric argument.
 When size is omitted or negative, the entire contents of the file will be read and returned; it’s your problem if the file is twice as large as your machine’s memory.
 Otherwise, at most size characters (in text mode) or size bytes (in binary mode) are read and returned.
 If the end of the file has been reached, f.read() will return an empty string ('')
+
+If you pass an integer argument to read(), it will read up to that number of characters, output them and then keep the window at that position ready to read on.
 ''')
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    print(f.read(2))
+    print(f.read(8))
+    print(f.read(16))
 
 print('#' * 99)
