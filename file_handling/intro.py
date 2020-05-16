@@ -108,3 +108,9 @@ with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
     print(f.read(16))
 
 print('#' * 99)
+
+
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    print(f.read(-1))
+
+print('#' * 99)
