@@ -93,13 +93,13 @@ Note that the write() method does not automatically add a newline character to t
 As of Python 3.6, you can also pass a Path object to the open() function instead of a string for the filename
 ''')
 
-greetings_file = open('greetings.txt', 'w')   
+greetings_file = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/greetings.txt', 'w')   
 print(greetings_file.write('Hello! hey! alloha!\n'))
 greetings_file.close()
-greetings_file = open('greetings.txt', 'a')
+greetings_file = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/greetings.txt', 'a')
 print(greetings_file.write('How do you do? Hakuna matata?'))
 greetings_file.close()
-greetings_file = open('greetings.txt')
+greetings_file = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/greetings.txt')
 content = greetings_file.read()
 greetings_file.close()
 print(content)
@@ -116,7 +116,7 @@ To read and write data using the shelve module:
 ''')
 
 import shelve
-shelf_file = shelve.open('my_data')
+shelf_file = shelve.open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/my_data')
 likes = ['mercedes', 'Prado Tx', 'Lexus LX500', 'macbook', 'iphone', '80 inch screen', 'big derriere wife']
 shelf_file['likes'] = likes
 shelf_file.close()
