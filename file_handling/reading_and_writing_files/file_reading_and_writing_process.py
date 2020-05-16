@@ -61,3 +61,15 @@ if_poem.close()
 print(poem_lines)
 
 print('#' * 99)
+
+print(r'''
+To write to a file, you need to open it in “write plaintext” mode or “append plaintext” mode, or write mode and append mode for short
+
+Write mode will overwrite the existing file and start from scratch, just like when you overwrite a variable’s value with a new value. Pass 'w' as the second argument to open() to open the file in write mode
+
+Append mode, on the other hand, will append text to the end of the existing file. You can think of this as appending to a list in a variable, rather than overwriting the variable altogether. Pass 'a' as the second argument to open() to open the file in append mode.
+
+If the filename passed to open() does not exist, both write and append mode will create a new, blank file. 
+
+After reading or writing a file, call the close() method before opening the file again
+''')
