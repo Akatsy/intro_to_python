@@ -72,4 +72,34 @@ Append mode, on the other hand, will append text to the end of the existing file
 If the filename passed to open() does not exist, both write and append mode will create a new, blank file. 
 
 After reading or writing a file, call the close() method before opening the file again
+
+>>> greetings_file = open('greetings.txt', 'w')   
+>>> greetings_file.write('Hello! hey! alloha!\n')
+    20
+>>> greetings_file.close()
+>>> greetings_file = open('greetings.txt', 'a')
+>>> greetings_file.write('How do you do? Hakuna matata?')
+    29
+>>> greetings_file.close()
+>>> greetings_file = open('greetings.txt')
+>>> content = greetings_file.read()
+>>> greetings_file.close()
+>>> print(content)
+Hello! hey! alloha!
+How do you do? Hakuna matata?
+
+Note that the write() method does not automatically add a newline character to the end of the string like the print() function does. You will have to add this character yourself.
+
+As of Python 3.6, you can also pass a Path object to the open() function instead of a string for the filename
 ''')
+
+greetings_file = open('greetings.txt', 'w')   
+print(greetings_file.write('Hello! hey! alloha!\n'))
+greetings_file.close()
+greetings_file = open('greetings.txt', 'a')
+print(greetings_file.write('How do you do? Hakuna matata?'))
+greetings_file.close()
+greetings_file = open('greetings.txt')
+content = greetings_file.read()
+greetings_file.close()
+print(content)
