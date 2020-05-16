@@ -43,3 +43,21 @@ The call to open() returns a File object. A File object represents a file on you
 ''')
 
 print('#' * 99)
+
+print(r'''
+If you want to read the entire contents of a file as a string value, use the File object’s read() method
+>>> content = helloFile.read()
+>>> content
+'Hello, world!'
+
+
+Alternatively, you can use the readlines() method to get a list of string values from the file, one string for each line of text
+A list of strings is often easier to work with than a single large string value
+
+''')
+if_poem = open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if')
+poem_lines =  if_poem.readlines()
+if_poem.close()
+print(poem_lines)
+
+print('#' * 99)
