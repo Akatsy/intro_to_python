@@ -157,3 +157,14 @@ print(list(shelf_file.values()))
 shelf_file.close()
 
 print('#' * 99)
+
+print(r'''
+pprint.pprint() function 'pretty prints' the contents of a list or dict to the screen
+pprint.pformat() function will return the same text as a string rather than print it to the screen
+The string returned by pprint.pformat() is not only easy to read but is syntactically correct Python code. Using pprint.pformat(), we can get a string that we can write to a .py file to save it
+The saved file can be used as your own module which you can import whenever you want to use the value saved in it
+The modules that an import statement imports are themselves just Python scripts
+Since Python scripts are themselves just text files with the .py file extension, your Python programs can themselves generate other Python programs and you can then import those files into a script
+''')
+
+print('#' * 99)
