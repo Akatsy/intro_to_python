@@ -142,6 +142,18 @@ shelf_file.close()
 print('#' * 99)
 
 print(r'''
+Just like dicts, shelf files have keys() and values() methods that will return list-like values of the keys and values in the shelf
+The values returned are not true lists but we can pass them to list() to convert them to list values
 ''')
+
+shelf_file = shelve.open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/my_data')
+goals = ['Python', 'Javascript', 'CCNA', 'ethical hacker']
+shelf_file['goals'] = goals
+shelf_file.close()
+
+shelf_file = shelve.open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/my_data')
+print(list(shelf_file.keys()))
+print(list(shelf_file.values()))
+shelf_file.close()
 
 print('#' * 99)
