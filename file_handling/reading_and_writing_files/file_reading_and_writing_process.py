@@ -125,3 +125,23 @@ print(shelf_file)
 print(type(shelf_file))
 
 print('#' * 99)
+
+print(r'''
+As of Python 3.7, you have to pass the open() shelve method filenames as strings - you cannot pass path objects
+Windows creates 3 files - my_data.dat, my_data.bak, my_data.dir
+MacOs and Linux create one file - my_data.db
+The binary file my_data.db contains the data you stored in the shelf file
+shelve module frees you from worrying about how to store your program's data to a file
+Your program can use the shelve module to later reopen and retrieve the data from these shelf files
+shelf values do not have to be opened in read or write mode - they can do both once opened
+''')
+shelf_file = shelve.open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/my_data')
+print(shelf_file['likes'])
+shelf_file.close()
+
+print('#' * 99)
+
+print(r'''
+''')
+
+print('#' * 99)
