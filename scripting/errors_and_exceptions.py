@@ -71,6 +71,8 @@ Exceptions are errors detected during execution - examples and how to solve them
 2. UnboundLocalError - You are trying to access a local variable before it is defined. Make sure local scope of variable in function is defined or value assigned to it.
 
 3. ValueError: too many values to unpack (expected 2) - Assignation error - Inconsistency in how many values being unpacked and how many variables the values should be assigned to
+
+4. TypeError: unsupported operand type(s) for +: 'int' and 'str' - An operation or function is applied to an object of inappropriate type e.g trying to concatenate a string and integer. Change the datatype for one of the values e.g change int to str
 ''')
 
 print('#' * 99)
