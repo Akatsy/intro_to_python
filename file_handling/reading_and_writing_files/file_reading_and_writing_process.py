@@ -167,4 +167,16 @@ The modules that an import statement imports are themselves just Python scripts
 Since Python scripts are themselves just text files with the .py file extension, your Python programs can themselves generate other Python programs and you can then import those files into a script
 ''')
 
+things = [{'goals': ['Python', 'Javascript', 'CCNA', 'ethical hacker'], 'likes': ['mercedes', 'Prado Tx', 'Lexus LX500', 'macbook', 'iphone', '80 inch screen', 'big derriere wife']}]
+import pprint
+formatted = pprint.pformat(things)
+print(formatted)
+
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/reading_and_writing_files/things.py', 'w') as f:
+    f.write(formatted)
+
+import things
+print(type(things))
+print(things)
+print(dir(things))
 print('#' * 99)
