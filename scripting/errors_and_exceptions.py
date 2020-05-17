@@ -69,6 +69,8 @@ Exceptions are errors detected during execution - examples and how to solve them
 1. NameError: name 'abc_dict' is not defined - Identifier is not found in the local or global namespace. Make sure the reference to the identifier is correctly added to the code.
 
 2. UnboundLocalError - You are trying to access a local variable before it is defined. Make sure local scope of variable in function is defined or value assigned to it.
+
+3. ValueError: too many values to unpack (expected 2) - Assignation error - Inconsistency in how many values being unpacked and how many variables the values should be assigned to
 ''')
 
 print('#' * 99)
