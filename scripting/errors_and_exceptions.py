@@ -61,3 +61,14 @@ except Exception as e:
     print("The following exception occured: {}".format(e))
 print('#' * 99)
 print("'Exception' is the base class for all built in exceptions")
+print('#' * 99)
+
+print(r'''
+Exceptions are errors detected during execution - examples and how to solve them:
+
+1. NameError: name 'abc_dict' is not defined - Identifier is not found in the local or global namespace. Make sure the reference to the identifier is correctly added to the code.
+
+2.
+''')
+
+print('#' * 99)
