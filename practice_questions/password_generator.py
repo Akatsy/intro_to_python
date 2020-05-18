@@ -1,12 +1,4 @@
-# Quiz: Compute an Exponent
-# It's your turn to import and use the math module. Use the math module to calculate e to the power of 3. print the answer.
 
-# Refer to the math module's documentation to find the function you need!
-
-# # print e to the power of 3 using the math module
-# import math
-# print(math.exp(3))
-#   
 # Quiz: Password Generator
 # Write a function called generate_password that selects three random words from the list of words word_list and concatenates them into a single string. Your function should not accept any arguments and should reference the global variable word_list to build the password.
 
