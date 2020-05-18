@@ -20,16 +20,18 @@ print('''
 You can create an alias when importing a module so that you do not have to type the whole name of the module whenever you need to access its objects using the 'import module_name as alias' statement
 
 What if the script we import has executable statements which we do not need to use in our current script?
-This is where the >>>if '__name__' == '__main__': statement comes in.
-By including the executable statements inside if name is main statement (if '__name__' == '__main__':), we tell Python to execute that code only when the main program being executed is that script. If the script is imported in another script, that code will not run
+This is where the >>>if __name__ == '__main__': statement comes in.
+By including the executable statements inside if name is main statement (if __name__ == '__main__':), we tell Python to execute that code only when the main program being executed is that script. If the script is imported in another script, that code will not run
 
 Generally, it is good practice to write executable statements inside an if main block or alternatively include them in a function called main and call this function in the if name is main block
 >>>def main():
     pass
 
->>if '__name__' == '__main__':
+>>if __name__ == '__main__':
     main()
 
 
-
+Whenever we run a script, Python actually creates a special builtin variable called __name__ for any module
+When we run a script, Python recognizes this module as the main program, and sets the __name__ variable for this module to the string "__main__".
+For any modules that are imported in this script, this built-in __name__ variable is just set to the name of that module. Therefore, the condition if __name__ == "__main__"is just checking whether this module is the main program
 ''')
