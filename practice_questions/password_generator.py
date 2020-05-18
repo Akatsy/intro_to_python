@@ -40,3 +40,5 @@ def generate_password():
 
 # test your function
 print(generate_password())
+print('#' * 99)
+print("random.sample(population, k) - Return a k length list of unique elements chosen from the population sequence or set. Used for random sampling without replacement.")
