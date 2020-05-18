@@ -13,3 +13,9 @@ We need to use the name of the file (module) we imported followed by a dot (.) t
 When Python runs a script, it only has direct access to objects defined in that script. If the script has an import statement, then one of the objects the current script has access to is the module object created by the import statement. The name of the object is the name given after the import keyword and the object is of type module
 A module is just a file with Python definitions and statements
 ''')
+
+print('#' * 99)
+
+print('''
+You can create an alias when importing a module so that you do not have to type the whole name of the module whenever you need to access its objects using the 'import module_name as alias' statement
+''')
