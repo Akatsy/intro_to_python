@@ -16,3 +16,7 @@ The Python Standard Library has good documentation for each of its modules and i
 
 Modules in the documentation of the Python Standard Library are listed in groups based on their uses. Clicking on a name takes you to the documentation for the module which often has examples as well to test out.
 ''')
+
+import math
+print("Factorial of 9 is ", math.factorial(9))
+print("e to the power of 3 is ", math.exp(4))
