@@ -1,5 +1,5 @@
 import other_script
-import useful_functions
+import useful_functions as uf
 
 print(5 * 5)
 try:
@@ -13,10 +13,13 @@ print(other_script.greeting)
 
 scores = [90, 82, 74, 56, 50, 40, 22]
 
-average = useful_functions.mean(scores)
-standardized = useful_functions.add_five(scores)
-mean_s = useful_functions.mean(standardized)
+average = uf.mean(scores)
+standardized = uf.add_five(scores)
+mean_s = uf.mean(standardized)
 
 print("Scores:", scores)
 print("Standardized scores:", standardized)
 print("Original mean:", average, " standardized mean:", mean_s)
+
+print(__name__)
+print(uf.__name__)
