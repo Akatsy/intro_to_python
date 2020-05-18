@@ -20,3 +20,22 @@ Modules in the documentation of the Python Standard Library are listed in groups
 import math
 print("Factorial of 9 is ", math.factorial(9))
 print("e to the power of 3 is ", math.exp(4))
+
+print('#' * 99)
+
+print(r'''
+he Python Standard Library has a lot of modules! Here are a selection of a few Python Standard Library modules and why we use them!
+
+csv: very convenient for reading and writing csv files
+collections: useful extensions of the usual data types including OrderedDict, defaultdict and namedtuple
+random: generates pseudo-random numbers, shuffles sequences randomly and chooses random items
+string: more functions on strings. This module also contains useful collections of letters like string.digits (a string containing all characters which are valid digits).
+re: pattern-matching in strings via regular expressions
+math: some standard mathematical functions
+os: interacting with operating systems
+os.path: submodule of os for manipulating path names
+sys: work directly with the Python interpreter
+json: good for reading and writing json files (good for web work)
+''')
+
+print('#' * 99)
