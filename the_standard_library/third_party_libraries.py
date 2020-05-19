@@ -40,3 +40,25 @@ pyglet - A cross-platform application framework intended for game development.
 Pygame - A set of Python modules designed for writing games.
 pytz - World Timezone Definitions for Python
 ''')
+
+print('#' * 99)
+
+print(r'''
+Getting the information you need to know
+It takes an enormous amount of knowledge to be a skilled programmer. There's libraries to know, syntax to remember, and myriad other details. To add to the difficulty, the technology landscape is constantly shifting as new techniques and tools are invented.
+
+To a novice programmer, learning all of these details and keeping abreast of new developments seems like an impossible task. And it is! Expert programmers who have been working for years don't actually carry an encyclopedia's worth of knowledge in their heads. Instead they have mastered the task of finding information quickly.
+
+How to Search
+Here are some techniques for effective web searching:
+
+Try using "Python" or the name of the library you're using as the first word of your query. This tells the search engine to prioritize results that are explicitly related to the tools you're using.
+
+Writing a good search query can take multiple attempts. If you don't find helpful results on your first attempt, try again.
+Try using keywords found on the pages you found in your initial search to direct the search engine to better resources in the subsequent search.
+
+Copy and paste error messages to use as search terms. This will lead you to explanations of the error and potential causes. An error message might include references to specific line numbers of code that you wrote. Only include the part of the error message that comes before this in your search.
+If you can't find an answer to your question, ask it yourself! Communities like StackOverflow have etiquette rules you must learn if you want to participate, but don't let this stop you from using these resources.
+''')
+
+print('#' * 99)
