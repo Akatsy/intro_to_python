@@ -97,3 +97,13 @@ You can also just import the whole package and everything in the submodule will 
 ''')
 
 print('#' * 99)
+
+print(r'''
+Sometimes naming can be a point of confusion when working with modules for example a module might be named after one of the imported classes or functions within it. In such cases, you really need to think about your import statements
+>>>from datetime import datetime
+
+The above imports the datetime class from the datetime module
+Note after the import, datetime refers to the datetime class not the module
+''')
+
+print('#' * 99)
