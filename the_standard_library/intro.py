@@ -79,3 +79,21 @@ If you really want to use all of the objects from a module, use the standard imp
 ''')
 
 print('#' * 99)
+
+print(r'''
+Some of the modules in the PySL (Python Standard Library), have a lot in them. In order to manage code better, they are split down into sub-modules that are contained within a package
+
+A package is simply a module that contains submodules
+A submodule is specified with the usual dot-notation
+Modules that are sub-modules are specified with the package name and then the sub-module name separated by a dot (.)
+You can then access the objects and functions using the dot-notation
+>>>import os.path
+>>>os.path.isdir('/)
+
+You can also just import the whole package and everything in the submodule will still be accessible
+>>>import os
+>>>os.path.isdir('/)
+
+''')
+
+print('#' * 99)
