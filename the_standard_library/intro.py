@@ -54,6 +54,12 @@ There are other variants of import statements useful under different conditions:
     >>>from module_name import first_object, second_object
 
     You can import multiple individual objects by separating them with a comma - This technique is common when importing pieces from large libraries
+
+3. To rename a module:
+    >>>import module_name as new_name
+
+    This is useful if the name of the module is too long or if there is a clash with another identifier in your code,
+    When renaming modules, it is nice to use standard abbreviations as this makes your code consistent with others and also easier to read
 ''')
 
 print('#' * 99)
