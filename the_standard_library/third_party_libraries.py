@@ -13,6 +13,9 @@ requests==2.11.1
 Each line of the file includes the name of a package and its version number. The version number is optional, but it usually should be included. Libraries can change subtly, or dramatically, between versions, so it's important to use the same library versions that the program's author used when they wrote the program.
 
 You can use pip to install all of a project's dependencies at once by typing "pip install -r requirements.txt" in your command line.
+
+Python comes with batteries-included means Python comes wit the libraries you need to get right to work
+Put import statements for 3rd party libraries after import statements from the standard library 
 ''')
 
 print('#' * 99)
