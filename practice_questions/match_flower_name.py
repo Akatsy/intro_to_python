@@ -13,8 +13,17 @@ def dict_creator(file):
         for line in f:
             line_list = line.split(':')
             flower_dict[line_list[0]] = line_list[1].strip()
-    print(flower_dict)
+    return flower_dict
 
-flowers_file = '/home/mutwiri2/Desktop/intro_to_python/practice_questions/flowers.txt'
-dict_creator('flowers.txt')
+def match_flower_name():
+    flowers_file = '/home/mutwiri2/Desktop/intro_to_python/practice_questions/flowers.txt'
+    name = input("Enter your First [space] Last name only: ")
+    flower_dict = dict_creator(flowers_file)
+    first_letter = name.strip()[0].upper()
+    flower_name = flower_dict.get(first_letter)
+    print("Unique flower name with the first letter:", flower_name)
+
+match_flower_name()
+
+
 
