@@ -49,6 +49,11 @@ There are other variants of import statements useful under different conditions:
    This gives access only to the object you have imported via the object_name. 
    Trying to access the object via dot-notation or even trying to access the module itself will raise a NameError exception
    Importing individual objects from a module means you only take what you need and you do not need to use dot-notation to access it
+
+2. To import multiple individual objects from a module:
+    >>>from module_name import first_object, second_object
+
+    You can import multiple individual objects by separating them with a comma - This technique is common when importing pieces from large libraries
 ''')
 
 print('#' * 99)
