@@ -65,6 +65,17 @@ There are other variants of import statements useful under different conditions:
     >>>from module_name import object_name as new_name
 
     This can be useful if you have multiple objects with similar names from different packages in your namespace hence you give them the descriptive names to differentiate e.g a jsonreader and a csvreader
+
+5. To import every object individually from a module (DO NOT DO THIS):
+    >>>from module_name import *
+
+Using this asterisk will import every object from a module individually and allow you to access each of them directly via its name (not via the dot-notation)
+The problem arises in that modules may contain many objects each of which has a name and including all these names in your namespace may overwrite or be overwritten by other names in your program
+import * also makes it impossible for collaboraters to find where an imported object was defined
+A reader may look for a definition of a function and not find it and they will not know which import * statement introduced it.
+
+If you really want to use all of the objects from a module, use the standard import module_name statement instead and access each of the objects with the dot notation.
+    >>>import module_name
 ''')
 
 print('#' * 99)
