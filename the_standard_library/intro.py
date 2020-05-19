@@ -60,6 +60,11 @@ There are other variants of import statements useful under different conditions:
 
     This is useful if the name of the module is too long or if there is a clash with another identifier in your code,
     When renaming modules, it is nice to use standard abbreviations as this makes your code consistent with others and also easier to read
+
+4. To import an object from a module and rename it:
+    >>>from module_name import object_name as new_name
+
+    This can be useful if you have multiple objects with similar names from different packages in your namespace hence you give them the descriptive names to differentiate e.g a jsonreader and a csvreader
 ''')
 
 print('#' * 99)
