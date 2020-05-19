@@ -47,7 +47,8 @@ There are other variants of import statements useful under different conditions:
 1. To import an individual function or class from a module:
    >>>from module_name import object_name
    This gives access only to the object you have imported via the object_name. 
-   Trying to access the object via dot-notation or even trying to access the module itself will raise a NAmeError exception
+   Trying to access the object via dot-notation or even trying to access the module itself will raise a NameError exception
+   Importing individual objects from a module means you only take what you need and you do not need to use dot-notation to access it
 ''')
 
 print('#' * 99)
