@@ -39,3 +39,15 @@ json: good for reading and writing json files (good for web work)
 ''')
 
 print('#' * 99)
+
+print(r'''
+Importing modules with the syntax >>>import module_name makes all the classes of objects and functions of that module available via dot-notation
+
+There are other variants of import statements useful under different conditions:
+1. To import an individual function or class from a module:
+   >>>from module_name import object_name
+   This gives access only to the object you have imported via the object_name. 
+   Trying to access the object via dot-notation or even trying to access the module itself will raise a NAmeError exception
+''')
+
+print('#' * 99)
