@@ -34,3 +34,14 @@ for n in my_range(4):
 Using a for loop we can print values from this stream of data (iterator)
 
 ''')
+
+def my_range(x):
+    i = 0
+    while i < x:
+        yield i
+        i += 1
+
+print(my_range(4))
+
+for n in my_range(4):
+    print(n)
