@@ -22,4 +22,15 @@ Note that instead of using return keyword, we use yield
 
 yield allows the function to return values one at a time and start where it left off each time it is called
 the yield keyword is what differentiates a generator from a typical function
+
+>>>print(my_range(4))
+    <generator object my_range at 0x...>
+
+Calling the generator function returns an iterator object as shown above that we can iterate through
+
+for n in my_range(4):
+    print(n)
+
+Using a for loop we can print values from this stream of data (iterator)
+
 ''')
