@@ -22,5 +22,11 @@ def my_enumerate(iterable, start=0):
     for i in range(size):
         yield i + start, iterable[i]
 
+def my_enumerate(iterable, start=0):
+    count = start
+    for element in iterable:
+        yield count, element
+        count += 1
+
 for i, lesson in my_enumerate(lessons, 1):
     print("Lesson {}: {}".format(i, lesson))
