@@ -7,4 +7,16 @@ An iterator is different from an iterable like a list since a list is not a stre
 
 You can create iterators using generators
 Generator - a function that creates an iterator
+
+Generator is a simple way to create iterators using functions
+Generator is often used to refer to the generator function but is sometimes also used to refer to the iterator object produced by the function
+
+def my_range(x):
+    i = 0
+    while i < x:
+        yield i
+        i += 1
+
+The above represents a generator function called my_range that produces a stream of numbers from 0 to x-1
+Note that instead of using return keyword, we use yield
 ''')
