@@ -45,3 +45,10 @@ print(my_range(4))
 
 for n in my_range(4):
     print(n)
+
+
+print(r'''
+Why Generators?
+https://softwareengineering.stackexchange.com/questions/290231/when-should-i-use-a-generator-and-when-a-list-in-python/290235
+Generators are a lazy way to build iterables. They are useful when the fully realized list would not fit in memory, or when the cost to calculate each list element is high and you want to do it as late as possible. But they can only be iterated over once.
+''')
