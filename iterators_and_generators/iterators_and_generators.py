@@ -19,6 +19,7 @@ def my_range(x):
 
 The above represents a generator function called my_range that produces a stream of numbers from 0 to x-1
 Note that instead of using return keyword, we use yield
+You can also define iterators using classes - https://docs.python.org/3/tutorial/classes.html#iterators
 
 yield allows the function to return values one at a time and start where it left off each time it is called
 the yield keyword is what differentiates a generator from a typical function
