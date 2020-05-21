@@ -333,7 +333,7 @@ for char in string.ascii_letters:
 
 print('#' * 99)
 
-for i in range(91,127):
+for i in range(439, 1439):
     print(i, chr(i))
 
 
