@@ -2,7 +2,7 @@
 print("Errors are inevitable in programming. Error messages are just a way for the computer to let you know that it does not quite understand what you have instructed it to do. THIS DOES NOT IN ANY WAY MAKE YOU A BAD PROGRAMMER. Instead, you should take this as a learning opportunity to become a better programmer.")
 print('#' * 79)
 print("Understand common errors you may get and what to do about them.")
-print("There are two types to look out for \n\t {} \n\t {}".format("Exceptions- A problem that occurs when the program is running and results in the output not being the expected one.", "Syntax / Parsing errors- A problem detected when Python checks the code before it runs it. These errors cause the program to crash / stop execution and exit"))
+print("There are two types to look out for \n\t {} \n\t {}".format("Exceptions- A problem that occurs when the program is running.", "Syntax / Parsing errors- A problem detected when Python checks the code before it runs it."))
 print('#' * 79)
 print("Some common errors you might run into are:")
 print("\t ZeroDivisionError: Occurs when you try to divide (normal division, modulo(remainder of division) or integer division) any number by zero. This is Python just enforcing the rules of Math e.g {}, {} and {} should give you a ZeroDivisionError". format("3/0", "3//0", "3%0"))
