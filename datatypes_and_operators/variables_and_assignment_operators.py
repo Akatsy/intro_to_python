@@ -41,7 +41,7 @@ print('#' * 79)
 print("When a variable is assigned, it is assigned to the value that results from evaluating an expression and not to the expression itself as seen above i.e Python reduces (by evaluating) the 'weight + 2' expression to a single value 58 then assigns that value to the weight variable")
 print('#' * 99)
 print("There are special assignment operators in python to deal with the above common use-case of performing an arithmetic operation on a variable e.g adding and then re-assigning the new value to the variable")
-print("The special assignment operators are basically just all the arithmetic operators followed by the '='(assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign the result back to the variable")
+print("The special assignment operators are basically just all the arithmetic operators followed by the '=' (assignment operator) e.g the two most common '+=' and '-='. What they do is just apply the arithmetic operation to the variable on the left using the value on the right and then assign the result back to the variable")
 print('#' * 79)
 print("e.g, say you have 'x=2', and you want to increase x by 2 then decrease x by 1 then multiply x by 3 then raise x to the power of 4 then do integer division of x by 6 and finally float division of x by 5 you would do the following:")
 x = 2
