@@ -99,7 +99,7 @@ age = 25
 print(name + " is " + str(age) + " years old.")
 print('#' * 79)
 
-print("The above is requires a lot of tedious typing. A better method is using String Interpolation where '%s' is used as a placeholder for the values to be put in then the values are put at the end of the string in order of how they should be put into the string")
+print("The above requires a lot of tedious typing. A better method is using String Interpolation where '%s' is used as a placeholder for the values to be put in then the values are put at the end of the string in order of how they should be put into the string")
 print("%s is %s years old" %(name,age))
 
 print('#' * 79)
@@ -277,7 +277,7 @@ print("Justifying text is especially useful when you want to print tabular data 
 def neat_spacing(item_dict,leftlen,rightlen):
     print("ITEMS".center(leftlen+rightlen, '='))
     for key, value in item_dict.items():
-        print(key.ljust(rightlen, '.') + str(value).rjust(leftlen))
+        print(key.ljust(rightlen, '.') + str(value).rjust(leftlen, '.'))
     
 items = {'mercedes': 2, 'toyota': 5, 'TX': 3, 'BMW': 2}
 neat_spacing(items,12,5)
