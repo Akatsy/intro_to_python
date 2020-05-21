@@ -49,7 +49,7 @@ print('#' * 79)
 print("format() method is used to replace any number of '{}' placeholders put in a string e.g 'Hey {}, {}'.format('first name', 'last name') will display: ", 'Hey {}, {}'.format('first_name', 'last name'))
 print('#' * 79)
 print("You can get any character or set of characters from a string by indexing and dicing as shown below:")
-print("Indexing (using [] and an integer denoting the index you want) gets you one character at a time. Slicing (using subscripts separated by :(a colon) gets you a subset of characters from the string at a go")
+print("Indexing (using [] and an integer denoting the index you want) gets you one character at a time. Slicing (using subscripts separated by : (a colon) gets you a subset of characters from the string at a go")
 print("You can get the first character in a string like this print('hello world[0]') >>>", 'hello world'[0])
 print("You can get the last character in a string like this print('hello world[-1]') >>>", 'hello world'[-1])
 print("You can get the first three characters in a string like this print('hello world[0:3]') >>>", 'hello world'[0:3])
@@ -170,7 +170,7 @@ print("Is NOt Title".istitle())
 print('#' * 79)
 
 print("The isX() methods are useful when you need to validate user input")
-a program to validate different user input using isX() methods
+# a program to validate different user input using isX() methods
 
 while True:
     name = input("Please input your names (First letter must be capital): ")
