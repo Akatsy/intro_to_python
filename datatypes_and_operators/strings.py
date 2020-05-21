@@ -321,7 +321,7 @@ print("pamamplifieramppam".strip('Amp'))
 
 print('#' * 99)
 
-print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a unit of digital information that most commonly consists of eight bits hence the need to be able to convert text to numbers for storage.")
+print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a unit of digital information that most commonly consists of eight bits (binary digits 0 and 1) hence the need to be able to convert text to numbers for storage.")
 print("ord() function returns the code point (numeric value) of a one-character string")
 print("chr() function returns the one-character string for an integer code point")
 print("The above functions are useful when you need to do an ordering or mathematical operations on characters")
