@@ -23,7 +23,7 @@ print("You can declare multiple variables at once using a single expression like
 print("x,y,z = 4, 5.6, 8")
 print("This assigns 4 to x, 5.6 to y and 8 to z")
 x,y,z = 4, 5.6, 8
-print("x:{} y:{} z:{}".format(x,y,x))
+print("x:{} y:{} z:{}".format(x,y,z))
 print("Only use multiple assignments like above for closely related data e.g co-ordinates of a point and remember variable names should be descriptive of the values they hold. The above variable names are okay, for say, co-ordinates in a 3D-axis")
 print('#' * 79)
 print("You can change the value of a variable once you have declared it as follows:")
