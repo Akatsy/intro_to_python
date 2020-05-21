@@ -2,7 +2,7 @@
 print("Every object you encounter in Python has a data type. Data types are a way to represent the various types (categories) of information we will be dealing with in our programs.")
 print("Data types are also useful in the sense that they define what kind of functions and operations work on a given object and how these operations and functions work")
 print('#' * 79)
-print("For numerical data in our programs, we can represent it using two data types -- int (short for integer) and float (short for floating point numbers).")
+print("For numerical data in our programs, we can represent them using two data types -- int (short for integer) and float (short for floating point numbers).")
 print("int is a data type for real whole numbers - either positive or negative.")
 print("float is a data type for real numbers (positive or negative) that use a decimal point to allow numbers with fractional values.")
 print('#' * 79)
