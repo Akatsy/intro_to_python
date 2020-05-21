@@ -277,7 +277,7 @@ print("Justifying text is especially useful when you want to print tabular data 
 def neat_spacing(item_dict,leftlen,rightlen):
     print("ITEMS".center(leftlen+rightlen, '='))
     for key, value in item_dict.items():
-        print(key.ljust(rightlen, '.') + str(value).rjust(leftlen, '.'))
+        print(key.ljust(rightlen, '.') + str(value).rjust(leftlen, ))
     
 items = {'mercedes': 2, 'toyota': 5, 'TX': 3, 'BMW': 2}
 neat_spacing(items,12,5)
@@ -321,7 +321,7 @@ print("pamamplifieramppam".strip('Amp'))
 
 print('#' * 99)
 
-print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a string of binary numbers hence the need to be able to convert text to numbers for storage.")
+print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a unit of digital information that most commonly consists of eight bits hence the need to be able to convert text to numbers for storage.")
 print("ord() function returns the code point (numeric value) of a one-character string")
 print("chr() function returns the one-character string for an integer code point")
 print("The above functions are useful when you need to do an ordering or mathematical operations on characters")
