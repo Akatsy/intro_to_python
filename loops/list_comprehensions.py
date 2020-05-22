@@ -67,3 +67,11 @@ scores = {
 
 passed = [name for name, score in scores.items() if score>=65]
 print(passed)
+
+print('#' * 99)
+print(r'''
+List comprehensions syntax summary is as follows:
+
+[expression for iteration_variable in iterable singular condition]
+[expression multiple conditionals for iteration_variable in iterable]
+''')
