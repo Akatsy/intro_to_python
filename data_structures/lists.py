@@ -4,7 +4,7 @@ print("All data structures are data types- Because data types are just a way to 
 print("These containers give Python much more power to develop complex programs. The data structures in Python are: \n\t{} \n\t{} \n\t{} \n\t{}".format("1. lists", "2. tuples", "3. sets", "4. dictionaries" ))
 print('#' * 79)
 print("The list is one of the most common and basic data structure in Python.\n It is a data structure (data type) for a mutable ordered sequence of elements")
-print("'mutable' means it can be altered / changed after being created without neccessarily creating a new object.\n 'ordered' means each element in a list has an index (an integer value that defines it's position in the list) and can be referenced / obtained using that index")
+print("'mutable' means it can be altered / changed after being created without neccessarily creating a new object.\n 'ordered' means each element in a list has an index (an integer value that defines it's position in the list) and can be referenced / accessed using that index")
 print('#' * 79)
 print("Lists are created / defined using square brackets [] and can contain elements of any data type (integer, float, boolean, strings) or even another data structure (container of data e.g another list)")
 list_of_random_things = [1, 2.5, 'hello', True, -5, -0.9, '\\', False]
