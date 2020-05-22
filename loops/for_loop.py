@@ -170,6 +170,17 @@ for word in word_list:
     word_count[word] = word_count.get(word, 0) + 1
 print(word_count)
 
+print('#' * 79)
+
+# use setdefault method to create a dictionary from a list
+word_count = {}
+
+for word in word_list:
+    word_count[word] = word_count.setdefault(word, 0) + 1
+print(word_count)
+
+print('#' * 79)
+
 # check for identity and equality of the two dictionaries
 print(word_count is word_counter)
 print(word_counter is word_count)
