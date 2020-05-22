@@ -9,7 +9,7 @@ print("Both membership operators (in and not in) match exactly the search object
 print("For a list, the search object must match exactly an element existing in the list including uppercase and lowercase while for a string the substring must be a sequence of characters exactly appearing in the same order in the string including any spaces, punctuations and case")
 print('#' * 79)
 days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-greeting = ['Hey there, I am learning Python']
+greeting = 'Hey there, I am learning Python'
 print("Given this list; days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],  we can look for a day as follows and see the result: 'monday' in days - {}, 'Sunday' in days - {}".format('monday' in days, 'Sunday' in days))
 print('#' * 79)
 print("Given this list; days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],  we can look for a day as follows and see the result: 'monday' not in days - {}, 'Sunday' not in days - {}".format('monday' not in days, 'Sunday' not in days))
