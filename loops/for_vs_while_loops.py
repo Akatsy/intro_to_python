@@ -60,7 +60,7 @@ odd_num_sum = 0
 odd_num_count = 0
 index = 0
 len_num_list = len(num_list)
-while index < len_num_list and odd_num_count < 5:
+while (index < len_num_list) and (odd_num_count < 5):
     if num_list[index] % 2 != 0:
         odd_num_count += 1
         odd_num_sum += num_list[index]
