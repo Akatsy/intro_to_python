@@ -22,7 +22,7 @@ print('#' * 79)
 thisdict['make']='c200'
 print("we can add a new object to our list above like this thisdict['make']='c200' and printing out the dict we see our new object: {}".format(thisdict))
 print('#' * 79)
-print("There are a few methods that are useful for operating on lists:")
+print("There are a few methods that are useful for operating on dicts:")
 print("The get() method looks up to see if a key exists in the dict and if it does, returns the value of that key. If it does not exist, it returns the keyword None (by default) or another user defined response: e.g")
 print('#' * 79)
 cc = thisdict.get('cc', 'The carrying capacity does not exist')
