@@ -3,7 +3,7 @@
 print("for loops iterate over every element in an iterable and while loops continue with iterations until their stop condition is met. This is how we choose where to use the two depending on the kind of functionality we aim to get")
 print("However, sometimes we need to have more precise control over when our loops stop")
 print("This is where the 'break' keyword comes in. break will terminate a for or while loop whenever encountered")
-print("The break keyword terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop")
+print("The break keyword terminates the loop containing it. Control of the program goes to the statement immediately after the body of the loop")
 print("If the break keyword is inside a nested loop (i.e loop inside another loop), it will only terminate the innermost loop")
 print('#' * 99)
 print("Suppose you want to load a ship with a list of items called manifest which contains tuples as elements each with the name of an item and it's weight. Ideally, you would want to load all items to the ship but the ship has a weight limit which you should not exceed. So you need to load the items whilst checking that the weight has not been exceeded and if it has, you need to stop loading (stop the loop)")
