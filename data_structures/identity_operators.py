@@ -1,5 +1,5 @@
 # check if two objects are identical or not (i.e if they are the same object) using the identity operators
-print("Python provides two identity operators:\n\t1.is and \n\t2.is not")
+print("Python provides two identity operators:\n\t1.is \n\t2.is not")
 print("is checks whether both sides of the operator have the same value")
 print("is not checks whether both sides of the operator have different values")
 print('#' * 79)
