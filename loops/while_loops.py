@@ -7,7 +7,7 @@ print("The format / how to define a while loop is as follows:\n\nwhile test_expr
 print("We begin with the keyword 'while' to signal that it is a while loop")
 print("Following the while keyword is a test_expression that is evaluated to a boolean value")
 print("A colon (:) marks the end of the while statement")
-print("Below the while statement is the body of the loop which is a block of code signified by indentation and which will execute once for every iteration")
+print("Below the while statement is the body of the loop which is a block of code signified by increased indentation and which will execute once for every iteration")
 print('#' * 79)
 print("The test_expression typically involves one or more variables that are initialized prior to starting the loop and modified somewhere in the body of the loop")
 
@@ -88,6 +88,6 @@ print(nearest_square)
 print('#' * 99)
 
 print("Requirements to consider adding into a while loop".upper().center(99, '='))
-print("1. A condition expression that will be accessed and when met will allow you to exit the loop (i.e a way to exit the loop'")
+print("1. A condition expression that will be accessed and when met will allow you to exit the loop (i.e a way to exit the loop)")
 print("2. Make sure the loop is advancing - The value of the condition variable is changing with each iteration of the loop")
 print('#' * 99)
