@@ -221,6 +221,7 @@ all_guests = {
 def item_count(guests, item):
     total = 0
     for guest, items in guests.items():
+        print(f"{guest} brought {guests[guest][item]} {item}")
         total += items.get(item,0)
     return "There were a total of {} {} in the meeting".format(total,item)
 
