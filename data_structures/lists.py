@@ -147,6 +147,7 @@ print(a)
 a.insert(10,10)
 print(a)
 
+print("Inserting a value in an already existent index moves the values that come after it one index up. Inserting a value in an index higher than the last element's index just makes the value the last element in the list and it assumes the last index in the list")
 print('#' * 99)
 
 # remove() method to remove a value from the list
