@@ -4,7 +4,7 @@ print("Python code is normally read and executed line by line from top to bottom
 print("However, sometimes we might want to have some block of code executed and other blocks skipped depending on some conditions")
 print("if statements are conditional statements that execute or skip blocks of code depending on whether the conditions they check evaluate to True or False")
 print('#' * 79)
-print("An if statement is declared as follows:\n\tYou begin with the if keyword followed by a condition which must be a boolean expression then end with a full colon(:)\n\tBelow that you then have an indented block of code that you wish to be evaluated if the conditional statement evaluates to True, or otherwise skipped if it evaluates to False")
+print("An if statement is declared as follows:\n\tYou begin with the if keyword followed by a condition which must be a boolean expression (meaning the expression must evaluate to either True or False) then end with a full colon(:)\n\tBelow that you then have an indented block of code that you wish to be evaluated if the conditional statement evaluates to True, or otherwise skipped if it evaluates to False")
 print('#' * 79)
 print("Python indents blocks of code using spaces (4 spaces by default - use spaces instead of TABS according to Python specification but you can still use TABS long as you are consistent and do not mix them).")
 print("The indented block of code beneath an if statement is executed if and only if the condition in the if clause executes to True")
@@ -16,7 +16,7 @@ print("You can have as many elif clauses as neccessary, each with its condition 
 print('#' * 79)
 print("2. else - This clause is the last in an if statement. It will execute if all other clauses (the if's and elif's) execute to false. It does not need a condition (boolean expression) - just define it using the else keyword followed by a full colon (:)")
 
-print("An example of an if statement:\nweather = 'rainy'\nif weather == 'sunny':\n\tprint(\"Wear light clothes\")\nelif weather == 'cold':\n\tprint(\"Wear warm clothes\")\nelif weather == 'rainy':\n\tprint(\"Carry an umbrella\")\nelse:\n\tprint(\"Weather is confusing!")
+print("An example of an if statement:\nweather = 'rainy'\nif weather == 'sunny':\n\tprint(\"Wear light clothes\")\nelif weather == 'cold':\n\tprint(\"Wear warm clothes\")\nelif weather == 'rainy':\n\tprint(\"Carry an umbrella\")\nelse:\n\tprint(\"Weather is confusing!)")
 
 weather = 'rainy'
 if weather == 'sunny':
@@ -28,7 +28,7 @@ elif weather == 'rainy':
 else:
     print("Weather is confusing!")
 
-print("After the example, you can see the line printed is 'Carry an umbrella' because that is the block that will be executed since our weather variable is set to 'rainy'")
+print("After the example, the line printed is 'Carry an umbrella' because that is the block that will be executed since our weather variable is set to 'rainy'")
 print('#' * 79)
 print("The if statement executes from top to bottom - once a condition is satisfied, the execution stops and exits from the if statement to the next code block after it. This understanding should help you structure your if statements well for the best efficiency for your code execution")
 print('#' * 79)
@@ -38,7 +38,7 @@ print("A few examples of some complex conditions using multiple comparison opera
 print('#' * 79)
 print("if 20000 <= salary <= 100000:\n\tprint('tax to be paid is 20%)")
 print('#' * 79)
-print("if (not_unsubscribed) and (location == 'KE' or location == 'TZ') and payed:\n\tprint('Send email link')")
+print("if (not_unsubscribed) and (location == 'KE' or location == 'TZ') and (payed):\n\tprint('Send email link')")
 print('#' * 79)
 print("If you give a non-boolean object as your condition in the if statement, then Python does what is called TRUTH VALUE TESTING i.e it checks for the truth value of the object and then depending on the result it either runs the code block that follows or it doesn't")
 print('#' * 79)
