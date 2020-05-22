@@ -1,7 +1,7 @@
 # store related pieces of info using the tple data type (data structure)
 
 print("Tuples are a data type for immutable ordered sequence of objects")
-print("They are immutable meaning a tuple cannot be modified once it has been created- you cannot remove or add or sort the order of elements in it")
+print("They are immutable meaning a tuple cannot be modified once it has been created- you cannot remove or add or sort or reverse or shuffle the order of elements in it")
 print("They are ordered meaning each object has an index to indicate it's position in the data structure and that can be used to access it")
 print('#' * 79)
 print("Tuples can be created or defined in the following ways:")
