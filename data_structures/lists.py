@@ -117,7 +117,9 @@ print(alphabets)
 print('#' * 99)
 print("We can add (concatenate) lists or replicate lists using the '+' and '*' operators")
 alphabets += string.digits
+print("\nAdd a list of digits to the alphabets list:")
 print(alphabets)
+print("\nreplicate the above list four times")
 alphabets *= 4
 print(alphabets)
 
