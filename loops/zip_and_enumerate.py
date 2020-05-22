@@ -34,7 +34,7 @@ print(items, weights)
 
 print('#' * 79)
 
-print("enumerate() is a function that returns an iterator of tuples containing indices and values of a list")
+print("enumerate() is a built-in function that returns an iterator of tuples containing indices and values of a list")
 print('#' * 99)
 
 print("The enumerate() method adds counter to an iterable and returns it (the enumerate object).")
