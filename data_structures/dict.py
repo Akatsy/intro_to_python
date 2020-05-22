@@ -106,7 +106,7 @@ print("minimum value is:", min(values_list))
 print('#' * 79)
 
 # other useful dictionary methods
-
+print("other useful dictionary methods\n")
 print("1. keys() - Returns a list containing the dictionary's keys")
 print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
 my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
