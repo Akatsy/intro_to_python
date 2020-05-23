@@ -25,8 +25,8 @@ print('#' * 99)
 print('eval() can only run simple python expressions that are not complex i.e single lines of code without logic, conditional statements or control flow')
 print('#' * 99)
 print("if we want to run more complex code e.g conditional statements or loops, we can use the built-in exec() function e.g\nexec(input('Enter a block of code: '))")
-print()
-print(r'''Be careful while using exec()
-Consider a situation, you are using a Unix system (macOS, Linux etc) and you have imported os module. The os module provides portable way to use operating system functionalities like: read or write a file.
+print("\nBe careful while using exec() !!!!!".upper())
+print(r'''
+Consider a situation, you are using a Unix system (macOS, Linux etc) and you have imported os module. The os module provides a portable way to use operating system functionalities like: read or write a file.
 
 If you allow users to input a value using exec(input()), the user may issue commands to change file or even delete all the files using command os.system('rm -rf *')''')
