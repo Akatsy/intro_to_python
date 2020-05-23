@@ -108,7 +108,7 @@ print('#' * 99)
 print('#' * 99)
 
 print("4 rules to tell whether a variable is in local or global scope".upper())
-print("1. If a variable is being used in the global scope i.e outside of all functions then it is always a global variable")
+print("1. If a variable is being used / assigned / accessed in the global scope i.e outside of all functions then it is always a global variable")
 print("2. If there is a global statement for that variable in a function, it is always a global variable")
 print("3. Otherwise, if the variable is used in an assignment statement in a function, it is a local variable")
 print("4. But if the variable is not used in an assignment statement in a function, it is a global variable")
