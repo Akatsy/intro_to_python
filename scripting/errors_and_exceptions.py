@@ -37,10 +37,10 @@ while True:
         print('\nYou have not entered a number. Try again\n')
         continue
     else:
-        print("\nNumber inputted- {}\n".format(x))
+        print("\nNumber inputted is {}\n".format(x))
         break
     finally:
-        print("\nThank you for trying\n")
+        print("\nThank you for trying.\n")
     
 print('#' * 99)
 print("We can still access an error message after we have handled an exception to prevent the program from crashing")
