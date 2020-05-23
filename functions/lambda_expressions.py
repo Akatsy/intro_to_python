@@ -65,3 +65,10 @@ cities = ['New York', 'Barcelona', 'Madrid', 'Amsterdam', 'Cape Town', 'New Delh
 short_cities = list(filter(is_short, cities))
 short_cities = list(filter(lambda name: len(name)<8, cities))
 print(short_cities)
+
+print('#' * 99)
+print(r'''
+Lambda expressions syntax
+
+lambda arg1,arg2: statement / expression to execute
+''')
