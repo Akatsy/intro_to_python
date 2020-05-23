@@ -56,6 +56,7 @@ If a class subclasses another class and its behavior is mostly inherited from th
 print('#' * 99)
 
 print("Here is Google's docstring format:")
+print("Link to learn more -->  https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format")
 print('''This is an example of Google style.
 
 Args:
@@ -80,14 +81,16 @@ print("After the inputs description, it is good to give a description of the out
 print('#' * 99)
 print('#' * 99)
 print("an example of a docstring")
-print("def population_density(population, land_area):\n\t\"\"\" Calculate the population density of an area\n\t\tINPUT:\n\t\tpopulation: int. The number of people in an area\n\t\tland_area: int or float. This is unit-agostic meaning if you give the area in a certain unit,\n\t\tsay kilometres or miles, the answer will be given in that unit\n\t\tOUTPUT:\n\t\tpopulation_density: population/land_area. The population density of a given area \"\"\"\n\treturn population/land_area")
+print("def population_density(population, land_area):\n\t\"\"\" Calculate the population density of an area\n\n\t\tINPUT:\n\t\tpopulation: int. The number of people in an area\n\t\tland_area: int or float. This is unit-agostic meaning if you give the area in a certain unit,\n\t\tsay kilometres or miles, the answer will be given in that unit\n\n\t\tOUTPUT:\n\t\tpopulation_density: population/land_area. The population density of a given area \"\"\"\n\n\treturn population/land_area")
 print('#' * 99)
 
 def population_density(population, land_area):
     """ Calculate the population density of an area
+
         INPUT:
         population: int. The number of people in an area
         land_area: int or float. This is unit-agostic meaning if you give the area in a certain unit, say kilometres or miles, the answer will be given in that unit
+
         OUTPUT:
         population_density: population/land_area. The population density of a given area """ 
     return population/land_area
@@ -100,8 +103,10 @@ print('#' * 99)
 
 def readable_timedelta(days):
     """ calculate number of weeks and days given a number of days
+
         INPUT:
         days: int. a number representing the number of days
+        
         OUTPUT:
         a string stating the number of days given, and the number of weeks and days that evaluates to"""
     weeks = days // 7
