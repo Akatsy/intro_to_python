@@ -7,7 +7,7 @@ print('#' * 99)
 print("Functions are a way to take data types & operators, data structures, control flow, loops and many other programming concepts and put them into a holder that allows you to use it over and over again in an easy to use container")
 print('#' * 99)
 
-print("for example suppose we want to find the volume of a cylinder, then we can define a function like:\ndef volume_cylinder(height, radius):\n\tpi = 3.14159265359\n\tvolume = pi * radius **2 * height\n\treturn volume")
+print("for example suppose we want to find the volume of a cylinder, then we can define a function like:\ndef volume_cylinder(height, radius):\n\tpi = 3.14159265359\n\tvolume = pi * radius**2 * height\n\treturn volume")
 def volume_cylinder(height, radius):
     pi = 3.14159265359
     volume = pi * radius**2 * height
