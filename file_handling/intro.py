@@ -11,7 +11,7 @@ print('#' * 99)
 
 print(r'''
 This is how to read information from a file into Python:
-1. Open the file using the built in function open()
+1. Open the file using the built-in function open()
 >>>f = open('/path/to/file.txt', 'r')
 
 Open takes in a string with the path to the file as the first parameter, and another string as the second parameter that specifies the mode we want to open the file in - 'r' is for 'read mode' meaning we just want to access the contents of the file and not modify anything. (If not specified the mode defaults to read)
