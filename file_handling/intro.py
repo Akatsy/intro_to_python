@@ -14,7 +14,12 @@ This is how to read information from a file into Python:
 1. Open the file using the built-in function open()
 >>>f = open('/path/to/file.txt', 'r')
 
-Open takes in a string with the path to the file as the first parameter, and another string as the second parameter that specifies the mode we want to open the file in - 'r' is for 'read mode' meaning we just want to access the contents of the file and not modify anything. (If not specified the mode defaults to read)
+open() takes in a string with the path to the file as the first parameter, and another string as the second parameter that specifies the mode we want to open the file in -
+'r' is for 'read mode' meaning we just want to access the contents of the file and not modify anything,
+'w' is for 'write mode' meaning we want to change the contents of the file - it overwrites anything that was there previously.
+'a' is for 'append mode' which means we wamt to add content to the file and not overwrite anything that was there before.
+'r+' is for 'read and write mode' meaning we want to both read and write (If not specified the mode defaults to read)
+
 open() returns a file object which is a Python object through which Python interacts with the file itself.
 Once we have opened a file and created a file object, we can use the read method to access the contents of this file.
 
