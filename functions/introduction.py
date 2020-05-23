@@ -19,7 +19,7 @@ print(volume_cylinder(45, 450))
 
 print('#' * 99)
 print("Defining a function is as easy as above. It has a few important parts as follows:")
-print("A. Function header (def statements) - This is the first statement in a function definition. It consists of;")
+print("A. Function header (def statement) - This is the first statement in a function definition. It consists of;")
 print("1. 'def' keyword- A function definition always begins with the def keyword. This tells Python that whatever follows is a function definition. That statement that starts with def keyword must always end with a colon (:)")
 print('#' * 99)
 print("2. function name- After the def keyword, what follows is the name of the function. This is the command we will call to run the code encapsulated in it. The rules for naming a function are similar to those of naming Python variables.")
@@ -29,7 +29,7 @@ print("3. Immediately after the function name is a parantheses that houses any n
 
 print('#' * 99)
 print("B. Function body - This is the indented block of code below the function header")
-print("4. After the definition statement that ends with a colon, comes the body of the function which must be indented below it. It is where the function does it's work. The body can contain other variable declarations and any number of statements or code blocks to perform a task")
+print("4. After the definition statement that ends with a colon, comes the body of the function which must be indented below it. It is where the function does its work. The body can contain other variable declarations and any number of statements or code blocks to perform a task")
 
 print('#' * 99)
 print("A few important terms as far as functions go that might be confusing are explained below:")
@@ -51,7 +51,7 @@ print('#' * 99)
 print("We get back the code block inside the function body and the None keyword. Why is the None keyword given as an output?")
 
 print('#' * 99)
-print("Often, the body of a Python function will have the return statement i.e the return keyword followed by an expression (or value) whose value is what return will give as the output value of the function. So the return statement is used by  a function to give a return value (output) from the function")
+print("Often, the body of a Python function will have the return statement i.e the return keyword followed by an expression (or value) whose value is what return will give as the output value of the function. So the return statement is used by a function to give a return value (output) from the function")
 print("If the return keyword is not used in a function body explicitly to define the output, then the function returns None keyword as seen from the example above i.e Python adds a 'return None' to the end of any function definition with no return statement")
 print('#' * 99)
 print("The None value is the only value of the NoneType data type. It represents the absence of a value and is helpful when you need to store something that will not be confused for a real value in a variable")
@@ -75,14 +75,14 @@ print('#' * 99)
 print("2. named arguments- This is where we give values inside the parantheses using their parameter names and then supply a value e.g cylinder_volume(radius=10, height=6) so the height will be 6 and radius will be 10")
 
 print('#' * 99)
-print("Function - A block of code that has a name but does not do anythin until we tell it to (by calling it)")
+print("Function - A block of code that has a name but does not do anything until we tell it to (by calling it)")
 print("Function call - A statement that makes a function run (perform a process)")
 print("Method - A function associated with an object")
 print("Arguments - Values we can pass to a function when we call it")
 
 print('#' * 99)
 print("What is the difference between print() and return statements in a function??")
-print("print() provides output for the output window (console) while return provides an output value  to the statement that called it and that value can also be stored and used by other programs")
+print("print() provides output for the output window (console) while return provides an output value to the statement that called it and that value can also be stored and used by other programs")
 
 print('#' * 99)
 print("Functions are the primary way to compartmentalize your code into logical groups. Since the variables in functions exist in their own local scopes, the code in one function cannot directly affect the values of variables in other functions. This limits what code could be changing the values of your variables, which can be helpful when it comes to debugging your code.".upper())
