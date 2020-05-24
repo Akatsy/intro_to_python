@@ -83,6 +83,7 @@ f_text = f.read()
 f.close()
 print(f_text)
 
+print('\n write() does not add a newline character for you. You have to add it manually')
 print('#' * 99)
 
 print(r'''
