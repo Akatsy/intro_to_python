@@ -60,3 +60,15 @@ def all_even():
         yield n
         n += 2
 ''')
+
+def all_even():
+    num = 0
+    while True:
+        yield num
+        num += 2
+
+# try out the infinite stream with a break condition so it does not run forever
+for i in all_even():
+    print(i)
+    if i == 10000:
+        break
