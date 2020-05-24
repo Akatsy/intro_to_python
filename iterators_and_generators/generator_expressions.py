@@ -70,5 +70,5 @@ def all_even():
 # try out the infinite stream with a break condition so it does not run forever
 for i in all_even():
     print(i)
-    if i == 10000:
+    if i == 100:
         break
