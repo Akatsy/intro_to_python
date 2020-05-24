@@ -29,8 +29,11 @@ print(r'''
 Generator expressions can be used as function arguments. When used in such a way, the round parentheses can be dropped.
 
 >>> sum(x**2 for x in range(100))
-146
+328350
 
 >>> max(x**2 for x in range(100))
-100
+9801
 ''')
+
+print(sum(x**2 for x in range(100)))
+print(max(x**2 for x in range(100)))
