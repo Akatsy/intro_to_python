@@ -54,6 +54,37 @@ print(my_range(4))
 for n in my_range(4):
     print(n)
 
+print('#' * 99)
+
+print(r'''
+Normally, generator functions are implemented with a loop having a suitable terminating condition.
+
+Let's take an example of a generator that reverses a string.
+
+def rev_str(my_str):
+    length = len(my_str)
+    for i in range(length - 1, -1, -1):
+        yield my_str[i]
+
+
+# For loop to reverse the string
+for char in rev_str("hello"):
+    print(char)
+
+When we run the above program, we get the following output:
+
+o
+l
+l
+e
+h
+In this example, we have used the range() function to get the index in reverse order using the for loop.
+
+Note: This generator function not only works with strings, but also with other kinds of iterables like list, tuple, etc.
+''')
+
+print('#' * 99)
+
 
 print(r'''
 Why Generators?
