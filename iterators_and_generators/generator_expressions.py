@@ -47,6 +47,7 @@ A few reasons why generators are used in Python:
 A normal function to return a sequence will create the entire sequence in memory before returning the result. This is an overkill, if the number of items in the sequence is very large.
 
 Generator implementation of such sequences is memory friendly and is preferred since it only produces one item at a time.
+A generator does not produce the required result immediately. Instead, it returns a generator object, which produces items only on demand.
 
 2. Represent Infinite Stream
 Generators are excellent mediums to represent an infinite stream of data. Infinite streams cannot be stored in memory, and since generators produce only one item at a time, they can represent an infinite stream of data.
