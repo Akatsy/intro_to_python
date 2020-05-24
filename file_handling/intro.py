@@ -177,7 +177,7 @@ print('#' * 99)
 
 print(r'''
 Conveniently, Python can loop over the lines of a file using the syntax 'for line in file:'
-Ypu could use this to create a list of lines in the file
+You could use this to create a list of lines in the file
 Because each line has a newline character attached, you can use .strip() to remove it 
 ''')
 if_poem_lines_list = []
