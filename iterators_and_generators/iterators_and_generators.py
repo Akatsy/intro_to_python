@@ -83,6 +83,15 @@ In this example, we have used the range() function to get the index in reverse o
 Note: This generator function not only works with strings, but also with other kinds of iterables like list, tuple, etc.
 ''')
 
+def rev_str(a_str):
+    length = len(a_str)
+    for i in range(length-1, -1, -1):
+        yield a_str[i]
+
+for char in rev_str('Python'):
+    print(char, end='')
+
+print()
 print('#' * 99)
 
 
