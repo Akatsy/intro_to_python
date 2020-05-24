@@ -37,3 +37,16 @@ Generator expressions can be used as function arguments. When used in such a way
 
 print(sum(x**2 for x in range(100)))
 print(max(x**2 for x in range(100)))
+
+print('#' * 99)
+
+print(r'''
+A few reasons why generators are used in Python:
+
+1. Memory Efficient
+A normal function to return a sequence will create the entire sequence in memory before returning the result. This is an overkill, if the number of items in the sequence is very large.
+
+Generator implementation of such sequences is memory friendly and is preferred since it only produces one item at a time.
+
+2. 
+''')
