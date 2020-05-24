@@ -7,9 +7,16 @@ An iterator is different from an iterable like a list since a list is not a stre
 
 You can create iterators using generators
 Generator - a function that creates an iterator
+a generator is a function that returns an object (iterator) which we can iterate over (one value at a time).
 
 Generator is a simple way to create iterators using functions
 Generator is often used to refer to the generator function but is sometimes also used to refer to the iterator object produced by the function
+
+It is fairly simple to create a generator in Python. It is as easy as defining a normal function, but with a yield statement instead of a return statement.
+
+If a function contains at least one yield statement (it may contain other yield or return statements), it becomes a generator function. Both yield and return will return some value from a function.
+
+The difference is that while a return statement terminates a function entirely, yield statement pauses the function saving all its states and later continues from there on successive calls.
 
 def my_range(x):
     i = 0
