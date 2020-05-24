@@ -21,3 +21,16 @@ sq_list = [x**2 for x in range(100)]
 print(sq_list)
 sq_generator = (x**2 for x in range(100))
 print(sq_generator)
+
+
+print('#' * 99)
+
+print(r'''
+Generator expressions can be used as function arguments. When used in such a way, the round parentheses can be dropped.
+
+>>> sum(x**2 for x in range(100))
+146
+
+>>> max(x**2 for x in range(100))
+100
+''')
