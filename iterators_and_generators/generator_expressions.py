@@ -48,5 +48,14 @@ A normal function to return a sequence will create the entire sequence in memory
 
 Generator implementation of such sequences is memory friendly and is preferred since it only produces one item at a time.
 
-2. 
+2. Represent Infinite Stream
+Generators are excellent mediums to represent an infinite stream of data. Infinite streams cannot be stored in memory, and since generators produce only one item at a time, they can represent an infinite stream of data.
+
+The following generator function can generate all the even numbers (at least in theory).
+
+def all_even():
+    n = 0
+    while True:
+        yield n
+        n += 2
 ''')
