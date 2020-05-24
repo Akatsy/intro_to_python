@@ -191,10 +191,12 @@ print('#' * 99)
 print("Alternatively, If you want to read all the lines of a file in a list you can also use list(f) or f.readlines().")
 
 with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
-    print(list(f))
+    print(list(f)) # convert the file object into a list
+print('#' * 99)
 
 with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
-    print(f.readlines())
+    print(f.readlines())  # return a list of the lines in the file object
+print('#' * 99)
 
 print("\nNote that the lines read into the list using list(f) or f.readlines() have the newline character still attached")
 
