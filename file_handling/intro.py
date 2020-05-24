@@ -160,9 +160,18 @@ Second line of the file
 
 ''')
 
+print("loop over lines in a file and print them out with the end character changed from a newline character to no whitespace because each line already has a new character at the end of it\n")
+
 with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
     for line in f:
         print(line, end='')
+
+print('#' * 99)
+
+print("loop over lines in a file and print them out\n")
+with open('/home/mutwiri2/Desktop/intro_to_python/file_handling/if') as f:
+    for line in f:
+        print(line)
 
 print('#' * 99)
 
