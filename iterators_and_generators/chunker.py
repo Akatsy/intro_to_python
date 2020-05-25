@@ -19,7 +19,9 @@
 
 def chunker(iterable, size):
     """Yield successive chunks from iterable of length size."""
-    for i in range(0, len(iterable), size):
+    length = len(iterable)
+    for i in range(0, length, size):
+        print(i)
         yield iterable[i:i + size]
 
 
