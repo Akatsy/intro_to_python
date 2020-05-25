@@ -6,6 +6,8 @@ If you encounter an error message or have trouble making your code work, you won
 
  No one person can know everything about programming, so an everyday part of any software developer’s job is looking up answers to technical questions.
 
+##########################################################################################################################
+
 Asking Smart Programming Questions
 
 If you can’t find the answer by searching online, try asking people in a web forum such as Stack Overflow (https://stackoverflow.com/) or the “learn programming” subreddit at https://reddit.com/r/learnprogramming/
@@ -28,4 +30,10 @@ These websites make it easy to share large amounts of code with people online, w
 5. If the error came up after you made a change to your code, explain exactly what you changed.
 
 6. Say whether you’re able to reproduce the error every time you run the program or whether it happens only after you perform certain actions. If the latter, then explain what those actions are.
+
+
+#####################################################################################################################
+
+You can find more information on how to ask for programming help in the blog post at https://autbor.com/help/.
+You can find a list of frequently asked questions about programming at https://www.reddit.com/r/learnprogramming/wiki/faq/ You can find a list about getting a job in software development at https://www.reddit.com/r/cscareerquestions/wiki/index/.
 ''')
