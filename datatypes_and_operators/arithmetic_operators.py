@@ -15,7 +15,7 @@ print("The '/' (forward slash) symbol is the python arithmetic operator for divi
 print("Note that the result of the '/' operator is always a float even when the result is a whole number")
 print("65 / 5 = ", 65/5)
 print('#' * 79)
-print("The '//' (double forward slash) is the python arithmetic operator for integer division as shown below:")
+print("The '//' (double forward slash) is the python arithmetic operator for integer division (floored quotient) as shown below:")
 print("Integer division means the answer is rounded down to the nearest integer and this applies to even negative real numbers")
 print("43 // 5 = ", 43//5)
 print("-53 // 7 = ", -53//7)
