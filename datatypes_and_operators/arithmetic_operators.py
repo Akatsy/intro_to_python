@@ -28,3 +28,13 @@ print("For example the equation: 3 + 5 - 5 * 6 ** 4 / 2 // 2 % 5 will evaluate t
 print('#' * 79)
 print("To change the order of operation i.e to have an operation executed first, wrap parantheses around that operation. You can nest parantheses inside parantheses and execution begins in the innermost parantheses and once finished it goes to the next parantheses till execution is done")
 print("For example altering the order of the equation from before will result in a different answer as follows: 3 + (5 - 5) * 6 ** 4 / 2 // 2 % 5 will evaluate to", 3 + (5 - 5) * 6 ** 4 / 2 // 2 % 5)
+
+print(r'''
+The most basic kind of instruction in Python is an expression.
+An expression is made up of values and operators
+Expressions have a characteristic that they can always reduce (evaluate down) to
+a single value. Therefore you can use an expression anywhere in Python that you
+could also use a single value.
+A single value with no operator is also considered an expression although it just
+evaluates to itself.
+''')
