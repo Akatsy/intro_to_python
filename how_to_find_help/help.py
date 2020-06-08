@@ -2,7 +2,7 @@ print(r'''
 Programmers tend to learn by searching the internet for answers to their questions.
 What’s great about using the internet as a schoolroom is that there are whole communities of folks who can answer your questions.
 Indeed, your questions have probably already been answered, and the answers are waiting online for you to find them.
-If you encounter an error message or have trouble making your code work, you won’t be the first person to have your problem, and finding a solution is easier than you might think.
+If you encounter an error message or have trouble making your code work, you won’t be the first person to have that problem, and finding a solution is easier than you might think.
 
  No one person can know everything about programming, so an everyday part of any software developer’s job is looking up answers to technical questions.
 
@@ -35,5 +35,6 @@ These websites make it easy to share large amounts of code with people online, w
 #####################################################################################################################
 
 You can find more information on how to ask for programming help in the blog post at https://autbor.com/help/.
-You can find a list of frequently asked questions about programming at https://www.reddit.com/r/learnprogramming/wiki/faq/ You can find a list about getting a job in software development at https://www.reddit.com/r/cscareerquestions/wiki/index/.
+You can find a list of frequently asked questions about programming at https://www.reddit.com/r/learnprogramming/wiki/faq/
+You can find a list about getting a job in software development at https://www.reddit.com/r/cscareerquestions/wiki/index/.
 ''')
