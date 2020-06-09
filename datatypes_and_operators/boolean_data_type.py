@@ -26,3 +26,4 @@ print("2. 'or' operator that evaluates if at least one side of the equation is t
 print("and & or are binary boolean operators because they always take two boolean values (or expressions)")
 print("3. 'not' operator that inverses the value of a boolean e.g not True evaluates to", not True)
 print("not is a unary boolean operator because it only operates on one boolean value (or expression)")
+print("Boolean operators have order of operations like arithmetic operators: NAO (not, and, or)")
