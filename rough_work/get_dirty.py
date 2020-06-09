@@ -100,6 +100,6 @@ a() # call function a() to see the call stack in action
 
 print('#' * 99)
 print("What is the difference between an expression and a statement?")
-print("A statement is a complete line of Python code that performs some action\nwhile an expression is the most basic kind of instruction in Python that is made up of values and operators and always reduces (evaluates) to a single value")
+print("A statement is a complete line of Python code that performs some action e.g assignment statement assigns a value to a variable (initializes a variable)\nwhile an expression is the most basic kind of instruction in Python that is made up of values and operators (or function calls) and always reduces (evaluates) to a single value. An expression can be used anywhere in Python where we would use a value since it always reduces to a single value")
 
 print('#' * 99)
