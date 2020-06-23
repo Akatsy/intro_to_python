@@ -34,6 +34,11 @@ print("It is included as an easter egg in the Python interpreter which can be\
 import this
 
 print('#' * 99)
+print(r'''
+Python is a programming language (with syntax rules for writing what is considered
+valid Python code) and the Python interpreter software that reads source code 
+(written in the Python language) and performs its instructions
+''')
 print("Python is a powerful, general-purpose programming language with the\
  following applications:")
 print("web and internet development")
