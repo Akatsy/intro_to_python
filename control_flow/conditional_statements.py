@@ -1,3 +1,18 @@
+print(r'''
+Flow control statements often start with a part called the condition and are
+always followed by a block of code called the clause
+
+Conditions are expressions that always evaluate to True or False
+
+The clauses are blocks of code which is just Python lines of code grouped together
+There are 3 rules for blocks:
+1. Blocks begin when indentation increases
+2. Blocks can contain other blocks
+3. Blocks end when the indentation decreases to zero or to a containing's block
+indentation
+''')
+print('#' * 99)
+
 phone_balance = 10
 bank_balance = 50
 
@@ -40,3 +55,5 @@ else:
 
 message = "Somebody who is {} years old will pay ${} to ride the bus.".format(age, ticket_price)
 print(message)
+
+print('#' * 99)
