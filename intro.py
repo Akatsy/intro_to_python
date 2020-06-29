@@ -28,7 +28,10 @@ print("The language's core philosophy is summarized in the document 'The Zen of\
  Python'")
 print('#' * 99)
 print("The Zen of Python is a collection of '19 guiding principles' for writing\
- computer programs that influence the design of the Python programming language")
+ computer programs that influence the design of the Python programming language\
+ written by software engineer Tim Peters. Peters's list left open a 20th principle\
+ 'for Guido to fill in', referring to Guido van Rossum, the original author of the\
+ Python language. The vacancy for a 20th principle has not been filled.")
 print("It is included as an easter egg in the Python interpreter which can be\
  displayed by typing the following statement on the Python interpreter:\nimport this\n")
 import this
