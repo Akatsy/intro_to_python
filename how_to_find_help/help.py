@@ -58,4 +58,5 @@ You can find a list of frequently asked questions about programming
 at https://www.reddit.com/r/learnprogramming/wiki/faq/
 You can find a list about getting a job in software development 
 at https://www.reddit.com/r/cscareerquestions/wiki/index/.
+You can view the execution of a program at http://pythontutor.com/
 ''')
