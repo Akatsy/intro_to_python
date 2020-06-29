@@ -165,4 +165,5 @@ print('#' * 79)
 
 print("print(my_variable)")
 print(my_variable)
-print('Hello there!') #will not be executed because the line preceding it has a syntactic / parsing error
+print('Hello there!') #will not be executed because the line preceding it has a
+# syntactic / parsing error
