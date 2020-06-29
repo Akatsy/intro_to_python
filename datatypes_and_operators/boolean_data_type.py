@@ -49,6 +49,7 @@ print("6. not equal to operator (!=) e.g 0.3 != 0.1+0.1+0.1 results in", 0.3 != 
 print('#' * 79)
 
 print("The logical operators (also called boolean operators) in Python are:")
+print("They are called boolean operators because they operate on boolean values")
 
 print("1. 'and' operator that evaluates if both sides of the equation are true\
  e.g 20>5 and 30==30 evaluates to", 20>5 and 30==30)
