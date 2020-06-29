@@ -1,22 +1,28 @@
 tab = '    '
-print("If you declare a variable tab and assign to it one tab from the keyboard then len(tab) returns",len(tab))
+print("If you declare a variable tab and assign to it one tab from the keyboard\
+ then len(tab) returns",len(tab))
 print('#'*79)
 
 tab_2 = '       '
-print("If you declare a variable tab_2 and assign to it two tabs from the keyboard then len(tab_2) returns",len(tab_2))
+print("If you declare a variable tab_2 and assign to it two tabs from the\
+ keyboard then len(tab_2) returns",len(tab_2))
 print('#'*79)
 
 tab_3 = '           '
-print("If you declare a variable tab_3 and assign to it three tabs from the keyboard then len(tab_3) returns",len(tab_3))
+print("If you declare a variable tab_3 and assign to it three tabs from the\
+ keyboard then len(tab_3) returns",len(tab_3))
 print('#'*79)
 
 newline = '''
 '''
-print("If you declare a variable newline and assign to it a multiline string like below\nnewline = '''\n'''\n then len(newline) will return ",len(newline))
+print("If you declare a variable newline and assign to it a multiline string\
+ like below\nnewline = '''\n'''\n then len(newline) will return ",len(newline))
 print('#'*79)
 
 print("len('\\t') returns",len('\t'))
+
 print("len('\\n') returns",len('\n'))
+
 print("len(' ') returns",len(' '))
 print('#' * 99)
 
@@ -100,6 +106,11 @@ a() # call function a() to see the call stack in action
 
 print('#' * 99)
 print("What is the difference between an expression and a statement?")
-print("A statement is a complete line of Python code that performs some action e.g assignment statement assigns a value to a variable (initializes a variable)\nwhile an expression is the most basic kind of instruction in Python that is made up of values and operators (or function calls) and always reduces (evaluates) to a single value. An expression can be used anywhere in Python where we would use a value since it always reduces to a single value")
+print("A statement is a complete line of Python code that performs some action\
+ e.g assignment statement assigns a value to a variable (initializes a variable)\
+\nwhile an expression is the most basic kind of instruction in Python that is\
+ made up of values and operators (or function calls) and always reduces\
+ (evaluates) to a single value. An expression can be used anywhere in Python\
+ where we would use a value since it always reduces to a single value")
 
 print('#' * 99)
