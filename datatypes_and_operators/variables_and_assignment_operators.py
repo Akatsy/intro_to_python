@@ -6,6 +6,8 @@ print('#' * 79)
 print("This is how to declare a variable to store data (value of any type e.g a\
  number):")
 print("variable_name = value")
+print("A variable is initialized (or created) the first time a value is stored\
+ in it. After that, you can use it in expressions with other variables and values")
 print('#' * 79)
 
 print("Whatever term is on the left (variable_name) becomes a name for whatever\
