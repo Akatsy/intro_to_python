@@ -64,3 +64,20 @@ print("3. You will inevitably run into errors as you learn and code in Python.\
  tell you that it does not quite understand what you have instructed it to do.\
  Use errors as a learning tool, don't let them be a deterrent or discouragement\
  in your learning to code journey")
+
+print("Sidebar".upper().center(79,'*'))
+print(r'''
+What is Programming?
+
+Programming is (simply put) the act of entering instructions for the computer to 
+perform
+This instructions might accomplish a wide variety of tasks e.g crunch some numbers,
+modify some text, communicate with other computers over the internet e.t.c
+
+All programs we write will use some basic instructions as building blocks to implement
+more intricate decisions. The basic instructions are:
+1. Do this, then do that (normal program flow)
+2. If this condition is true, then do this, otherwise do that (conditionals)
+3. Do this exactly n times. (for loops)
+4. Keep doing that until this condition is true. (while loops)
+''')
