@@ -33,11 +33,13 @@ print("Integer division means the answer is rounded down to the nearest integer\
 print("43 // 5 = ", 43//5)
 print("-53 // 7 = ", -53//7)
 print('#' * 79)
+
 print("The '%' (percentage) symbol is the python arithmetic operator for modulo\
  operation (i.e finds the remainder after division of one number by another\
  (called the modulus of the operation)) as shown below:")
 print("38 % 4 = ", 38%4)
 print('#' * 79)
+
 print("The mathematical order of operation holds in Python i.e given a mixture\
  of arithmetic operations in the same equation, then they will be executed using\
  the following order from first to last:\
@@ -45,6 +47,7 @@ print("The mathematical order of operation holds in Python i.e given a mixture\
 print("For example the equation: 3 + 5 - 5 * 6 ** 4 / 2 // 2 % 5 will evaluate to\
 ", 3 + 5 - 5 * 6 ** 4 / 2 // 2 % 5)
 print('#' * 79)
+
 print("To change the order of operation i.e to have an operation executed first,\
  wrap parantheses around that operation. You can nest parantheses inside\
  parantheses and execution begins in the innermost parantheses and once finished\
@@ -52,6 +55,7 @@ print("To change the order of operation i.e to have an operation executed first,
 print("For example altering the order of the equation from before will result in\
  a different answer as follows: 3 + (5 - 5) * 6 ** 4 / 2 // 2 % 5 will evaluate to\
  ", 3 + (5 - 5) * 6 ** 4 / 2 // 2 % 5)
+print('#' * 79)
 
 print(r'''
 The most basic kind of instruction in Python is an expression.
