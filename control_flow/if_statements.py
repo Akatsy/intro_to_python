@@ -37,7 +37,8 @@ print("1. elif (short for else if) statement - This is a conditional clause that
  evaluates to True")
 
 print("You can have as many elif clauses as neccessary, each with its condition\
- to check and evaluates if the other clauses above it execute to false")
+ to check and evaluates if the other clauses above it execute to false ie the rest\
+ of the elif clauses are automatically skipped once a True condition has been found")
 print('#' * 79)
 
 print("2. else - This clause is the last in an if statement. It will execute if\
