@@ -14,7 +14,7 @@ print("An if statement is declared as follows:\n\tYou begin with the if keyword\
  expression must evaluate to either True or False) then end with a full colon(:)\
  \n\tBelow that you then have an indented block of code that you wish to be\
  evaluated if the conditional statement evaluates to True, or otherwise skipped\
- if it evaluates to False")
+ if it evaluates to False. This block is called the if clause")
 print('#' * 79)
 
 print("Python indents blocks of code using spaces (4 spaces by default - use\
