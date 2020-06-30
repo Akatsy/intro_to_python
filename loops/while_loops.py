@@ -1,20 +1,36 @@
 # do unspecified number of iterations using the while loop
 
-print("The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true")
-print("It is normally used when we do not know the number of times to iterate beforehand")
+print("The while loop in Python is used to iterate over a block of code as long\
+ as the test expression (condition) is true")
+print("Normally used when we do not know the number of times to iterate beforehand")
 print('#' * 79)
-print("The format / how to define a while loop is as follows:\n\nwhile test_expression:\n\tbody_of_the_loop\n")
+
+print("The format / how to define a while loop is as follows:\n\nwhile test_expression:\
+\n\tbody_of_the_loop\n")
+
 print("We begin with the keyword 'while' to signal that it is a while loop")
-print("Following the while keyword is a test_expression that is evaluated to a boolean value")
+
+print("Following the while keyword is a test_expression that is evaluated to a\
+ boolean value")
 print("A colon (:) marks the end of the while statement")
-print("Below the while statement is the body of the loop which is a block of code signified by increased indentation and which will execute once for every iteration")
+
+print("Below the while statement is the body of the loop which is a block of code\
+ signified by increased indentation and which will execute once for every iteration")
 print('#' * 79)
-print("The test_expression typically involves one or more variables that are initialized prior to starting the loop and modified somewhere in the body of the loop")
+
+print("The test_expression typically involves one or more variables that are\
+ initialized prior to starting the loop and modified somewhere in the body of the loop")
 
 print('#' * 79)
-print("In the while loop, the test_expression is checked first. The body of the loop is entered only if the test_expression evaluates to True.")
-print("After one iteration, the test_expression is checked again and this process continues until the test_expression evaluates to False in which case execution moves to the first unindented line after the body of the loop")
+
+print("In the while loop, the test_expression is checked first. The body of the\
+ loop is entered only if the test_expression evaluates to True.")
+
+print("After one iteration, the test_expression is checked again and this process\
+ continues until the test_expression evaluates to False in which case execution\
+ moves to the first unindented line after the body of the loop")
 print('#' * 79)
+
 # problem sets
 
 # Find the factorial of a number using a while loop.
@@ -39,7 +55,11 @@ while current <= number:
 print("The factorial of {} is {}".format(used,factorial))
 
 print('#' * 79)
-# Suppose you want to count from some number start_num by another number count_by until you hit a final number end_num. Use break_num as the variable that you'll change each time through the loop. For simplicity, assume that end_num is always larger than start_num and count_by is always positive.
+# Suppose you want to count from some number start_num by another number count_by
+#  until you hit a final number end_num. Use break_num as the variable that you'll
+#  change each time through the loop. For simplicity, assume that end_num is always
+#  larger than start_num and count_by is always positive.
+
 start_num = 5 #provide some start number
 end_num = 100 #provide some end number that you stop when you hit
 count_by = 2 #provide some number to count by 
@@ -53,9 +73,15 @@ while break_num < end_num:
 print(break_num)
 
 print('#' * 79)
-# Suppose you want to count from some number start_num by another number count_by until you hit a final number end_num, and calculate break_num the way you did in the last quiz.
+# Suppose you want to count from some number start_num by another number count_by
+# until you hit a final number end_num, and calculate break_num the way you did 
+# in the last quiz.
 
-# Now in addition, address what would happen if someone gives a start_num that is greater than end_num. If this is the case, set result to "Oops! Looks like your start value is greater than the end value. Please try again." Otherwise, set result to the value of break_num.
+# Now in addition, address what would happen if someone gives a start_num that is
+# greater than end_num. If this is the case, set result to "Oops! Looks like your
+# start value is greater than the end value. Please try again." Otherwise, set 
+# result to the value of break_num.
+
 start_num = 10 #provide some start number
 end_num = 9 #provide some end number that you stop when you hit
 count_by = 1 #provide some number to count by 
@@ -65,7 +91,8 @@ count_by = 1 #provide some number to count by
 #   check against end_num
 break_num = start_num
 if start_num > end_num:
-    result = "Oops! Looks like your start value is greater than the end value. Please try again."
+    result = "Oops! Looks like your start value is greater than the end value.\
+     Please try again."
 else:
     break_num = start_num
     while break_num < end_num:
@@ -74,7 +101,10 @@ else:
 
 print('#' * 99)
 
-# Write a while loop that finds the largest square number less than an integer limit and stores it in a variable nearest_square. A square number is the product of an integer multiplied by itself, for example 36 is a square number because it equals 6*6.
+# Write a while loop that finds the largest square number less than an integer
+# limit and stores it in a variable nearest_square. A square number is the product
+# of an integer multiplied by itself, for example 36 is a square number because
+# it equals 6*6.
 
 # For example, if limit is 40, your code should set the nearest_square to 36.
 
@@ -88,6 +118,8 @@ print(nearest_square)
 print('#' * 99)
 
 print("Requirements to consider adding into a while loop".upper().center(99, '='))
-print("1. A condition expression that will be accessed and when met will allow you to exit the loop (i.e a way to exit the loop)")
-print("2. Make sure the loop is advancing - The value of the condition variable is changing with each iteration of the loop")
+print("1. A condition expression that will be accessed and when met will allow you\
+ to exit the loop (i.e a way to exit the loop)")
+print("2. Make sure the loop is advancing - The value of the condition variable\
+ is changing with each iteration of the loop")
 print('#' * 99)
