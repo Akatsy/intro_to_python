@@ -48,7 +48,7 @@ print("The factorial of {} is {}".format(used,factorial))
 factorial = 1
 number = 5 # number to find factorial of. change to any value
 used = number
-current = 1 # number to keep track of number we working on
+current = 2 # number to keep track of number we working on
 while current <= number:
     factorial *= current
     current += 1
