@@ -139,7 +139,13 @@ print("Function - A block of code that has a name but does not do anything until
  we tell it to (by calling it)")
 
 print("Function call - A statement that makes a function run (perform a process)")
+print("When the program execution reaches a function call, it will jump to the top\
+ line in the function definition and begin executing the code there. When it reaches\
+ the end of the function, the execution returns to the line that called the function\
+ and continues moving through the code as before")
+
 print("Method - A function associated with an object")
+
 print("Arguments - Values we can pass to a function when we call it")
 print('#' * 99)
 
