@@ -28,7 +28,7 @@ print("In the while loop, the test_expression is checked first. The body of the\
 
 print("After one iteration, the test_expression is checked again and this process\
  continues until the test_expression evaluates to False in which case execution\
- moves to the first unindented line after the body of the loop")
+ moves to the first unindented line after the body of the loop (the while clause)")
 print('#' * 79)
 
 # problem sets
