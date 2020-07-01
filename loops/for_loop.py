@@ -1,39 +1,85 @@
 # iterate (repeat an action) over an iterable using the for loop
 print("loops are a way to repeat blocks of code")
-print("Python has two types of loops:\n\t1. {} \n\t2. {}".format("for loops", "while loops"))
+print("Python has two types of loops:\n\t1. {} \n\t2. {}".format("for loops",\
+ "while loops"))
 print('#' * 99)
+
 print("for loops are loops that iterate (repeatedly do an action) over an iterable")
+
 print("An iterable is an object that can return each of its elements one at a time")
-print("An iterable can be of the sequence types like lists, tuples, strings etc or of the non-sequence types like dicts and files")
-print("You can define objects with an iter method to allow them to be used as an iterable")
+
+print("An iterable can be of the sequence types like lists, tuples, strings etc\
+ or of the non-sequence types like dicts and files")
+
+print("You can define objects with an iter method to allow them to be used as an\
+ iterable")
 print('#' * 99)
+
 print("A for loop can be defined as follows:")
 print("for iteration_variable in iterable:\n\t#block of code to be executed")
 print('#' * 99)
-print("You begin with the for keyword which signals that this is a for loop,\nthen the iteration variable (which represents the element from the iterable that the loop is currently processing for each iteration)\nthen the in keyword (membership operator),\nthen the iterable (the object that can return each of its elements one at a time)\nFinally you end the for statement with a full colon(:)")
+
+print("You begin with the for keyword which signals that this is a for loop,\n\
+then the iteration variable (which represents the element from the iterable that\
+ the loop is currently processing for each iteration)\nthen the in keyword\
+ (membership operator),\nthen the iterable (the object that can return each of\
+ its elements one at a time)\nFinally you end the for statement with a full colon(:)")
 print('#' * 99)
-print("Below the for statement is an indented block of code that executes once for each iteration")
-print("The iteration variable can be accessed and used by the indented block of code during each iteration")
+
+print("Below the for statement is an indented block of code that executes once\
+ for each iteration")
+
+print("The iteration variable can be accessed and used by the indented block of\
+ code during each iteration")
 print('#' * 99)
-print("After the body of a for loop has executed, we do not move on to the next line yet (i.e the line after the indented block). Rather, program execution goes back to the for statement where the iteration variable takes on the value of the next element from the iterable and the body is executed again.")
-print("This process repeats until the for loop has iterated over all the elements of the iterable. Then now program execution moves on to the line after the indented block of code (body of the loop)")
+
+print("After the body of a for loop has executed, we do not move on to the next\
+ line yet (i.e the line after the indented block). Rather, program execution goes\
+ back to the for statement where the iteration variable takes on the value of the\
+ next element from the iterable and the body is executed again.")
+
+print("This process repeats until the for loop has iterated over all the elements\
+ of the iterable. Then now program execution moves on to the line after the\
+ indented block of code (body of the loop)")
 print('#' * 99)
-print("The naming convention for iteration variables and iterables is to use the same name where the iteration variable is in the singular form and the iterable is in plural form e.g 'for city in cities:'")
+
+print("The naming convention for iteration variables and iterables is to use the\
+ same name where the iteration variable is in the singular form and the iterable\
+ is in plural form e.g 'for city in cities:'")
 
 print('#' * 99)
 
-print("The range() function is a useful function when dealing with loops\nIt generates an iterable immutable sequence of numbers")
-print("range() returns an object that produces a sequence of integers from start (inclusive) to stop (exclusive)")
-print("The range() function has three arguments, all of which must be integers as follows and of which the first and third are optional - range(start, stop, step)")
+print("The range() function is a useful function when dealing with loops\nIt\
+ generates an iterable immutable sequence of numbers")
+
+print("range() returns an object that produces a sequence of integers from start\
+ (inclusive) to stop (exclusive)")
+
+print("The range() function has three arguments, all of which must be integers as\
+ follows and of which the first and third are optional - range(start, stop, step)")
+
 print("Start indicates which number the sequence starts from, the default is 0")
-print("Stop is one number higher than the last number in the sequence- this argument is mandatory")
-print("Step is the difference between each number in the sequence - defaults to one (1) if not specified")
+
+print("Stop is one number higher than the last number in the sequence- this\
+ argument is mandatory")
+
+print("Step is the difference between each number in the sequence - defaults to\
+ one (1) if not specified")
 print('#' * 99)
-print("If you supply only one argument to range() then it is used as the stop value and the start defauts to 0 and step to 1")
-print("If you supply two arguments to range() then the first is used as the start value and the second as the stop value and step defaults to one.")
-print("If you supply three arguments to range() then the first is used as the start value, the second as the stop value and the third as the step")
+
+print("If you supply only one argument to range() then it is used as the stop\
+ value and the start defauts to 0 and step to 1")
+
+print("If you supply two arguments to range() then the first is used as the start\
+ value and the second as the stop value and step defaults to one.")
+
+print("If you supply three arguments to range() then the first is used as the\
+ start value, the second as the stop value and the third as the step")
 print('#' * 99)
-print("range() is often used to repeat a block of code a number of times e.g to print a greeting 10 times we would do it as follows;\n for i in range(10):\n\tprint('Helloooo')")
+
+print("range() is often used to repeat a block of code a number of times e.g to\
+ print a greeting 10 times we would do it as follows;\n for i in range(10):\n\t\
+print('Helloooo')")
 for i in range(10):
     print("Helloooo")
 
@@ -49,7 +95,8 @@ print('#' * 79)
 
 reversed_elements_list = []
 for team in teams:
-    reversed_elements_list.append(team[::-1])  #  reverse each string(element) in the teams list and add it to the new list
+    # reverse each string(element) in the teams list and add it to the new list
+    reversed_elements_list.append(team[::-1])  
 print(reversed_elements_list)
 
 print('#' * 79)
@@ -76,13 +123,16 @@ for word in sentence:
 
 print('#' * 79)
 
-# Write a for loop below that will print out every whole number that is a multiple of 5 and less than or equal to 30.
+# Write a for loop below that will print out every whole number that is a
+# multiple of 5 and less than or equal to 30.
 for num in range(5,31,5):
     print(num)
 
 print('#' * 99)
 
-# Write a for loop that iterates over the names list to create a usernames list. To create a username for each name, make everything lowercase and replace spaces with underscores. Running your for loop over the list:
+# Write a for loop that iterates over the names list to create a usernames list.
+# To create a username for each name, make everything lowercase and replace spaces
+# with underscores. Running your for loop over the list:
 
 # names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
 
@@ -98,7 +148,9 @@ for name in names:
 print(user_names)
 
 print('#' * 79)
-# Write a for loop that uses range() to iterate over the positions in names to modify the list. Like you did in the previous quiz, change each name to be lowercase and replace spaces with underscores.
+# Write a for loop that uses range() to iterate over the positions in names to 
+# modify the list. Like you did in the previous quiz, change each name to be 
+# lowercase and replace spaces with underscores.
 
 for index in range(len(names)):
     names[index] = names[index].replace(' ', '_').lower()
@@ -106,7 +158,11 @@ print(names)
 
 print('#' * 79)
 
-# Write a for loop that iterates over a list of strings, tokens, and counts how many of them are XML tags. XML is a data language similar to HTML. You can tell if a string is an XML tag if it begins with a left angle bracket "<" and ends with a right angle bracket ">". Keep track of the number of tags using the variable count.
+# Write a for loop that iterates over a list of strings, tokens, and counts how
+# many of them are XML tags. XML is a data language similar to HTML. You can 
+# tell if a string is an XML tag if it begins with a left angle bracket "<" and
+# ends with a right angle bracket ">". Keep track of the number of tags using
+# the variable count.
 # tokens = ['<greeting>', 'Hello World!', '</greeting>']
 # You can assume that the list of strings will not contain empty strings.
 
@@ -120,7 +176,9 @@ print("There are {} xml tags in the list of strings, tokens".format(count))
 
 print('#' * 79)
 
-# Write some code, including a for loop, that iterates over a list of strings and creates a single string, html_str, which is an HTML list. For example, if the list is items = ['first string', 'second string'], printing html_str should output:
+# Write some code, including a for loop, that iterates over a list of strings
+# and creates a single string, html_str, which is an HTML list. For example, 
+# if the list is items = ['first string', 'second string'], printing html_str should output:
 
 # <ul>
 # <li>first string</li>
@@ -136,14 +194,26 @@ print(html_str)
 print('#' * 79)
 # create a word counter dictionary given the following string
 
-python_history = "Python was conceived in the late 1980s[34] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL),[35] capable of exception handling and interfacing with the Amoeba operating system.[8] Its implementation began in December 1989.[36] Van Rossum shouldered sole responsibility for the project, as the lead developer, until July 12, 2018, when he announced his \"permanent vacation\" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[37] He now shares his leadership as a member of a five-person steering council.[38][39][40] In January, 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member \"Steering Council\" to lead the project"
+python_history = "Python was conceived in the late 1980s[34] by Guido van Rossum\
+ at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the\
+ ABC language (itself inspired by SETL),[35] capable of exception handling and\
+ interfacing with the Amoeba operating system.[8] Its implementation began in\
+ December 1989.[36] Van Rossum shouldered sole responsibility for the project,\
+ as the lead developer, until July 12, 2018, when he announced his \"permanent \
+ vacation\" from his responsibilities as Python's Benevolent Dictator For Life,\
+ a title the Python community bestowed upon him to reflect his long-term commitment\
+ as the project's chief decision-maker.[37] He now shares his leadership as a member\
+ of a five-person steering council.[38][39][40] In January, 2019, active Python core\
+ developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van\
+ Rossum to a five-member \"Steering Council\" to lead the project"
 
 # get a list of the words in the string given and print out the list
 word_list = python_history.split()
 print(word_list)
 print('#' * 79)
 
-# reverse the above process. Build a string from the list of words seperated by a space then print out the string
+# reverse the above process. Build a string from the list of words seperated by
+#  a space then print out the string
 word_string = ' '.join(word_list)
 print(word_string)
 print('#' * 79)
@@ -151,7 +221,8 @@ print('#' * 79)
 # create an empty dictionary to store the word count
 word_counter = {}
 
-# loop over every word in the list, check whether it is in the dictionary, if not add a new entry and set it to 1. If it exists increase it's count by 1
+# loop over every word in the list, check whether it is in the dictionary, if\
+# not add a new entry and set it to 1. If it exists increase it's count by 1
 
 for word in word_list:
     if word not in word_counter:
