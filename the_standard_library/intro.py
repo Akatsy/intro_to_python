@@ -161,3 +161,15 @@ Note after the import, datetime refers to the datetime class not the module
 ''')
 
 print('#' * 99)
+
+print(r'''
+Programs always terminate if the program execution reaches the bottom of the 
+instructions i.e the last line of code
+
+However, you can cause the program to exit before it reaches the last instruction
+by using the exit() function found in the sys module
+>>>import sys
+>>>sys.exit()
+''')
+
+print('#' * 99)
