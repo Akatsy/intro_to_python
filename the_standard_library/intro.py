@@ -1,5 +1,8 @@
 print("https://docs.python.org/3/library/")
 print(r'''
+All Python programs can call a basic set of functions called built-in functions
+e.g print(), input() e.t.c
+
 There is an entire library of built-in modules that just come with Python - this
 is the Python Standard Library
 
