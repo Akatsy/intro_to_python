@@ -15,6 +15,9 @@ print("This is where the 'break' keyword comes in.\n break will terminate a for\
 print("The break keyword terminates the loop containing it. Control of the\
  program goes to the statement immediately after the body of the loop")
 
+print("If the execution reaches a break statement, it immediately exits a loop’s\
+ clause (loop body). In code, a break statement simply contains the break keyword.")
+
 print("If the break keyword is inside a nested loop (i.e loop inside another \
 loop), it will only terminate the innermost loop")
 print('#' * 99)
@@ -50,6 +53,11 @@ print("Sometimes, we also might need to skip an iteration because of some\
 print("The continue statement is used to stop the rest of the code inside a loop\
  for the current iteration only. The loop does not terminate but continues on\
  with the next iteration")
+
+print("When the program execution reaches a continue statement, the program\
+ execution immediately jumps back to the start of the loop and reevaluates the\
+ loop’s condition. (This is also what happens when the execution reaches the end\
+ of the loop.)")
 
 print("Suppose, for example we had a basket of food and wanted to add only those\
  that are fruits to another basket. Looping through the list of food, if we\
