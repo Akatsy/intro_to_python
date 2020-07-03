@@ -38,9 +38,13 @@ print("Consider the following:\n a = [1,2,3,4] \n b = a \n a[1] = 5 \n print(a) 
 print(a)
 print(b)
 print("Why does the change in a affect b??")
-print("When we create the list, we assign its reference to the variable a. Then we assign a to b, in effect copying the reference for the list to variable b. Note that this means a and b thus refer to the same underlying list. So when you modify a, you are modifying the same list b refers to and hence the results above")
+print("When we create the list, we assign its reference to the variable a.\
+ Then we assign a to b, in effect copying the reference for the list to variable b.\
+ Note that this means a and b thus refer to the same underlying list. So when you\
+ modify a, you are modifying the same list b refers to and hence the results above")
 
 print('#' * 79)
+
 print("All values in Python have a unique identity that can be obtained with the id() function e.g \nprint(id(print))\nprint(id(False))\nprint(id(1))\nwill output:")
 print(id(print))
 print(id(False))
