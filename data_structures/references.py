@@ -70,7 +70,10 @@ print("Python's automatic garbage collection deletes any values not being\
 print('#' * 79)
 
 print("How are arguments passed to functions??")
-print("When a function is called, the values of the arguments are copied to the parameter variables. For list (and dictionaries), this means a copy of the reference is used for the parameter - meaning that the parameter and the arguments are essentially the same underlying list")
+print("When a function is called, the values of the arguments are copied to the\
+ parameter variables. For list (and dictionaries), this means a copy of the\
+ reference is used for the parameter - meaning that the parameter and the arguments\
+ are essentially the same underlying list")
 
 def eggs(par):
     print(id(par))
