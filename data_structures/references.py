@@ -43,6 +43,15 @@ print("When we create the list, we assign its reference to the variable a.\
  Note that this means a and b thus refer to the same underlying list. So when you\
  modify a, you are modifying the same list b refers to and hence the results above")
 
+print("If two variables refer to the same list (like a and b above) and the list\
+ value itself changes, both variables are affected because they both refer to the\
+ same list. The append(), extend(), remove(), sort(), reverse(), and other list\
+ methods modify their lists in place.")
+
+print("Note however that if you create a new list and assign it to one of the\
+ above variables, the id() function will return different results because creating\
+ a new list means it has a new identity different from the previous list")
+
 print('#' * 79)
 
 print("All values in Python have a unique identity that can be obtained with the\
