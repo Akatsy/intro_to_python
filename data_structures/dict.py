@@ -67,14 +67,26 @@ print("The get() method is a better way to acces a value from a key in a dict\
  the get() method which returns None or a custom user defined value.")
 print('#' * 79)
 
-print("The dict data structure supports the membership operators 'in' and 'not in' which return a bool value of whether a key exists in the dict or not")
-print("You can also check if a value exists (or not) in a dictionary using the membership operators and calling the values() method on the dictionary value e.g 'Ford' in thisdict.values() same for the keys - 'year' in thisdict.keys()")
-print("'year' in thisdict returns {} and 'cc' not in thisdict returns {}".format('year' in thisdict, 'cc' not in thisdict))
+print("The dict data structure supports the membership operators 'in' and 'not in'\
+ which return a bool value of whether a key exists in the dict or not")
+
+print("You can also check if a value exists (or not) in a dictionary using the\
+ membership operators and calling the values() method on the dictionary value\
+ e.g 'Ford' in thisdict.values() same for the keys - 'year' in thisdict.keys()")
+
+print("'year' in thisdict returns {} and 'cc' not in thisdict returns\
+ {}".format('year' in thisdict, 'cc' not in thisdict))
 print('#' * 79)
 print('#' * 99)
-print("Compound data structures can be formed by combining collections of data together. Collections of data are any of the data structures (containers of data) i.e lists, tuples, sets and dicts")
-print("As an example, we can have a dict where the value of each key is another dict like this:")
+
+print("Compound data structures can be formed by combining collections of data\
+ together. Collections of data are any of the data structures (containers of data)\
+ i.e lists, tuples, sets and dicts")
+
+print("As an example, we can have a dict where the value of each key is another\
+ dict like this:")
 print('#' * 79)
+
 cars = {
     'mercedes': {
         'model': 'c200',
@@ -89,9 +101,12 @@ cars = {
         'cc': 3000
     }
 }
+
 print("An example of a compound data structure:", cars)
-print("We can perform operations on the compound data structure as we would on the simple data structure e.g add a new object, change a value or get a value:")
+print("We can perform operations on the compound data structure as we would on\
+ the simple data structure e.g add a new object, change a value or get a value:")
 print('#' * 79)
+
 audi = {
     'model': 'Q7',
     'make': 'SUV',
@@ -101,37 +116,66 @@ audi = {
 cars['audi'] = audi
 print("Our compound data structure with a new object added", cars)
 print('#' * 79)
+
 print("We can get a car's make as follows: cars.get('audi').get('make')-", cars.get('audi').get('make'))
 print("Or we can use square brackets as follows: cars['audi']['make'] :", cars['audi']['make'])
 print('#' * 79)
 print('#' * 99)
+
 print("An exercise to play around with data structures")
-print('#' * 79)
-verse = "if you can keep your head when all about you are losing theirs and blaming it on you if you can trust yourself when all men doubt you but make allowance for their doubting too   if you can wait and not be tired by waiting or being lied about  don’t deal in lies   or being hated  don’t give way to hating and yet don’t look too good  nor talk too wise"
+
+verse = "if you can keep your head when all about you are losing theirs and blaming\
+ it on you if you can trust yourself when all men doubt you but make allowance\
+ for their doubting too   if you can wait and not be tired by waiting or being\
+ lied about  don’t deal in lies   or being hated  don’t give way to hating and\
+ yet don’t look too good  nor talk too wise"
+
 print("Here is a string\n", verse)
+
 print("The number of characters in the verse is:", len(verse))
 print('#' * 79)
+
 verse_list = verse.split()
-print("Here is a list generated from the above string by using the string method split()\n", verse_list)
+print("Here is a list generated from the above string by using the string method\
+ split()\n", verse_list)
+
 print("The number of elements in the list is:\n", len(verse_list))
 print('#' * 79)
+
 verse_set = set(verse_list)
-print("Here is a set (collection of unique elements only) generated from the list above using the set() constructor:\n", verse_set)
+print("Here is a set (collection of unique elements only) generated from the list\
+ above using the set() constructor:\n", verse_set)
+
 print("The number of elements in the set is:\n",len(verse_set))
 print('#' * 79)
-verse_dict =  {'if': 3, 'you': 6, 'can': 3, 'keep': 1, 'your': 1, 'head': 1, 'when': 2, 'all': 2, 'about': 2, 'are': 1, 'losing': 1, 'theirs': 1, 'and': 3, 'blaming': 1, 'it': 1, 'on': 1, 'trust': 1, 'yourself': 1, 'men': 1, 'doubt': 1, 'but': 1, 'make': 1, 'allowance': 1, 'for': 1, 'their': 1, 'doubting': 1, 'too': 3, 'wait': 1, 'not': 1, 'be': 1, 'tired': 1, 'by': 1, 'waiting': 1, 'or': 2, 'being': 2, 'lied': 1, 'don\'t': 3, 'deal': 1, 'in': 1, 'lies': 1, 'hated': 1, 'give': 1, 'way': 1, 'to': 1, 'hating': 1, 'yet': 1, 'look': 1, 'good': 1, 'nor': 1, 'talk': 1, 'wise': 1}
-print("This is a dictionary created from the string above with each unique word and how many times it appeared on the string:\n",verse_dict)
+
+verse_dict =  {'if': 3, 'you': 6, 'can': 3, 'keep': 1, 'your': 1, 'head': 1,\
+ 'when': 2, 'all': 2, 'about': 2, 'are': 1, 'losing': 1, 'theirs': 1, 'and': 3,\
+ 'blaming': 1, 'it': 1, 'on': 1, 'trust': 1, 'yourself': 1, 'men': 1, 'doubt': 1,\
+ 'but': 1, 'make': 1, 'allowance': 1, 'for': 1, 'their': 1, 'doubting': 1, 'too': 3,\
+ 'wait': 1, 'not': 1, 'be': 1, 'tired': 1, 'by': 1, 'waiting': 1, 'or': 2, 'being': 2,\
+ 'lied': 1, 'don\'t': 3, 'deal': 1, 'in': 1, 'lies': 1, 'hated': 1, 'give': 1, 'way': 1,\
+ 'to': 1, 'hating': 1, 'yet': 1, 'look': 1, 'good': 1, 'nor': 1, 'talk': 1, 'wise': 1}
+
+print("This is a dictionary created from the string above with each unique word\
+ and how many times it appeared on the string:\n",verse_dict)
+
 print("The number of words in the dict is:\n", len(verse_dict))
 print('#' * 79)
+
 keys_list = list(verse_dict.keys())
 print("Here is a list of keys generated from the dict by using the dict method keys()", keys_list)
 print("There are {} keys in the dict".format(len(keys_list)))
 print('#' * 79)
+
 values_list = list(verse_dict.values())
 print("Here is a list of values generated from the dict by using the dict method values()", values_list)
 print("There are {} values in the dict".format(len(values_list)))
 print('#' * 79)
-print("Let's sort the values in the list in ascending and descending order and then print the maximum and minimum value using indices")
+
+print("Let's sort the values in the list in ascending and descending order and\
+ then print the maximum and minimum value using indices")
+
 sorted_values_asc = sorted(values_list)
 sorted_values_desc = sorted(values_list, reverse=True)
 print("maximum value is:", sorted_values_asc[-1])
@@ -144,8 +188,13 @@ print('#' * 79)
 
 # other useful dictionary methods
 print("other useful dictionary methods\n")
+
 print("1. keys() - Returns a list containing the dictionary's keys")
-print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
+
+print("The value returned is not a true list since you cannot modify it\
+ (like use append() or insert() on it). It is a list-like object that can be\
+ turned to a list by passing it to the list() method")
+
 my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
 print(my_list.keys())
 print(type(my_list.keys()))
@@ -153,7 +202,10 @@ print(list(my_list.keys()))
 print('#' * 79)
 
 print("2. values() - Returns a list of all the values in the dictionary")
-print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
+print("The value returned is not a true list since you cannot modify it\
+ (like use append() or insert() on it). It is a list-like object that can be\
+ turned to a list by passing it to the list() method")
+
 my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
 print(my_list.values())
 print(type(my_list.values()))
@@ -161,13 +213,20 @@ print(list(my_list.values()))
 print('#' * 79)
 
 print("3. items() - Returns a list containing a tuple for each key value pair")
-print("The value returned is not a true list since you cannot modify it (like use append() or insert() on it). It is a list-like object that can be turned to a list by passing it to the list() method")
+print("The value returned is not a true list since you cannot modify it\
+ (like use append() or insert() on it). It is a list-like object that can be\
+ turned to a list by passing it to the list() method")
+
 my_list = {1:'a', 2:'b',3:{4:'c', 5:'d'}}
 print(my_list.items())
 print(type(my_list.items()))
 print(list(my_list.items()))
 print('#' * 79)
-print("You can use the list-like objects returned in a for loop to print out the items. You can use the multiple assignment statement to assign the items() return value to different variables")
+
+print("You can use the list-like objects returned in a for loop to print out the\
+ items. You can use the multiple assignment statement to assign the items() return\
+ value to different variables")
+
 for key,value in my_list.items():
     print(key, value)
 
@@ -175,13 +234,21 @@ print('#' * 79)
 
 
 print("4. clear() - Removes all the elements from the dictionary")
+
 print("5. copy() - Returns a copy of the dictionary")
+
 print("6. update() - Updates the dictionary with the specified key-value pairs")
+
 print("7. pop() - Removes the element with the specified key")
+
 print("8. popitem() - Removes the last inserted key-value pair")
 
 print('#' * 99)
-print("setdefault() - a method that takes two arguments, the first is the key and the second is a value for that key. It assigns and returns a default value to the key in the dictionary if it doesn't exist, and if it does it returns the value of the key and does not change it")
+
+print("setdefault() - a method that takes two arguments, the first is the key\
+ and the second is a value for that key. It assigns and returns a default value\
+ to the key in the dictionary if it doesn't exist, and if it does it returns the\
+ value of the key and does not change it")
 
 # a  program to count the number of occurences of each character in a sentence 
 
@@ -194,21 +261,29 @@ print(char_count)
 
 print('#' * 99)
 
-print("You can import the pprint module which has two helpful functions pprint() and pformat() that help you output a prettier display of a dictionary's items")
-print("the pprint() function displays a much cleaner output than print and even sorts the keys in the output displayed")
-print("pprint() is especially helpful if you have a list or another dict nested in the dictionary")
+print("You can import the pprint module which has two helpful functions pprint()\
+ and pformat() that help you output a prettier display of a dictionary's items")
+
+print("the pprint() function displays a much cleaner output than print and even\
+ sorts the keys in the output displayed")
+
+print("pprint() is especially helpful if you have a list or another dict nested\
+ in the dictionary")
 import pprint
 pprint.pprint(char_count)
 print('#' * 99)
 
-print("If you want to obtain the prettified version as a string instead of outputting it, use the pformat() method")
+print("If you want to obtain the prettified version as a string instead of\
+ outputting it, use the pformat() method")
+
 pretty_version = pprint.pformat(char_count)
 print(type(pretty_version)) # type is a string
 print(pretty_version) # you can print it out
 print('#' * 99)
 
 
-print("Two dictionaries are equal if they contain the same key-value pairs: e.g {1:'a', 2:'b', 3:'c'} == {2:'b', 3:'c', 1:'a'} will result to:")
+print("Two dictionaries are equal if they contain the same key-value pairs:\
+ e.g {1:'a', 2:'b', 3:'c'} == {2:'b', 3:'c', 1:'a'} will result to:")
 a = {1:'a', 2:'b', 3:'c'}
 b = {2:'b', 3:'c', 1:'a'}
 print(a == b)
@@ -234,16 +309,24 @@ print('#' * 99)
 
 # ORDERED DICTIONARIES IN PYTHON 3.7
 
-print("While they’re still not ordered and have no “first” key-value pair, dictionaries in Python 3.7 and later will remember the insertion order of their key-value pairs if you create a sequence value from them")
-print("For example, a list made from the following two dictionaries will match the sequence in which they were created in the dictionary")
+print("While they’re still not ordered and have no “first” key-value pair,\
+ dictionaries in Python 3.7 and later will remember the insertion order of their\
+ key-value pairs if you create a sequence value from them")
+
+print("For example, a list made from the following two dictionaries will match\
+ the sequence in which they were created in the dictionary")
 
 got = {'genre':'thriller', 'seasons':8, 'rank':2}
 suits = {'rank':6, 'seasons':9, 'genre':'drama'}
 print(list(got))
 print(list(suits))
 
-print("The same will not work in Python versions before 3.7 i.e the list doesn’t match the insertion order of the dictionary’s key-value pairs when you run this code in say Python 3.5")
-print("You shouldn’t rely on this behavior, as dictionaries in older versions of Python don’t remember the insertion order of key-value pairs")
+print("The same will not work in Python versions before 3.7 i.e the list doesn’t\
+ match the insertion order of the dictionary’s key-value pairs when you run this\
+ code in say Python 3.5")
+
+print("You shouldn’t rely on this behavior, as dictionaries in older versions of\
+ Python don’t remember the insertion order of key-value pairs")
 print('#' * 99)
 
 print('#' * 99)
