@@ -292,7 +292,7 @@ print('#' * 99)
 # a program to store friend's birthdays
 birthdays = {'Kevin':'Dec 28', 'Naitore':'Jan 14', 'Angule':'Mar 3'}
 while True:
-    name = input("Enter friend's name (leave blank to quit): ")
+    name = input("Enter friend's name to get their birthday (leave blank to quit): ")
     if name == '':
         break
     elif name in birthdays:
