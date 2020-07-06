@@ -249,9 +249,12 @@ print('ASKMEHOW'.isupper())
 
 print('#' * 79)
 
-print("isX() string methods are useful methods that begin with 'is' and return a boolean value that describes the nature of the string")
+print("isX() string methods are useful methods that begin with 'is' and return a\
+ boolean value that describes the nature of the string")
 print()
-print("1. isalpha() - returns True if the string consists of only letters and is not empty - otherwise returns False")
+print("1. isalpha() - returns True if the string consists of only letters and is\
+ not empty - otherwise returns False")
+
 print('kevinisaboy'.isalpha())
 print('kevin is a boy'.isalpha())
 print('kevin2isaboy'.isalpha())
@@ -259,14 +262,18 @@ print('kevin2isaboy'.isalpha())
 
 print('#' * 79)
 
-print("2. isdecimal() returns True if the string only consists of numeric characters and is not empty, otherwise returns False")
+print("2. isdecimal() returns True if the string only consists of numeric\
+ characters and is not empty, otherwise returns False")
+
 print("12345".isdecimal())
 print("k24".isdecimal())
 print("1 2 3 4 5".isdecimal())
 
 print('#' * 79)
 
-print("3. isalnum() returns True if the string consists only of letters and numeric characters and is not blank, otherwise returns False")
+print("3. isalnum() returns True if the string consists only of letters and\
+ numeric characters and is not blank, otherwise returns False")
+
 print("secr3t".isalnum())
 print("hello".isalnum())
 print("45".isalnum())
@@ -274,7 +281,9 @@ print("123_sed".isalnum())
 
 print('#' * 79)
 
-print("4. isspace() returns True if the string only consists of spaces, tabs, newline characters and is not blank, otherwise returns False")
+print("4. isspace() returns True if the string only consists of spaces, tabs,\
+ newline characters and is not blank, otherwise returns False")
+
 print("\n".isspace())
 print("\t".isspace())
 print(" ".isspace())
@@ -283,7 +292,10 @@ print("Kevin\ncome here".isspace())
 
 print('#' * 79)
 
-print("5. istitle() method returns True if the string consists of words whose first letter is uppercase and all other letters in the word are lowercase and the string is not blank, otherwise returns False")
+print("5. istitle() method returns True if the string consists of words whose\
+ first letter is uppercase and all other letters in the word are lowercase and\
+ the string is not blank, otherwise returns False")
+
 print("12345 Is A Title String".istitle())
 print("12345".istitle())
 print("Is NOt Title".istitle())
@@ -317,7 +329,11 @@ while True:
 
 print('#' * 79)
 
-print("startswith() and endswith() string methods return True if the string they are called on starts with or ends with the string passed to the methods. They are a good alternative to the '==' operator if you just want to check just the equality of the first or last parts of a string rather than the whole string. It is a case sensitive comparison")
+print("startswith() and endswith() string methods return True if the string they\
+ are called on starts with or ends with the string passed to the methods. They\
+ are a good alternative to the '==' operator if you just want to check just the\
+ equality of the first or last parts of a string rather than the whole string.\
+ It is a case sensitive comparison")
 
 print('Hello world.'.startswith("Hello"))
 print('Hello world.'.startswith("hello"))
@@ -328,15 +344,25 @@ print('Hello world.'.endswith("ld."))
 
 print('#' * 79)
 
-print("join() string method is called on a string, gets passed a list value (of strings) and returns a string")
-print("The string returned is a concatenation of each string in the list value with the string join is called on between each element (string) of the list argument")
-print("join() method is useful when you have a list of strings you need to be joined into a single string")
+print("join() string method is called on a string, gets passed a list value (of strings)\
+ and returns a string")
+
+print("The string returned is a concatenation of each string in the list value\
+ with the string join is called on between each element (string) of the list argument")
+
+print("join() method is useful when you have a list of strings you need to be\
+ joined into a single string")
 
 print('#' * 79)
 
 print("split() method is called on a string and returns a list of strings")
-print("By default the string it is called on is split whenever there is a whitespace character like space or tab. You can change this by passing an argument for the sep parameter (separator) - this is a string value that you want to be used as the split delimiter. The sep is not included in the strings in the returned list")
+
+print("By default the string it is called on is split whenever there is a whitespace\
+ character like space or tab. You can change this by passing an argument for the\
+ sep parameter (separator) - this is a string value that you want to be used as\
+ the split delimiter. The sep is not included in the strings in the returned list")
 print()
+
 print("A common use of split is to split a multiline string along the newline character")
 letter = '''    
                 Mutwiri Mwenda
@@ -354,30 +380,47 @@ Beau.
 print(letter.split('\n'))
 
 print('#' * 79)
-print("the partition() string method can be used to split a string. It is called on a string and passed another string (separator) as argument. The method looks for the string passed as argument in the string it is called on and returns a tuple of three strings - 1. the before, 2. the separator string and 3. the after")
+
+print("the partition() string method can be used to split a string. It is called\
+ on a string and passed another string (separator) as argument. The method looks\
+ for the string passed as argument in the string it is called on and returns a\
+ tuple of three strings - 1. the before, 2. the separator string and 3. the after")
+
 print("Hello Python".partition(' '))
 
 print('#' * 79)
 
-print("If the separator string appears more than once in the string partition() is called on, only the first occurrence is used to split the string")
+print("If the separator string appears more than once in the string partition()\
+ is called on, only the first occurrence is used to split the string")
+
 print("Hey there stranger".partition('er'))
 print('#' * 79)
 
-print("If the separator string does not exist in the string partition() is called on, the first string returned in the tuple (before) is the entire string and the other two (separator, after) are empty strings")
+print("If the separator string does not exist in the string partition() is called\
+ on, the first string returned in the tuple (before) is the entire string and\
+ the other two (separator, after) are empty strings")
 print("Programming is fun".partition('p'))
 
-print("The partition() method is useful for splitting a string whenever you need the parts before, including, and after a particular separator string")
+print("The partition() method is useful for splitting a string whenever you need\
+ the parts before, including, and after a particular separator string")
 
 print('#' * 79)
 
 print("You can justify text in Python using ljust(), rjust() and center() methods")
-print("ljust() and rjust() return a padded version of the string they are called on. The first argument to rjust() and ljust() is an integer length of the string returned e.g calling 'hello'.rjust(10) means the returned string will be of length ten and since the string itself has a length of 5 the remaining length of 5 will be spaces added to the left of the string so the string is justified to the right")
+
+print("ljust() and rjust() return a padded version of the string they are called\
+ on. The first argument to rjust() and ljust() is an integer length of the string\
+ returned e.g calling 'hello'.rjust(10) means the returned string will be of length\
+ ten and since the string itself has a length of 5 the remaining length of 5 will\
+ be spaces added to the left of the string so the string is justified to the right")
+
 print("Python".ljust(12))
 print("Python".rjust(12))
 
 print('#' * 79)
 
-print("You can pass an optional second argument to ljust() and rjust() to change the fill character used from the default of space.")
+print("You can pass an optional second argument to ljust() and rjust() to change\
+ the fill character used from the default of space.")
 print("Python".ljust(12, '*'))
 print("Python".rjust(12, '*'))
 
@@ -391,7 +434,8 @@ print("Python".center(20, '*'))
 
 print('#' * 79)
 
-print("Justifying text is especially useful when you want to print tabular data with even spacing and neat alignment")
+print("Justifying text is especially useful when you want to print tabular data\
+ with even spacing and neat alignment")
 
 # a program to print tabular data using justify methods
 
@@ -407,8 +451,11 @@ neat_spacing(items,15,30)
 
 print('#' * 99)
 
-print("Sometimes you want to strip all whitespaces (tabs, spaces, newline characters) from a string or just from the sides  (the left or right of a string)")
-print("strip(), lstrip() and rstrip() can be used to do that. They return a new string with the whitespace characters removed")
+print("Sometimes you want to strip all whitespaces (tabs, spaces, newline characters)\
+ from a string or just from the sides  (the left or right of a string)")
+
+print("strip(), lstrip() and rstrip() can be used to do that. They return a new\
+ string with the whitespace characters removed")
 
 print('   Hello   world'.strip())
 print('   Hello   world'.lstrip())
@@ -416,14 +463,18 @@ print('   Hello   world'.rstrip())
 
 print('#' * 99)
 
-print("Optionally, you can pass a string that specifies which characters on the end will be stripped")
+print("Optionally, you can pass a string that specifies which characters on the\
+ end will be stripped")
 print('   Hello   world'.strip('    H'))
 print('   Hello   world'.lstrip('   He'))
 print('   Hello   world'.rstrip('ld'))
 
 print('#' * 99)
 
-print("The order of the characters in the string passed to strip() does not matter - strip('map) will do the same thing as strip(pam) or strip(amp) and will remove all valid occurences")
+print("The order of the characters in the string passed to strip() does not matter\
+ - strip('map) will do the same thing as strip(pam) or strip(amp) and will remove\
+ all valid occurences")
+
 print("pamamplifieramppam".strip('amp'))
 print("pamamplifieramppam".strip('mpa'))
 print("pamamplifieramppam".strip('pam'))
@@ -442,20 +493,27 @@ print("pamamplifieramppam".strip('Amp'))
 
 print('#' * 99)
 
-print("Every text character has a corresponding numeric value called Unicode code point. This is because computers store information as bytes - i.e a unit of digital information that most commonly consists of eight bits (binary digits 0 and 1) hence the need to be able to convert text to numbers for storage.")
+print("Every text character has a corresponding numeric value called Unicode code\
+ point. This is because computers store information as bytes - i.e a unit of\
+ digital information that most commonly consists of eight bits (binary digits 0 and 1)\
+ hence the need to be able to convert text to numbers for storage.")
+
 print("ord() function returns the code point (numeric value) of a one-character string")
+
 print("chr() function returns the one-character string for an integer code point")
-print("The above functions are useful when you need to do an ordering or mathematical operations on characters")
+
+print("The above functions are useful when you need to do an ordering or mathematical\
+ operations on characters")
 
 print('#' * 99)
-import string
-for char in string.ascii_letters:
-    print(char, ord(char))
+# import string
+# for char in string.ascii_letters:
+#     print(char, ord(char))
 
-print('#' * 99)
+# print('#' * 99)
 
-for i in range(439, 1439):
-    print(i, chr(i))
+# for i in range(439, 1439):
+#     print(i, chr(i))
 
 
 print('#' * 99)
