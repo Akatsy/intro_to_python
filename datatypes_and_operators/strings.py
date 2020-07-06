@@ -164,7 +164,8 @@ for key, value in escape_characters.items():
 
 print('#' * 79)
 print("You can place the letter r lowercase before the beginning quotation mark\
- of a string to make it a raw string")
+ of a string to make it a raw string. A raw string completely ignores all escape\
+ characters and prints any backslash that appears in the string")
 
 print("This is the path of your file in windows " + r'c:\\Users\Desktop\Mutwiri\Downloads')
 
