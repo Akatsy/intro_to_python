@@ -1,62 +1,116 @@
-print("functions have the advantage of making code easier to understand by making it easier to read and write blocks of code")
-print("functions can help break down a program into smaller chunks by implementing a singular task that is part of the whole")
-print("By naming functions using descriptive names of what task they accomplish, we help in improving understanding of code")
+print("functions have the advantage of making code easier to understand by making\
+ it easier to read and write blocks of code")
+
+print("functions can help break down a program into smaller chunks by implementing\
+ a singular task that is part of the whole")
+
+print("By naming functions using descriptive names of what task they accomplish,\
+ we help in improving understanding of code")
 print('#' * 99)
-print("Apart from using descriptive names for functions, we can also add documentation to help other programmers and our future selves understand what a funtion does")
-print("DOCSTRINGS (documentation strings) are a type of comments that describe the purpose of a function and how to use it.")
+
+print("Apart from using descriptive names for functions, we can also add documentation\
+ to help other programmers and our future selves understand what a funtion does")
+
+print("DOCSTRINGS (documentation strings) are a type of comments that describe the\
+ purpose of a function and how to use it.")
 print('#' * 99)
 
-print("A docstring is a string literal that occurs as the first statement in a module, function, class, or method definition. Such a docstring becomes the __doc__ special attribute of that object")
-print("All modules should normally have docstrings, and all functions and classes exported by a module should also have docstrings. Public methods (including the __init__ constructor) should also have docstrings. A package may be documented in the module docstring of the __init__.py file in the package directory.")
+print("A docstring is a string literal that occurs as the first statement in a module,\
+ function, class, or method definition. Such a docstring becomes the __doc__ special\
+ attribute of that object")
 
-print("String literals occurring elsewhere in Python code may also act as documentation. They are not recognized by the Python bytecode compiler and are not accessible as runtime object attributes (i.e. not assigned to __doc__), but two types of extra docstrings may be extracted by software tools:")
+print("All modules should normally have docstrings, and all functions and classes\
+ exported by a module should also have docstrings. Public methods (including the __init__ constructor)\
+ should also have docstrings. A package may be documented in the module docstring\
+ of the __init__.py file in the package directory.")
 
-print('1. String literals occurring immediately after a simple assignment at the top level of a module, class, or __init__ method are called "attribute docstrings".')
+print("String literals occurring elsewhere in Python code may also act as documentation.\
+ They are not recognized by the Python bytecode compiler and are not accessible as\
+ runtime object attributes (i.e. not assigned to __doc__), but two types of extra\
+ docstrings may be extracted by software tools:")
+
+print('1. String literals occurring immediately after a simple assignment at the\
+ top level of a module, class, or __init__ method are called "attribute docstrings".')
 print('2. String literals occurring immediately after another docstring are called "additional docstrings"')
 
 print('#' * 99)
 
-print('For consistency, always use """triple double quotes""" around docstrings. Use r"""raw triple double quotes""" if you use any backslashes in your docstrings. For Unicode docstrings, use u"""Unicode triple-quoted strings""".')
+print('For consistency, always use """triple double quotes""" around docstrings.\
+ Use r"""raw triple double quotes""" if you use any backslashes in your docstrings.\
+ For Unicode docstrings, use u"""Unicode triple-quoted strings""".')
 
 print('#' * 99)
 
 print("There are two forms of docstrings: one-liners and multi-line docstrings.")
+
 print("One-liners are for really obvious cases. They should really fit on one line")
+
 print("Notes for one-liners:")
 print("1. Triple quotes are used even though the string fits on one line. This makes it easy to later expand it")
 print("2. The closing quotes are on the same line as the opening quotes. This looks better for one-liners")
 print("3. There's no blank line either before or after the docstring")
-print('4. The docstring is a phrase ending in a period. It prescribes the function or method\'s effect as a command ("Do this", "Return that"), not as a description; e.g. don\'t write "Returns the pathname ...".')
+print('4. The docstring is a phrase ending in a period. It prescribes the function or method\'s\
+ effect as a command ("Do this", "Return that"), not as a description; e.g. don\'t write "Returns the pathname ...".')
 
 print('#' * 99)
 
-print("Multi-line docstrings consist of a summary line just like a one-line docstring, followed by a blank line, followed by a more elaborate description.")
-print("The summary line may be used by automatic indexing tools; it is important that it fits on one line and is separated from the rest of the docstring by a blank line.")
-print("The summary line may be on the same line as the opening quotes or on the next line. The entire docstring is indented the same as the quotes at its first line")
+print("Multi-line docstrings consist of a summary line just like a one-line docstring,\
+ followed by a blank line, followed by a more elaborate description.")
+
+print("The summary line may be used by automatic indexing tools; it is important\
+ that it fits on one line and is separated from the rest of the docstring by a blank line.")
+
+print("The summary line may be on the same line as the opening quotes or on the next line.\
+ The entire docstring is indented the same as the quotes at its first line")
 
 
 print('#' * 99)
 
-print('''The docstring of a script (a stand-alone program) should be usable as its "usage" message, printed when the script is invoked with incorrect or missing arguments (or perhaps with a "-h" option, for "help"). Such a docstring should document the script's function and command line syntax, environment variables, and files. Usage messages can be fairly elaborate (several screens full) and should be sufficient for a new user to use the command properly, as well as a complete quick reference to all options and arguments for the sophisticated user.''')
+print('''The docstring of a script (a stand-alone program) should be usable as its\
+ "usage" message, printed when the script is invoked with incorrect or missing\
+ arguments (or perhaps with a "-h" option, for "help"). Such a docstring should\
+ document the script's function and command line syntax, environment variables, and files.\
+ Usage messages can be fairly elaborate (several screens full) and should be sufficient\
+ for a new user to use the command properly, as well as a complete quick reference\
+ to all options and arguments for the sophisticated user.''')
 
 print('#' * 99)
 
-print('''The docstring for a module should generally list the classes, exceptions and functions (and any other objects) that are exported by the module, with a one-line summary of each. (These summaries generally give less detail than the summary line in the object's docstring.) The docstring for a package (i.e., the docstring of the package's __init__.py module) should also list the modules and subpackages exported by the package.''')
+print('''The docstring for a module should generally list the classes, exceptions\
+ and functions (and any other objects) that are exported by the module, with a\
+ one-line summary of each. (These summaries generally give less detail than the\
+ summary line in the object's docstring.) The docstring for a package (i.e., the\
+ docstring of the package's __init__.py module) should also list the modules and\
+ subpackages exported by the package.''')
 
 print('#' * 99)
 
-print('''The docstring for a function or method should summarize its behavior and document its arguments, return value(s), side effects, exceptions raised, and restrictions on when it can be called (all if applicable). Optional arguments should be indicated. It should be documented whether keyword arguments are part of the interface.''')
+print('''The docstring for a function or method should summarize its behavior and\
+ document its arguments, return value(s), side effects, exceptions raised, and\
+ restrictions on when it can be called (all if applicable). Optional arguments\
+ should be indicated. It should be documented whether keyword arguments are part\
+ of the interface.''')
 
 print('#' * 99)
 
-print('''The docstring for a class should summarize its behavior and list the public methods and instance variables. If the class is intended to be subclassed, and has an additional interface for subclasses, this interface should be listed separately (in the docstring). The class constructor should be documented in the docstring for its __init__ method. Individual methods should be documented by their own docstring.
+print('''The docstring for a class should summarize its behavior and list the public\
+ methods and instance variables. If the class is intended to be subclassed, and has\
+ an additional interface for subclasses, this interface should be listed\
+ separately (in the docstring). The class constructor should be documented in the\
+ docstring for its __init__ method. Individual methods should be documented by their own docstring.
 
-If a class subclasses another class and its behavior is mostly inherited from that class, its docstring should mention this and summarize the differences. Use the verb "override" to indicate that a subclass method replaces a superclass method and does not call the superclass method; use the verb "extend" to indicate that a subclass method calls the superclass method (in addition to its own behavior)''')
+If a class subclasses another class and its behavior is mostly inherited from that\
+ class, its docstring should mention this and summarize the differences. Use the\
+ verb "override" to indicate that a subclass method replaces a superclass method\
+ and does not call the superclass method; use the verb "extend" to indicate that\
+ a subclass method calls the superclass method (in addition to its own behavior)''')
 
 print('#' * 99)
 
 print("Here is Google's docstring format:")
-print("Link to learn more -->  https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format")
+print("Link to learn more --> \
+ https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format")
+
 print('''This is an example of Google style.
 
 Args:
