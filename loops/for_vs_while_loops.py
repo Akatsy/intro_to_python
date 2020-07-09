@@ -23,11 +23,15 @@ print('#' * 99)
 #PRACTICE
 # Question: What type of loop should we use?
 # You need to write a loop that takes the numbers in a given list named num_list:
-# num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191, 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
+# num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86,
+#  191, 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
 
-# Your code should add up the odd numbers in the list, but only up to the first 5 odd numbers together. If there are more than 5 odd numbers, you should stop at the fifth. If there are fewer than 5 odd numbers, add all of the odd numbers.
+# Your code should add up the odd numbers in the list, but only up to the first 5
+# odd numbers together. If there are more than 5 odd numbers, you should stop at
+# the fifth. If there are fewer than 5 odd numbers, add all of the odd numbers.
 
-num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191, 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
+num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191,
+ 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
 import time
 print("seconds since epoch: {}".format(time.time()))
 print("local time: {}".format(time.ctime()))
@@ -60,7 +64,8 @@ t4 = time.time()
 print(t3, t4)
 print("It took {} seconds to execute".format(t4-t3))
 print('#' * 99)
-print("Is the execution time of the for loop with break statement and without less? {}".format((t4-t3)<(t2-t1)))
+print("Is the execution time of the for loop with break statement and without less?\
+ {}".format((t4-t3)<(t2-t1)))
 
 
 print('#' * 99)
@@ -81,5 +86,7 @@ t6 = time.time()
 print(t5, t6)
 print("It took {} seconds to execute".format(t6-t5))
 print('#' * 99)
-print("Is the execution time of the for loop without break statement less than that of the while loop? {}".format((t2-t1)<(t6-t5)))
-print("Is the execution time of the for loop with break statement less than that of the while loop? {}".format((t4-t3)<(t6-t5)))
+print("Is the execution time of the for loop without break statement less than that\
+ of the while loop? {}".format((t2-t1)<(t6-t5)))
+print("Is the execution time of the for loop with break statement less than that\
+ of the while loop? {}".format((t4-t3)<(t6-t5)))
