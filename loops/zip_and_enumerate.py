@@ -1,14 +1,24 @@
 print("zip and enumerate are useful builtin functions when dealing with lists")
-print("zip is a builtin function that returns an iterator which combines multiple iterables into one sequence of tuples. Each tuple contains the elements at that position from all iterables")
+
+print("zip is a builtin function that returns an iterator which combines multiple\
+ iterables into one sequence of tuples. Each tuple contains the elements at that\
+ position from all iterables")
 print('#' * 99)
 
 print("The zip()function returns an iterator of tuples based on the iterable objects")
-print("If we do not pass any parameter, zip() returns an empty iterator")
-print("If a single iterable is passed, zip() returns an iterator of tuples with each tuple having only one element")
-print("If multiple iterables are passed, zip() returns an iterator of tuples with each tuple having elements from all the iterables from that position")
+
+print("1. If we do not pass any parameter, zip() returns an empty iterator")
+
+print("2. If a single iterable is passed, zip() returns an iterator of tuples with\
+ each tuple having only one element")
+
+print("3. If multiple iterables are passed, zip() returns an iterator of tuples\
+ with each tuple having elements from all the iterables from that position")
 print('#' * 99)
 
-print("Suppose, two iterables are passed to zip(); one iterable containing three and other containing five elements. Then, the returned iterator will contain three tuples. It's because iterator stops when the shortest iterable is exhausted.")
+print("Suppose, two iterables are passed to zip(); one iterable containing three\
+ and other containing five elements. Then, the returned iterator will contain\
+ three tuples. This is because iterator stops when the shortest iterable is exhausted.")
 print('#' * 99)
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f']
