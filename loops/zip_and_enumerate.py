@@ -57,24 +57,39 @@ print(items, weights)
 
 print('#' * 79)
 
-print("enumerate() is a built-in function that returns an iterator of tuples containing indices and values of a list")
+print("enumerate() is a built-in function that returns an iterator of tuples\
+ containing indices and values of a list")
 print('#' * 99)
 
 print("The enumerate() method adds counter to an iterable and returns it (the enumerate object).")
 print("The syntax of enumerate() is:\n\tenumerate(iterable, start=0)")
 print('#' * 99)
 
-print("The enumerate() method takes two parameters:\n1. iterable - a sequence, an iterator, or objects that supports iteration\n2. start (optional) - enumerate() starts counting from this number. If start is omitted, 0 is taken as start")
-print("The enumerate() method adds counter to an iterable and returns it. The returned object is a enumerate object.")
-print("On each iteration of the loop, enumerate() will return two values: the index of the item in the list, and the item in the list itself")
-print("The enumerate() function is useful if you need both the item and the item’s index in the loop’s block")
+print("The enumerate() method takes two parameters:\n1. iterable - a sequence, an iterator,\
+ or objects that supports iteration\n2. start (optional) - enumerate() starts counting from\
+ this number. If start is omitted, 0 is taken as start")
+
+print("The enumerate() method adds counter to an iterable and returns it. The\
+ returned object is an enumerate object.")
+
+print("On each iteration of the loop, enumerate() will return two values: the\
+ index of the item in the list, and the item itself in the list")
+
+print("The enumerate() function is useful if you need both an item and the item’s index in the loop’s block")
 print('#' * 99)
+
 print("You can convert enumerate objects to list, tuples or dicts using list(), tuple() and dict() methods respectively.")
 print('#' * 99)
+
 teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea']
-print("for example if you had a list like teams = ['Liverpool', 'Mancity', 'Leicester', 'Chelsea'] and you wanted to get a list of tuples of team and it's index, you could do the following; print(list(enumerate(teams))) to get the following output:\n{}".format(list(enumerate(teams))))
+print("for example if you had a list like teams = ['Liverpool', 'Mancity', 'Leicester',\
+ 'Chelsea'] and you wanted to get a list of tuples of team and it's index, you\
+ could do the following; print(list(enumerate(teams))) to get the following output:\
+\n{}".format(list(enumerate(teams))))
 print('#' * 99)
-print("You could also print out the values of a list with their indices using enumerate as follows:\n for i, team in enumerate(teams):\n\tprint(i, team)\nto get the following output:")
+
+print("You could also print out the values of a list with their indices using\
+ enumerate as follows:\n for i, team in enumerate(teams):\n\tprint(i, team)\nto get the following output:")
 for i, team in enumerate(teams):
     print(i, team)
 
@@ -82,7 +97,9 @@ print("You will often use enumerate() when you need the indices and values of a 
 
 print('#' * 99)
 # quiz
-# Use zip to write a for loop that creates a string specifying the label and coordinates of each point and appends it to the list points. Each string should be formatted as label: x, y, z. For example, the string for the first coordinate should be F: 23, 677, 4
+# Use zip to write a for loop that creates a string specifying the label and coordinates
+# of each point and appends it to the list points. Each string should be formatted as
+# label: x, y, z. For example, the string for the first coordinate should be F: 23, 677, 4
 
 x_coord = [23, 53, 2, -12, 95, 103, 14, -5]
 y_coord = [677, 233, 405, 433, 905, 376, 432, 445]
@@ -136,7 +153,9 @@ print(tuple(zip(*data_transpose)))
 
 print('#' * 99)
 # Quiz: Enumerate
-# Use enumerate to modify the cast list so that each element contains the name followed by the character's corresponding height. For example, the first element of cast should change from "Barney Stinson" to "Barney Stinson 72".
+# Use enumerate to modify the cast list so that each element contains the name
+# followed by the character's corresponding height. For example, the first element
+# of cast should change from "Barney Stinson" to "Barney Stinson 72".
 
 cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
 heights = [72, 68, 72, 66, 76]
