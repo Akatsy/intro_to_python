@@ -127,15 +127,29 @@ Raises:
 print('#' * 99)
 
 
-print("The first line of a docstring gives a brief description of what the function does. This is enough if the function is not that complicated")
+print("The first line of a docstring gives a brief description of what the function\
+ does. This is enough if the function is not that complicated")
 print('#' * 99)
-print("If the function is a little complicated, you can include a paragraph to further describe the function")
-print("The next line after the brief description is a description of the inputs (arguments) to the function. Here you list the arguments the function will take and their expected types, Then a description of what the arguments actually are (what they represent)")
-print("After the inputs description, it is good to give a description of the output of the function also (what the function returns or prints out)")
+
+print("If the function is a little complicated, you can include a paragraph to\
+ further describe the function")
+
+print("The next line after the brief description is a description of the inputs (arguments)\
+ to the function. Here you list the arguments the function will take and their expected types,\
+ Then a description of what the arguments actually are (what they represent)")
+
+print("After the inputs description, it is good to give a description of the output\
+ of the function also (what the function returns or prints out)")
 print('#' * 99)
 print('#' * 99)
+
 print("an example of a docstring")
-print("def population_density(population, land_area):\n\t\"\"\" Calculate the population density of an area\n\n\t\tINPUT:\n\t\tpopulation: int. The number of people in an area\n\t\tland_area: int or float. This is unit-agostic meaning if you give the area in a certain unit,\n\t\tsay kilometres or miles, the answer will be given in that unit\n\n\t\tOUTPUT:\n\t\tpopulation_density: population/land_area. The population density of a given area \"\"\"\n\n\treturn population/land_area")
+print("def population_density(population, land_area):\n\t\"\"\"\
+ Calculate the population density of an area\n\n\t\tINPUT:\n\t\tpopulation: int.\
+ The number of people in an area\n\t\tland_area: int or float. This is unit-agostic\
+ meaning if you give the area in a certain unit,\n\t\tsay kilometres or miles, the\
+ answer will be given in that unit\n\n\t\tOUTPUT:\n\t\tpopulation_density: population/land_area.\
+ The population density of a given area \"\"\"\n\n\treturn population/land_area")
 print('#' * 99)
 
 def population_density(population, land_area):
@@ -143,7 +157,8 @@ def population_density(population, land_area):
 
         INPUT:
         population: int. The number of people in an area
-        land_area: int or float. This is unit-agostic meaning if you give the area in a certain unit, say kilometres or miles, the answer will be given in that unit
+        land_area: int or float. This is unit-agostic meaning if you give the area
+        in a certain unit, say kilometres or miles, the answer will be given in that unit
 
         OUTPUT:
         population_density: population/land_area. The population density of a given area """ 
@@ -153,7 +168,9 @@ print(population_density(900, 90))
 print('#' * 99)
 # Quiz: Write a Docstring
 # Write a docstring for the readable_timedelta function
-# Given an integer that represents a number of days, write a function that returns a string that states the number of weeks and number of days for example if days = 10, it should return 1 week(s) and 3 day(s)
+# Given an integer that represents a number of days, write a function that returns
+# a string that states the number of weeks and number of days for example
+# if days = 10, it should return 1 week(s) and 3 day(s)
 
 def readable_timedelta(days):
     """ calculate number of weeks and days given a number of days
