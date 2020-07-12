@@ -101,7 +101,9 @@ print(f"area code is {area_code}, main number is {main_number}")
 
 print("#" * 99)
 
-print("The parantheses have a special meaning in regex, so if you want to match them in your text, you will need to escape them in the raw string passed to re.compile() when creating the regex object")
+print("The parantheses have a special meaning in regex, so if you want to match them in your text,\
+ you will need to escape them in the raw string passed to re.compile() when creating the regex\
+ object")
 phone_num_regex = re.compile(r'(\(\d{3}\)) (\d{3}-\d{4})')
 mo = phone_num_regex.search("My phone number is (415) 555-4242.")
 area_code, main_number = mo.groups()
