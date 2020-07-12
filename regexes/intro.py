@@ -67,9 +67,17 @@ print("4. Call the Match Object's group() method which returns a string of the a
 print("#" * 99)
 
 print("grouping with parantheses".upper().center(99, '*'))
-print("You can create groups in regexes using parantheses, then you can use the Match Object group() method to grab the matching text from a particular group")
-print("The first set of parantheses in a regex will be group 1, the second will be group 2 and so on...")
-print("Passing the integer 1 or 2 to the Match Object's group() method will return either of the two different parts of the matched text. Passing 0 or nothing to the group() method will return the entire matched string")
+
+print("You can create groups in regexes using parantheses, then you can use the Match Object\
+ group() method to grab the matching text from a particular group")
+
+print("The first set of parantheses in a regex will be group 1, the second will be group 2\
+ and so on...")
+
+print("Passing the integer 1 or 2 to the Match Object's group() method will return either of the\
+ two different parts of the matched text. Passing 0 or nothing to the group() method will return\
+ the entire matched string")
+
 phone_num_regex = re.compile(r'(\d{3})-(\d{3}-\d{4})')
 mo = phone_num_regex.search("My number is 415-555-4242.")
 print(mo.group(1))
@@ -78,10 +86,16 @@ print(mo.group(0))
 print(mo.group())
 print("#" * 99)
 
-print("If you would like to retrieve all the groups at once, use the groups() method -- Note the plural form.")
+print("If you would like to retrieve all the groups at once, use the groups() method -- Note the\
+ plural form.")
+
 print(mo.groups())
-print("mo.groups() returns a tuple of multiple values (i.e matched text of each group). We can therefore use multiple-assignment to assign the returned values to different variables")
+
+print("mo.groups() returns a tuple of multiple values (i.e matched text of each group). We can\
+ therefore use multiple-assignment to assign the returned values to different variables")
+
 area_code, main_number = mo.groups()
+
 print(f"area code is {area_code}, main number is {main_number}")
 
 
