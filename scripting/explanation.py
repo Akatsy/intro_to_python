@@ -1,9 +1,15 @@
-print("A script or scripting language is a computer language with a series of commands within a file that is capable of being executed without being compiled but can be compiled if need be")
+print("A script or scripting language is a computer language with a series of\
+ commands within a file that is capable of being executed without being compiled\
+ but can be compiled if need be")
+
 print("A program becomes more intuitive by interacting with user input")
 print('#' * 99)
 
-print("The built-in function input() is used to get raw input data from the user. It has an optional string argument that allows us to use as a prompt to the user")
+print("The built-in function input() is used to get raw input data from the user.\
+ It has an optional string argument that allows us to use as a prompt to the user")
+
 print("The input() function takes in whatever the user types and stores it as a string")
+
 print("for example\n name = input('Enter your name:')then we can\n print(name)")
 name = input('Enter your name: ')
 print("Hey", name)

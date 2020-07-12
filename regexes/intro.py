@@ -1,7 +1,11 @@
 print("Regular expressions (or regexes in short) are descriptions for a pattern of text.")
+
 print("A regular expression specifies a set of strings (a sequence of characters) that matches it.")
+
 print("A regex is a sequence of characters that define a search pattern")
-print("For example, \d in a regex stands for a digit character i.e any single numeral character from 0-9 will match this regex")
+
+print("For example, \d in a regex stands for a digit character i.e any single numeral character\
+ from 0-9 will match this regex")
 print("#" * 99)
 
 print("A regex defined as \d\d\d-\d\d\d-\d\d\d\d would tell Python to match a sequence of characters with 3 digits then a hyphen followed by 3 digits, another hyphen followed by 4 digits. Any text that does not match this search pattern would not be returned")
