@@ -66,4 +66,6 @@ When we create an object of a class, such as chui above, we can refer to its var
 using the dot operator and the name of the variable or function we want to use (for example,
 chui.spots). But when we’re creating functions inside a class, we refer to those same variables
 (and other functions) using the self parameter (self.spots).
+
+we use classes to create categories of things and objects are instances of those classes
 ''')
