@@ -43,4 +43,27 @@ Each class will be able to use the characteristics (the functions) of its parent
 you don’t need to make one really complicated class; you can put your functions in the highest parent
 where the characteristic applies. (This is a good way to make your classes simpler and easier to
 understand.)
+
+If we create a new object with the same variable name as an object we’ve already created, the old
+object won’t necessarily vanish.
+
+Apart from characteristics, we can also set properties (values) for objects.
+To do this, we create an __init__ function (notice that there are two underscore characters on each
+side, for a total of four)
+
+This is a special type of function in Python classes and must have this name. The init function is a
+way to set the properties for an object when the object is first created, and Python will
+automatically call this function when we create a new object e.g
+
+class Leopards(Mammals):
+    def __init__(self, spots):
+        self.spots = spots
+
+chui = Leopards(100)
+print(chui.spots)
+
+When we create an object of a class, such as chui above, we can refer to its variables or functions
+using the dot operator and the name of the variable or function we want to use (for example,
+chui.spots). But when we’re creating functions inside a class, we refer to those same variables
+(and other functions) using the self parameter (self.spots).
 ''')
