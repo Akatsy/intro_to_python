@@ -38,4 +38,9 @@ class Mammals(Animals):
 
 Class functions first parameter is self. The self parameter is a way for one function in the class
 to call another function in the class (and in the parent class). 
+
+Each class will be able to use the characteristics (the functions) of its parent. This means that
+you don’t need to make one really complicated class; you can put your functions in the highest parent
+where the characteristic applies. (This is a good way to make your classes simpler and easier to
+understand.)
 ''')
