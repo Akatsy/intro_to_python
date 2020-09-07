@@ -19,4 +19,9 @@ class Inanimate(Things):
 
 class Mammals(Animals):
     pass
+
+To create an object (also called instance of a class), we use the code snippet below
+object_name = class_name()
+
+We call the class name with parantheses at the end and assign it to a variable that will store it
 ''')
