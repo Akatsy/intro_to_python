@@ -24,4 +24,18 @@ To create an object (also called instance of a class), we use the code snippet b
 object_name = class_name()
 
 We call the class name with parantheses at the end and assign it to a variable that will store it
+
+To make objects more useful, we can describe characteristics of objects that belong to a class.
+These characteristics can be thought of as actions, or functions — things that an object of that
+class can do
+
+When we define a function that is associated with a class, we do so in the same way that we define
+any other function, except that we indent it beneath the class definition e.g
+
+class Mammals(Animals):
+    def feed_young_one_with_milk(self):
+        pass
+
+Class functions first parameter is self. The self parameter is a way for one function in the class
+to call another function in the class (and in the parent class). 
 ''')
