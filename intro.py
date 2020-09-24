@@ -65,6 +65,7 @@ print("3. You will inevitably run into errors as you learn and code in Python.\
  Use errors as a learning tool, don't let them be a deterrent or discouragement\
  in your learning to code journey")
 
+print()
 print("Sidebar".upper().center(79,'*'))
 print(r'''
 What is Programming?
