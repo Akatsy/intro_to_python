@@ -29,3 +29,14 @@ print("The information printed is not very useful so we have another built-in\
  help(num.__add__) or help('s'.rfind)")
 print('#' * 79)
 # print(help(num.__add__))
+
+print(r'''
+The python help function is used to display the documentation of modules, functions, classes, keywords etc.
+The help function has the following syntax:
+
+help([object]) e.g help(print)
+If the help function is passed without an argument, then the interactive help utility starts up on the console.
+
+''')
+
+print('#' * 79)
