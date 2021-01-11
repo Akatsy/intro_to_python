@@ -15,7 +15,7 @@ print("immutable means once a string object has been declared you cannot alter\
  or change it without creating a new object")
 
 print("ordered means that each character in the string has an index (an integer\
- value that denotes it's position) and can be referenced using that index")
+ value that denotes its position) and can be referenced using that index")
 print('#' * 79)
 
 print("Strings are created by wrapping any character(s) in quotes. Both single (')\
