@@ -16,8 +16,8 @@ print("Some common errors you might run into are:")
 
 print("\t ZeroDivisionError: Occurs when you try to divide (normal division,\
  modulo(remainder of division) or integer division) any number by zero. This is\
- Python just enforcing the rules of Math e.g {}, {} and {} should give you a\
- ZeroDivisionError". format("3/0", "3//0", "3%0"))
+ Python just enforcing the rules of Math e.g {}, {} and {} will give you a\
+ ZeroDivisionError". format("3 / 0", "3 // 0", "3 % 0"))
 
 print("\t SyntaxError: Occurs when you violate the rules of Python syntax e.g\
  leaving out a closing parantheses, having illegal whitespaces e.t.c")
