@@ -216,7 +216,7 @@ print("Tuple unpacking is a shorthand that lets you assign multiple variables\
  the number of items in the list otherwise, Python throws an error")
 
 print("For example consider the following and what is printed out:\nvowels = ['a','e','i','o','u']\
-\nfirst,second,third,fourth,fifth = vowels\nprint(first,second,third,fourth,fifth,sep='\n')")
+\nfirst,second,third,fourth,fifth = vowels\nprint(first,second,third,fourth,fifth,sep='\\n')")
 vowels = ['a','e','i','o','u']
 first,second,third,fourth,fifth = vowels
 print(first,second,third,fourth,fifth, sep='\n')
