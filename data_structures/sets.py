@@ -39,6 +39,10 @@ print("removed_element = set_sentence.pop() then print(removed_element, set_sent
  to get:\n removed element is {} and remaining set is {}".format(removed_element, set_sentence))
 print('#' * 79)
 
+print("The remove() method removes the specified element from the set. e.g set_sentence.remove('fish')")
+
+print('#' * 79)
+
 print("Sets are simple data structures and they have one main use - collecting\
  unique elements".upper())
 print("sets also make it easier to perform mathematical set operations such as\
