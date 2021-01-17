@@ -61,7 +61,7 @@ import sys
 while True:
     try:
         num = int(input("Enter any integer value: "))
-        if num < 0:
+        if num <= 0:
             print("Please input a positive value")
         else:
             print("The collatz sequence for {} is".format(num))
