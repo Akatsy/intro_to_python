@@ -1,6 +1,9 @@
 
 # Quiz: Password Generator
-# Write a function called generate_password that selects three random words from the list of words word_list and concatenates them into a single string. Your function should not accept any arguments and should reference the global variable word_list to build the password.
+# Write a function called generate_password that selects three random words from
+# the list of words word_list and concatenates them into a single string. Your
+# function should not accept any arguments and should reference the global
+# variable word_list to build the password.
 
 # Use an import statement at the top
 import random
@@ -33,4 +36,5 @@ def generate_password():
 # test your function
 print(generate_password())
 print('#' * 99)
-print("random.sample(population, k) - Return a k length list of unique elements chosen from the population sequence or set. Used for random sampling without replacement.")
+print("random.sample(population, k) - Return a k length list of unique elements\
+ chosen from the population sequence or set. Used for random sampling without replacement.")
