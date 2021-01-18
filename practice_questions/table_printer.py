@@ -1,4 +1,7 @@
-# Write a function named printTable() that takes a list of lists of strings and displays it in a well-organized table with each column right-justified. Assume that all the inner lists will contain the same number of strings. For example, the value could look like this:
+# Write a function named printTable() that takes a list of lists of strings and
+# displays it in a well-organized table with each column right-justified. Assume
+# that all the inner lists will contain the same number of strings. For example,
+# the value could look like this:
 
 # tableData = [['apples', 'oranges', 'cherries', 'banana'],
 #              ['Alice', 'Bob', 'Carol', 'David'],
@@ -11,9 +14,18 @@
 #  cherries Carol moose
 #    banana David goose
 
-# Hint: your code will first have to find the longest string in each of the inner lists so that the whole column can be wide enough to fit all the strings. You can store the maximum width of each column as a list of integers. The printTable() function can begin with colWidths = [0] * len(tableData), which will create a list containing the same number of 0 values as the number of inner lists in tableData. That way, colWidths[0] can store the width of the longest string in tableData[0], colWidths[1] can store the width of the longest string in tableData[1], and so on. You can then find the largest value in the colWidths list to find out what integer width to pass to the rjust() string method.
+# Hint: your code will first have to find the longest string in each of the inner
+# lists so that the whole column can be wide enough to fit all the strings. You
+# can store the maximum width of each column as a list of integers. The printTable()
+# function can begin with colWidths = [0] * len(tableData), which will create a
+# list containing the same number of 0 values as the number of inner lists in
+# tableData. That way, colWidths[0] can store the width of the longest string in
+# tableData[0], colWidths[1] can store the width of the longest string in
+# tableData[1], and so on. You can then find the largest value in the colWidths
+# list to find out what integer width to pass to the rjust() string method.
 
-table_data = [['apples', 'oranges', 'cherries', 'banana'],['Alice', 'Bob', 'Carol', 'David'],['dogs', 'cats', 'moose', 'goose']]
+table_data = [['apples', 'oranges', 'cherries', 'banana'],\
+['Alice', 'Bob', 'Carol', 'David'],['dogs', 'cats', 'moose', 'goose']]
 
 def print_table(list_value):
     col_width = []
@@ -23,7 +35,8 @@ def print_table(list_value):
     # print(col_width)
     right_width = max(col_width)
 
-    unzipped = zip(*list_value) # get a list of tuples each with the item at that index from each list in the list value
+    unzipped = zip(*list_value) # get a list of tuples each with the item at that
+    # index from each list in the list value
     for i in unzipped:
         for j in i:
             print(j.rjust(right_width), end='')
@@ -31,6 +44,7 @@ def print_table(list_value):
         
 
 print_table(table_data)
-# table_data = [['apples', 'oranges', 'cherries', 'banana'],['Alice', 'Bob', 'Carol', 'David'],['dogs', 'cats', 'moose', 'goose']]
+# table_data = [['apples', 'oranges', 'cherries', 'banana'],
+# ['Alice', 'Bob', 'Carol', 'David'],['dogs', 'cats', 'moose', 'goose']]
 # zipped = zip(*table_data)
 # print(list(zipped))
