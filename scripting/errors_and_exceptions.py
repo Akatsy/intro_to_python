@@ -38,7 +38,7 @@ print("3. else: If Python runs into no exceptions while running the code in the\
 print('#' * 99)
 
 print("4. finally: This block will always be executed under any circumstances\
- before the try statement exists even if it is ending the program whether there\
+ before the try statement exits even if it is ending the program whether there\
  is a return statement or a break statement. The finally block is useful for\
  cleaning up actions in our code e.g closing a file we attempted opening using\
  a try statement")
